@@ -1,7 +1,8 @@
 # Matplotlib for Storytellers
-
 This is a Python data visualization book. It is a work in progress.
 
+## Support
+Support this book on [LeanPub](https://leanpub.com/mplforstorytellers). 
 
 ## License
 
