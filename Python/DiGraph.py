@@ -1,7 +1,7 @@
 # For creating directed graphs
 # Can't make self loops
 # Similar to Tikz automata diagrams
-# For large graphs from data, us networkx and nxviz instead
+# For large graphs from data, use networkx and nxviz instead
 
 
 def node(center, radius = 'auto', label = '',
