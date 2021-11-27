@@ -2,7 +2,7 @@
 This is a Python data visualization book. It is a work in progress.
 
 ## Why?
-This book is written for frustrated and reluctant matplotlib users who care about crafting good data visuals. It can be a blank canvas, offering more room for customization than you might find in Microsoft Excel and offers the advantages of reproducibility and automation that come from working with Python. Still, becoming comfortable with matplotlib requires a lot of patience. I wrote this book to help make that easier and put some essentials in one place.
+This book is written for frustrated and reluctant matplotlib users who care about crafting good data visuals. Matplotlib can be a blank canvas, offering more room for customization than you might find in Microsoft Excel, and offers the advantages of reproducibility and automation that come from working with Python. Still, becoming comfortable with matplotlib requires a lot of patience. I wrote this book to help make that easier and put some essentials in one place.
 
 ## Gallery
 <img src="https://user-images.githubusercontent.com/13120988/142295712-a6f2fda9-5a73-47bd-8121-d096ca9ce1b7.png" width="30%" /> <img src="https://user-images.githubusercontent.com/13120988/142295871-e7c5a363-ba97-4321-b03c-abc90b1633b2.png" width="34%" /> <img src="https://user-images.githubusercontent.com/13120988/142296449-36dc6531-4404-49ff-98e9-3e8cca86712b.png" width="29%" /> 
