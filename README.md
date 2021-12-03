@@ -9,9 +9,12 @@ This book is written for frustrated and reluctant matplotlib users who care abou
 <img src="https://user-images.githubusercontent.com/13120988/142297378-0bffea87-fecd-4575-b188-a5e33196b93c.png" width="31%" /> <img src="https://user-images.githubusercontent.com/13120988/142297197-e76441cb-b220-44bf-8a75-cc032cf3e21d.png" width="31%" />    <img src="https://user-images.githubusercontent.com/13120988/142297226-b67ac50c-0673-484c-ae07-649e2a785eef.png" width="36%" /> 
 
 ## Demos
+#### Notebooks
 Go to the [Demos](https://github.com/alexanderthclark/Matplotlib-for-Storytellers/tree/main/Demos) folder for Jupyter notebooks demonstrating some applications in the book. 
 <img src="https://user-images.githubusercontent.com/13120988/143707580-e8e9a5c4-caed-4a9d-bc72-7458776e8882.png" width="40%" /> 
 
+#### YouTube Videos
+[Plot Title with Multiple Colors in Matplotlib (Python)](https://youtu.be/3nKYXhUjqJE)
 
 ## Support
 Support this book on [LeanPub](https://leanpub.com/mplforstorytellers). 
