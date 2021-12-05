@@ -15,3 +15,7 @@ Here are notebook files for further demonstrations of applications from the book
 3. [New York Times Line Chart Replication](https://colab.research.google.com/drive/1HbGlXNpsE7R1y-4Whuy1E9FEMyxfPenz?usp=sharing)
 
 <img src="https://user-images.githubusercontent.com/13120988/143727171-c6119128-7e04-4c71-b88e-ac65ed49d7c4.png" width="50%" /> 
+
+4. [Add a Font](https://colab.research.google.com/drive/1zb8_9OsKMX-Aav0QYIjRV3dDumRd56Wd?usp=sharing)
+
+<img src="https://user-images.githubusercontent.com/13120988/144763446-b7a3d1e7-08b5-46e7-8fd9-0038fde95ba2.png" width="51%" /> 
