@@ -16,6 +16,10 @@ Go to the [Demos](https://github.com/alexanderthclark/Matplotlib-for-Storyteller
 #### YouTube Videos
 [Plot Title with Multiple Colors in Matplotlib (Python)](https://youtu.be/3nKYXhUjqJE)
 
+[Make NYT Viz in Python](https://youtu.be/oYlJWTfJmj4)
+
+[Add a Font in Matplotlib](https://youtu.be/-0Pp81n5QNE)
+
 ## Support
 Support this book on [LeanPub](https://leanpub.com/mplforstorytellers). 
 
