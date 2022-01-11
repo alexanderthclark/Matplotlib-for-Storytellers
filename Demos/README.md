@@ -22,7 +22,7 @@ Here are notebook files for further demonstrations of applications from the book
 
 ## MVP
 
-5. Spiral Charts
+5. [Spiral Charts](https://colab.research.google.com/drive/1mUkMoPb3Kmrk9dRm7jvhi5NoVqeAaCYt?usp=sharing)
 <img src="https://user-images.githubusercontent.com/13120988/149035175-926ad935-8240-4e5e-8520-e2e1818f9167.png" width="51%" /> 
 
 6. Sloping Text
