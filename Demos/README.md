@@ -19,3 +19,11 @@ Here are notebook files for further demonstrations of applications from the book
 4. [Add a Font](https://colab.research.google.com/drive/1zb8_9OsKMX-Aav0QYIjRV3dDumRd56Wd?usp=sharing)
 
 <img src="https://user-images.githubusercontent.com/13120988/144763446-b7a3d1e7-08b5-46e7-8fd9-0038fde95ba2.png" width="51%" /> 
+
+## MVP
+
+5. Spiral Charts
+<img src="https://user-images.githubusercontent.com/13120988/149035175-926ad935-8240-4e5e-8520-e2e1818f9167.png" width="51%" /> 
+
+6. Sloping Text
+<img src="https://user-images.githubusercontent.com/13120988/149035291-882cd1d6-5390-442b-9434-6e7fc41d541c.png" width="51%" /> 
