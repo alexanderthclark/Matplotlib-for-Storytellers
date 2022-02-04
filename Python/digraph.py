@@ -2,7 +2,8 @@
 # Can't make self loops
 # Similar to Tikz automata diagrams
 # For large graphs from data, use networkx and nxviz instead
-
+import matplotlib.pyplot as plt
+import numpy as np
 
 def node(center, radius = 'auto', label = '',
             ax = None, circleprops = {'facecolor':(.9,.99,.9), 'edgecolor':'black'}):
