@@ -2,6 +2,7 @@
 # Can't make self loops
 # Similar to Tikz automata diagrams
 # For large graphs from data, use networkx and nxviz instead
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 
