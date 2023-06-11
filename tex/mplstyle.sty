@@ -1,0 +1,168 @@
+\usepackage{graphicx} % for images
+\usepackage{xcolor} % for text colors
+\usepackage{hyperref} % hyperlinking
+\usepackage{csquotes} % display quotes
+\usepackage[T1]{fontenc} % Nicer default font (+ math font) than Computer Modern for most use cases
+\usepackage{booktabs}  % table support for pandoc > 1.12.2, toprule etc
+\usepackage{adjustbox} % Used to constrain images to a maximum size 
+\usepackage[marginparsep=0.4mm]{geometry} % Used to adjust the document margins
+\usepackage{amsmath} % Equations
+\usepackage{amssymb} % Equations
+\usepackage{comment} % block comments
+\usepackage{fontawesome} % emoji stuff
+\usepackage{marginnote} % for pyfile command
+\usepackage{caption} % for figure floats
+\usepackage{colortbl} 
+\usepackage{float}
+
+% Stuff for part images
+% epipart.sty
+\usepackage{titlesec}
+\usepackage{epigraph}
+\setlength{\epigraphwidth}{\textwidth}
+\titleformat{\part}[display]
+{\normalfont\huge\filcenter\bfseries\thispagestyle{epigraph}}
+{\partname\ \thepart}
+{20pt}
+{\Huge}
+\titlespacing*{\part}{0pt}{0pt}{40pt}
+
+% Prevent overflowing lines due to hard-to-break entities
+\sloppy 
+% Setup hyperref package
+\hypersetup{
+    breaklinks=true,  % so long urls are correctly broken across lines
+    colorlinks=true,
+    urlcolor=urlcolor,
+    linkcolor=linkcolor,
+    citecolor=citecolor,
+    }
+    
+% Slightly bigger margins than the latex defaults, overwrites book-style left and right margins
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+
+% Code Listings
+\usepackage{listings} %%%%%%% manual add for more code formatting
+\lstdefinestyle{mystyle}{
+backgroundcolor=\color{backcolour},   
+commentstyle=\color{codegreen},
+keywordstyle=\color{magenta},
+numberstyle=\tiny\color{codegray},
+stringstyle=\color{codepurple},
+basicstyle=\ttfamily\footnotesize,
+breakatwhitespace=false,         
+breaklines=true,                 
+captionpos=b,                    
+keepspaces=true,                 
+numbers=left,                    
+numbersep=5pt,                  
+showspaces=false,                
+showstringspaces=false,
+showtabs=false,                  
+tabsize=2,
+escapeinside={(*@}{@*)},
+language = Python
+}
+\lstset{style=mystyle}
+
+% make float for 
+%https://tex.stackexchange.com/questions/279240/float-for-lstlisting\newfloat{lstfloat}{htbp}{lop}
+\newfloat{lstfloat}{htbp}{lop}
+\floatname{lstfloat}{Listing}
+\def\lstfloatautorefname{Listing} % needed for hyperref/auroref
+
+
+
+% Creative Commons 
+\usepackage[
+    type={CC},
+    modifier={by-nc-sa},
+    version={4.0},
+]{doclicense}
+
+% Bibliography
+\usepackage[
+    backend=biber,
+    style=apa,
+    citestyle=authoryear
+    ]{biblatex}
+\addbibresource{tex/mplbib.bib} %Imports bibliography file
+
+
+% force notes to right
+% instead of left right
+\usepackage{etoolbox}
+%\makeatletter
+%\patchcmd{\@addmarginpar}{\ifodd\c@page}{\ifodd\c@page\@tempcnta\m@ne}{}{}
+%\makeatother
+%\reversemarginpar
+% https://tex.stackexchange.com/questions/69595/marginnote-always-on-right-side-of-the-page
+\makeatletter
+\long\def\@mn@@@marginnote[#1]#2[#3]{%
+  \begingroup
+    \ifmmode\mn@strut\let\@tempa\mn@vadjust\else
+      \if@inlabel\leavevmode\fi
+      \ifhmode\mn@strut\let\@tempa\mn@vadjust\else\let\@tempa\mn@vlap\fi
+    \fi
+    \@tempa{%
+      \vbox to\z@{%
+        \vss
+        \@mn@margintest
+        \if@reversemargin\if@tempswa
+            \@tempswafalse
+          \else
+            \@tempswatrue
+        \fi\fi
+          \rlap{%
+            \ifx\@mn@currxpos\relax
+              \kern\marginnoterightadjust
+              \if@mn@verbose
+                \PackageInfo{marginnote}{%
+                  xpos not known,\MessageBreak
+                  using \string\marginnoterightadjust}%
+              \fi
+            \else\ifx\@mn@currxpos\@empty
+                \kern\marginnoterightadjust
+                \if@mn@verbose
+                  \PackageInfo{marginnote}{%
+                    xpos not known,\MessageBreak
+                    using \string\marginnoterightadjust}%
+                \fi
+              \else
+                \if@mn@verbose
+                  \PackageInfo{marginnote}{%
+                    xpos seems to be \@mn@currxpos,\MessageBreak
+                    \string\marginnoterightadjust
+                    \space ignored}%
+                \fi
+                \begingroup
+                  \setlength{\@tempdima}{\@mn@currxpos}%
+                  \kern-\@tempdima
+                  \if@twoside\ifodd\@mn@currpage\relax
+                      \kern\oddsidemargin
+                    \else
+                      \kern\evensidemargin
+                    \fi
+                  \else
+                    \kern\oddsidemargin
+                  \fi
+                  \kern 1in
+                \endgroup
+              \fi
+            \fi
+            \kern\marginnotetextwidth\kern\marginparsep
+            \vbox to\z@{\kern\marginnotevadjust\kern #3
+              \vbox to\z@{%
+                \hsize\marginparwidth
+                \linewidth\hsize
+                \kern-\parskip
+                \marginfont\raggedrightmarginnote\strut\hspace{\z@}%
+                \ignorespaces#2\endgraf
+                \vss}%
+              \vss}%
+          }%
+      }%
+    }%
+  \endgroup
+}
+\makeatother

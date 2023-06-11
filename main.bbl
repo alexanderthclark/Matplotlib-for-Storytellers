@@ -1,0 +1,275 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/global//global/global}
+    \entry{borg2018applied}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2ba91b8188a8fdddc0f388ccac52f1a7}{%
+           family={Borg},
+           familyi={B\bibinitperiod},
+           given={Ingwer},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2ba91b8188a8fdddc0f388ccac52f1a7}
+      \strng{fullhash}{2ba91b8188a8fdddc0f388ccac52f1a7}
+      \strng{bibnamehash}{2ba91b8188a8fdddc0f388ccac52f1a7}
+      \strng{authorbibnamehash}{2ba91b8188a8fdddc0f388ccac52f1a7}
+      \strng{authornamehash}{2ba91b8188a8fdddc0f388ccac52f1a7}
+      \strng{authorfullhash}{2ba91b8188a8fdddc0f388ccac52f1a7}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Applied multidimensional scaling and unfolding}
+      \field{year}{2018}
+      \keyw{math}
+    \endentry
+    \entry{pythonternary}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7171ed4ebe3e8eb0df4d7c58eb0f4b74}{%
+           family={Harper},
+           familyi={H\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7171ed4ebe3e8eb0df4d7c58eb0f4b74}
+      \strng{fullhash}{7171ed4ebe3e8eb0df4d7c58eb0f4b74}
+      \strng{bibnamehash}{7171ed4ebe3e8eb0df4d7c58eb0f4b74}
+      \strng{authorbibnamehash}{7171ed4ebe3e8eb0df4d7c58eb0f4b74}
+      \strng{authornamehash}{7171ed4ebe3e8eb0df4d7c58eb0f4b74}
+      \strng{authorfullhash}{7171ed4ebe3e8eb0df4d7c58eb0f4b74}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Zenodo 10.5281/zenodo.594435}
+      \field{title}{python-ternary: Ternary Plots in Python}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.5281/zenodo.594435
+      \endverb
+      \verb{urlraw}
+      \verb https://github.com/marcharper/python-ternary
+      \endverb
+      \verb{url}
+      \verb https://github.com/marcharper/python-ternary
+      \endverb
+      \keyw{software}
+    \endentry
+    \entry{knaflic2015storytelling}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=07b6a065f75de1e146193564bb2f8ea7}{%
+           family={Knaflic},
+           familyi={K\bibinitperiod},
+           given={Cole\bibnamedelima Nussbaumer},
+           giveni={C\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{07b6a065f75de1e146193564bb2f8ea7}
+      \strng{fullhash}{07b6a065f75de1e146193564bb2f8ea7}
+      \strng{bibnamehash}{07b6a065f75de1e146193564bb2f8ea7}
+      \strng{authorbibnamehash}{07b6a065f75de1e146193564bb2f8ea7}
+      \strng{authornamehash}{07b6a065f75de1e146193564bb2f8ea7}
+      \strng{authorfullhash}{07b6a065f75de1e146193564bb2f8ea7}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Storytelling With Data: A Data Visualization Guide for Business Professionals}
+      \field{year}{2015}
+      \keyw{guides}
+    \endentry
+    \entry{orwell2013politics}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2ef7da5d483d3c197804e8f1eb7b36eb}{%
+           family={Orwell},
+           familyi={O\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Penguin UK}%
+      }
+      \strng{namehash}{2ef7da5d483d3c197804e8f1eb7b36eb}
+      \strng{fullhash}{2ef7da5d483d3c197804e8f1eb7b36eb}
+      \strng{bibnamehash}{2ef7da5d483d3c197804e8f1eb7b36eb}
+      \strng{authorbibnamehash}{2ef7da5d483d3c197804e8f1eb7b36eb}
+      \strng{authornamehash}{2ef7da5d483d3c197804e8f1eb7b36eb}
+      \strng{authorfullhash}{2ef7da5d483d3c197804e8f1eb7b36eb}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Politics and the English Language}
+      \field{year}{2013}
+      \keyw{nondata}
+    \endentry
+    \entry{schwabish2014economist}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4297ecd0035e3a6b6674b79bad127077}{%
+           family={Schwabish},
+           familyi={S\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4297ecd0035e3a6b6674b79bad127077}
+      \strng{fullhash}{4297ecd0035e3a6b6674b79bad127077}
+      \strng{bibnamehash}{4297ecd0035e3a6b6674b79bad127077}
+      \strng{authorbibnamehash}{4297ecd0035e3a6b6674b79bad127077}
+      \strng{authornamehash}{4297ecd0035e3a6b6674b79bad127077}
+      \strng{authorfullhash}{4297ecd0035e3a6b6674b79bad127077}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Economic Perspectives}
+      \field{number}{1}
+      \field{title}{An economist's guide to visualizing data}
+      \field{volume}{28}
+      \field{year}{2014}
+      \field{pages}{209\bibrangedash 34}
+      \range{pages}{26}
+    \endentry
+    \entry{schwabish2021better}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4297ecd0035e3a6b6674b79bad127077}{%
+           family={Schwabish},
+           familyi={S\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Columbia University Press}%
+      }
+      \strng{namehash}{4297ecd0035e3a6b6674b79bad127077}
+      \strng{fullhash}{4297ecd0035e3a6b6674b79bad127077}
+      \strng{bibnamehash}{4297ecd0035e3a6b6674b79bad127077}
+      \strng{authorbibnamehash}{4297ecd0035e3a6b6674b79bad127077}
+      \strng{authornamehash}{4297ecd0035e3a6b6674b79bad127077}
+      \strng{authorfullhash}{4297ecd0035e3a6b6674b79bad127077}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks}
+      \field{year}{2021}
+      \keyw{guides}
+    \endentry
+    \entry{Turrell2021}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ce8edcc25c7cbde1d43753a15c8b0531}{%
+           family={Turrell},
+           familyi={T\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a8b2e39951bba535f313f563f6abaef6}{%
+           family={contributors},
+           familyi={c\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Online}%
+      }
+      \strng{namehash}{bc61ae4b91bcc313da5e49ff417da75b}
+      \strng{fullhash}{bc61ae4b91bcc313da5e49ff417da75b}
+      \strng{bibnamehash}{bc61ae4b91bcc313da5e49ff417da75b}
+      \strng{authorbibnamehash}{bc61ae4b91bcc313da5e49ff417da75b}
+      \strng{authornamehash}{bc61ae4b91bcc313da5e49ff417da75b}
+      \strng{authorfullhash}{bc61ae4b91bcc313da5e49ff417da75b}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Coding for Economists}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://aeturrell.github.io/coding-for-economists
+      \endverb
+      \verb{url}
+      \verb https://aeturrell.github.io/coding-for-economists
+      \endverb
+    \endentry
+    \entry{vanderplas2016python}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0fd9a0e34f1b2adda41357c948d14986}{%
+           family={VanderPlas},
+           familyi={V\bibinitperiod},
+           given={Jake},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {" O'Reilly Media, Inc."}%
+      }
+      \strng{namehash}{0fd9a0e34f1b2adda41357c948d14986}
+      \strng{fullhash}{0fd9a0e34f1b2adda41357c948d14986}
+      \strng{bibnamehash}{0fd9a0e34f1b2adda41357c948d14986}
+      \strng{authorbibnamehash}{0fd9a0e34f1b2adda41357c948d14986}
+      \strng{authornamehash}{0fd9a0e34f1b2adda41357c948d14986}
+      \strng{authorfullhash}{0fd9a0e34f1b2adda41357c948d14986}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Python Data Science Handbook: Essential Tools for Working with Data}
+      \field{year}{2016}
+      \keyw{tech}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

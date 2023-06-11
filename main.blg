@@ -1,0 +1,18 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[67] biber-darwin:340> INFO - === Sun Jun  4, 2023, 18:23:40
+[81] Biber.pm:418> INFO - Reading 'main.bcf'
+[186] Biber.pm:972> INFO - Found 8 citekeys in bib section 0
+[201] Biber.pm:4383> INFO - Processing section 0
+[211] Biber.pm:4574> INFO - Looking for bibtex file 'tex/mplbib.bib' for section 0
+[212] bibtex.pm:1713> INFO - LaTeX decoding ...
+[225] bibtex.pm:1518> INFO - Found BibTeX data source 'tex/mplbib.bib'
+[283] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[283] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[283] Biber.pm:4203> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[283] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[294] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[297] bbl.pm:757> INFO - Output to main.bbl
+[297] Biber.pm:130> WARN - BibTeX subsystem: /var/folders/y6/ztvd8x0x0sqgsr5frxs9wnpm00223f/T/biber_tmp_HW0n/11ad7f410f9e5102238fcec3352862e2_7599.utf8, line 141, warning: 1 characters of junk seen at toplevel
+[297] Biber.pm:130> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[297] Biber.pm:132> INFO - WARNINGS: 2

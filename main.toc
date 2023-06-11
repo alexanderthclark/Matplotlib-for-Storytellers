@@ -1,0 +1,10 @@
+\contentsline {chapter}{Preface}{vii}{chapter*.4}%
+\contentsline {section}{Technical Notes and Prerequisites}{vii}{section*.5}%
+\contentsline {section}{Why Matplotlib?}{vii}{section*.5}%
+\contentsline {section}{Good Visualization is like Good Writing}{vii}{section*.5}%
+\contentsline {section}{Resources and Inspiration}{ix}{section*.5}%
+\contentsline {section}{Text Organization}{x}{section*.5}%
+\contentsline {part}{I\hspace {1em}Prose}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}The Object-oriented Interface}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Figure, Axes}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Mixing the Interfaces}{6}{section.1.2}%
