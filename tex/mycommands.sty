@@ -5,8 +5,14 @@
 \newcommand{\link}[2]{\textcolor{blue}{\href{#1}{#2}}}
 
 % for referencing a py file directly
-\newcommand{\pyfile}[1]{
+
+\newcommand{\gitlink}[1]{\link{https://github.com/alexanderthclark/Matplotlib-for-Storytellers/blob/refactor/python/#1}{#1}}
+
+\newcommand{\pyfilenolink}[1]{
 \lstinputlisting[title = \hspace{\textwidth} \scalebox{.67}{\texttt{#1}}]{python/#1}}
+
+\newcommand{\pyfile}[1]{
+\lstinputlisting[title = \hspace{\textwidth} \scalebox{.67}{\texttt{\gitlink{#1}}}]{python/#1}}
 
 \newcommand{\pyfiletoc}[1]{
 \lstinputlisting[caption = {[#1]}, title = \hspace{\textwidth} \scalebox{.7}{\texttt{#1}}]{python/#1}}
