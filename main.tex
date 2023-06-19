@@ -19,6 +19,7 @@
 \renewcommand\lstlistlistingname{Code} 
 %\setcounter{tocdepth}{1}
 
+
 \begin{document}
 
 \frontmatter
@@ -37,11 +38,9 @@
 \noindent \link{https://github.com/alexanderthclark/Matplotlib-for-Storytellers}{github.com/alexanderthclark/Matplotlib-for-Storytellers}\\
 \link{https://www.youtube.com/channel/UC7zSpQsXo4ezksvHaGYTvzg}{youtube.com/@alexanderthclark}
 
-
 \tableofcontents
 %% Add list of listings for code
 \input{tex/codeTOC}
-
 
 \newpage
 
@@ -53,7 +52,6 @@
 \section*{Technical Notes and Prerequisites}
 \addcontentsline{toc}{section}{Technical Notes and Prerequisites}
 \input{tex/preface/techandprereq}
-
 
 
 \section*{Why Matplotlib?}
@@ -74,28 +72,26 @@
 \input{tex/preface/textorg}
 
 
-
 \mainmatter
 
 \clearpage
 
 
 % Prose
-
 \epigraphhead[200]{\vspace{4cm}\hfil\includegraphics[width = .9\textwidth]{images/monetgrapes}\hfill\\ %QuinceCabbageMelonandCucumber.jpg}\hfil\\ % monetgrapes.jpg}\hfil\\
 \begin{center}\emph{Still Life with Apples and Grapes} by Claude Monet (Public Domain) \end{center}}
 %\begin{center}\emph{Quince, Cabbage, Melon and Cucumber} by Juan Sánchez Cotán (Public Domain) \end{center}}
 %https://commons.wikimedia.org/wiki/File:Fra_Juan_Sánchez_Cotán_001.jpg
 %replaced https://commons.wikimedia.org/wiki/File:Monet-Still-Life-with-Apples-and-Grapes-1880.jpg
 
+
 \part{Prose}\label{part:prose}
 
-
-
 \chapter{The Object-oriented Interface}\label{chapter:oop}
-
 \input{tex/prose/oop}
 
+\chapter{Axes Appearance, Ticks, and Grids}\label{chapter:axes}
+\input{tex/prose/ticks}
 
 
 %%%% EARLY ENDING
@@ -116,8 +112,6 @@ His name is Alexander. He is a data scientist at LinkedIn and is an adjunct assi
 
 
 
-\chapter{Axes Appearance, Ticks, and Grids}\label{chapter:axes}
-\input{ticks}
 
 \chapter{Plot Elements and Coordinate Systems}\label{chapter:elements}
 \chaptermark{Plot Elements and Coord. Sys.}
