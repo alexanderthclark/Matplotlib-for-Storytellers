@@ -1,0 +1,111 @@
+%https://matplotlib.org/stable/tutorials/intermediate/artists.html#sphx-glr-tutorials-intermediate-artists-py
+
+This chapter can be skipped by the reader in a hurry. I include it to establish some vocabulary about the basic plot elements and then discuss the different coordinate systems that can be used within a single plot---not polar vs. Cartesian coordinates but data coordinates vs. figure coordinates, for example. Coordinate systems do come up repeatedly in future chapters.
+
+
+\section{Primitives and Containers}
+
+Once you have a your figure and axis objects, you'll want to add actual plot elements to them, lines for a line chart, bars for a bar chart, annotations, etc. We already did that in Chapter \ref{chapter:oop}, creating line plots. In matplotlib, these elements belong to the Artist class, it being a very general base class. Artists objects are basically the water you've been swimming in this whole time---you just might not have noticed it. Artist objects can be either primitives or containers. Containers include background items like the figure and axes objects. Primitives are the meat of the plot, like the line created by a call to \code{ax.plot()}. Important primitive Artist objects include Line2D, Patches, and Text. 
+
+\pyfile{artists.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/artists.pdf}
+\end{center}
+
+
+What might be unusual in the above is that we don't simply run \code{ax.plot(x, y)}. Instead we actually assign the plot call to a variable, \code{line, = ax.plot(x,y)}. Usually, this isn't necessary, but this allows us to reference the same object later in the program. The plot method creates a tuple of Line2D objects. In this case, that tuple contains only one item and it is assigned to the variable \code{line}. 
+
+Now that we have the object as \code{line}, we can get properties or make changes. You can obtain the color with the \code{get_color()} method or change it with \code{set_color()}. You can even remove the plot element with \code{line.remove()}. These are all niche uses. However, we will later make use of \code{remove()} when iteratively centering text. We'll also use the \code{get_window_extent()} artist method frequently to help space objects in the plot. 
+
+
+\subsection{Ordering with \code{zorder}}
+% https://matplotlib.org/stable/gallery/misc/zorder_demo.html
+
+\subsubsection{Default Ordering}
+By default, text is plotted over lines and lines are plotted over patches, like the fill created by \code{fill_between()}. Within each of these three categories, objects created later in the program are plotted over previously created objects. The \code{zorder} parameter can be used to create a different ordering. Objects with a greater \code{zorder} value are ordered further to the front. 
+
+First, we create and plot without specifying the \code{zorder} for any object to observe default behavior. We also print the zorder for each object using \code{get_zorder()}. Text has a \code{zorder} of 3, lines have a \code{zorder} of 2, and each patch object will have \code{zorder = 1}. Note \code{patch1} and \code{patch2} have the same \code{zorder}, but the red \code{patch2} is added later in the program so it is plotted over the green \code{patch1}, being as if \code{patch1} has a lower \code{zorder}. 
+
+
+\pyfile{default-z}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/default-z.pdf}
+\end{center}
+
+\subsubsection{Custom Ordering}
+
+Then, we reverse the ordering.
+
+\pyfile{reverse-z}
+
+\begin{center}
+    \includegraphics[width = .8\textwidth]{figures/proseplots/reverse-z.pdf}
+\end{center}
+
+
+\subsubsection{Axes and Tick Ordering}
+
+Notice that by default, gridlines are ordered below artists added to a plot regardless of where the call to show the gridlines is placed. This can be changed using \code{ax.set_axisbelow()}, which also reorders the ticks. The \code{XAxis} and \text{YAxis} can be ordered independently using the \code{set_order()} axis method.
+
+\pyfile{default-axes}
+
+\begin{center}
+    \includegraphics[width = .8\textwidth]{figures/proseplots/default-axes.pdf}
+\end{center}
+
+\pyfile{front-axes}
+
+\begin{center}
+    \includegraphics[width = .8\textwidth]{figures/proseplots/front-axes.pdf}
+\end{center}
+
+\pyfile{front-xaxis}
+
+\begin{center}
+    \includegraphics[width = .8\textwidth]{figures/proseplots/front-xaxis.pdf}
+\end{center}
+
+
+%https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_axisbelow.html#matplotlib.axes.Axes.set_axisbelow
+% https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.fill_between.html
+
+
+\section{Coordinate Systems and Transformations}
+
+So far we have worked with data coordinates and you might not even realize there could be anything else. When we plotted a line between the points $(0,0)$ and $(1,1)$, we meant those as values in the usual $xy$-plane. But with use of transformations, we might also plot according to axes, figure, and display coordinates. In axes coordinates, $(0,0)$ is the bottom left of the axes and $(1,1)$ is the top right. Similarly, in figure coordinates, $(0,0)$ is the bottom left of the figure and $(1,1)$ is the top right. We won't cover the fourth type, display coordinates, which is the pixel coordinate system. 
+
+The plot below features a group of plot calls using axes coordinates, then a group using figure coordinates, and then a single call using data coordinates. 
+
+\pyfile{coords}
+
+\begin{center}
+    \includegraphics[width = .8\textwidth]{figures/proseplots/coords.pdf}
+\end{center}
+
+
+
+\begin{lstlisting}[language = Python]
+fig, ax = plt.figure(), plt.axes()
+
+for i in np.linspace(0,1,50):
+    ax.plot([i,.5], [0.00, .5], 
+            transform = ax.transAxes)
+
+for i in np.linspace(0,1,4):
+    ax.plot([i,.5], [1, .5], 
+            transform = fig.transFigure)
+    
+# Choose any x and y
+ax.plot([1,2],[1,1])
+\end{lstlisting}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{proseplots/CoordinateSystems.pdf}
+\end{center}
+
+
+\section{Window Extents}
+
+Another useful method is \code{get_window_extent()}.

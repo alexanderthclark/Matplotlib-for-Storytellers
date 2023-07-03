@@ -1,9 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.5)  19 JUN 2023 12:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.5)  3 JUL 2023 16:18
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**main.tex
+**main
 (./main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (./tex/kdp.cls
@@ -1012,52 +1011,44 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./tex/copyright.tex
-<Images/by-nc-sa.png, id=12, 97.0827pt x 33.9669pt>
+<Images/by-nc-sa.png, id=68, 97.0827pt x 33.9669pt>
 File: Images/by-nc-sa.png Graphic file (type png)
 <use Images/by-nc-sa.png>
 Package pdftex.def Info: Images/by-nc-sa.png  used on input line 3.
 (pdftex.def)             Requested size: 86.72488pt x 30.34393pt.
-) [2.2 <./Images/by-nc-sa.png>]
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+) [2.2 <./Images/by-nc-sa.png>] (./main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
+
 
 (./tex/codeTOC.tex [3.3
 
 ] [4.4
 
-]
-
-Package hyperref Warning: old lol file detected, not used; run LaTeX again.
-
+] (./main.lol)
 \tf@lol=\write7
 \openout7 = `main.lol'.
 
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
 .
+
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 7.
 
-(./python/imports.py)
+(./python/imports.py [5.5])
 Overfull \hbox (38.96254pt too wide) in paragraph at lines 7--7
 []|  []| 
  []
 
-[5.5]) [6.6]
+) [6.6]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 53.
 
-(./tex/preface/techandprereq.tex
-
-LaTeX Warning: Reference `part:prose' on page vii undefined on input line 1.
-
-) (./tex/preface/whympl.tex
+(./tex/preface/techandprereq.tex) (./tex/preface/whympl.tex
 
 LaTeX Warning: Reference `part:poetry' on page vii undefined on input line 4.
 
@@ -1066,19 +1057,8 @@ LaTeX Warning: Reference `part:poetry' on page vii undefined on input line 4.
 ] [8.8])
 (./tex/preface/resourcesinsp.tex) (./tex/preface/textorg.tex
 
-LaTeX Warning: Hyper reference `sec:writing' on page ix undefined on input line
- 1.
-
-
-LaTeX Warning: Hyper reference `part:prose' on page ix undefined on input line 
-1.
-
-
 LaTeX Warning: Hyper reference `part:poetry' on page ix undefined on input line
  1.
-
-
-LaTeX Warning: Reference `part:prose' on page ix undefined on input line 1.
 
 
 LaTeX Warning: Reference `part:math' on page ix undefined on input line 1.
@@ -1090,7 +1070,7 @@ LaTeX Warning: Reference `part:poetry' on page ix undefined on input line 1.
 LaTeX Warning: Reference `part:topics' on page ix undefined on input line 1.
 
 [9.9]) [10.10]
-<images/monetgrapes.jpg, id=121, 803.0pt x 645.41125pt>
+<images/monetgrapes.jpg, id=197, 803.0pt x 645.41125pt>
 File: images/monetgrapes.jpg Graphic file (type jpg)
 <use images/monetgrapes.jpg>
 Package pdftex.def Info: images/monetgrapes.jpg  used on input line 88.
@@ -1123,7 +1103,7 @@ Overfull \hbox (44.42125pt too wide) in paragraph at lines 21--21
 []|  []| 
  []
 
-<figures/proseplots/figparams.pdf, id=156, 144.54pt x 216.81pt>
+<figures/proseplots/figparams.pdf, id=229, 144.54pt x 216.81pt>
 File: figures/proseplots/figparams.pdf Graphic file (type pdf)
 <use figures/proseplots/figparams.pdf>
 Package pdftex.def Info: figures/proseplots/figparams.pdf  used on input line 2
@@ -1138,7 +1118,7 @@ Overfull \hbox (54.97115pt too wide) in paragraph at lines 35--35
 []|  []| 
  []
 
-<figures/proseplots/gettersetter.pdf, id=188, 578.16pt x 289.08pt>
+<figures/proseplots/gettersetter.pdf, id=260, 578.16pt x 289.08pt>
 File: figures/proseplots/gettersetter.pdf Graphic file (type pdf)
 <use figures/proseplots/gettersetter.pdf>
 Package pdftex.def Info: figures/proseplots/gettersetter.pdf  used on input lin
@@ -1154,7 +1134,7 @@ Overfull \hbox (30.35472pt too wide) in paragraph at lines 49--49
 []|  []| 
  []
 
-<figures/proseplots/chart.pdf, id=192, 578.16pt x 361.35pt>
+<figures/proseplots/chart.pdf, id=264, 578.16pt x 361.35pt>
 File: figures/proseplots/chart.pdf Graphic file (type pdf)
 <use figures/proseplots/chart.pdf>
 Package pdftex.def Info: figures/proseplots/chart.pdf  used on input line 52.
@@ -1164,7 +1144,7 @@ Overfull \hbox (40.90462pt too wide) in paragraph at lines 58--58
 []|  []| 
  []
 
-<figures/proseplots/colorful.pdf, id=249, 578.16pt x 361.35pt>
+<figures/proseplots/colorful.pdf, id=321, 578.16pt x 361.35pt>
 File: figures/proseplots/colorful.pdf Graphic file (type pdf)
 <use figures/proseplots/colorful.pdf>
 Package pdftex.def Info: figures/proseplots/colorful.pdf  used on input line 63
@@ -1175,7 +1155,7 @@ Overfull \hbox (37.38799pt too wide) in paragraph at lines 70--70
 []|  []| 
  []
 
-<figures/proseplots/irisbox.pdf, id=277, 433.62pt x 289.08pt>
+<figures/proseplots/irisbox.pdf, id=349, 433.62pt x 289.08pt>
 File: figures/proseplots/irisbox.pdf Graphic file (type pdf)
 <use figures/proseplots/irisbox.pdf>
 Package pdftex.def Info: figures/proseplots/irisbox.pdf  used on input line 73.
@@ -1191,7 +1171,7 @@ Overfull \hbox (30.35472pt too wide) in paragraph at lines 6--6
 []|  []| 
  []
 
-<figures/proseplots/empty.pdf, id=324, 433.62pt x 289.08pt>
+<figures/proseplots/empty.pdf, id=395, 433.62pt x 289.08pt>
 File: figures/proseplots/empty.pdf Graphic file (type pdf)
 <use figures/proseplots/empty.pdf>
 Package pdftex.def Info: figures/proseplots/empty.pdf  used on input line 9.
@@ -1202,22 +1182,18 @@ Overfull \hbox (54.97115pt too wide) in paragraph at lines 15--15
  []
 
 [11.21 <./figures/proseplots/empty.pdf>]
-<figures/proseplots/empty-square.pdf, id=347, 433.62pt x 289.08pt>
+<figures/proseplots/empty-square.pdf, id=416, 433.62pt x 289.08pt>
 File: figures/proseplots/empty-square.pdf Graphic file (type pdf)
 <use figures/proseplots/empty-square.pdf>
 Package pdftex.def Info: figures/proseplots/empty-square.pdf  used on input lin
 e 18.
 (pdftex.def)             Requested size: 173.44977pt x 115.63435pt.
-
-
-LaTeX Warning: Reference `chapter:oop' on page 12 undefined on input line 21.
-
-(./python/expanding-lims.py)
+ (./python/expanding-lims.py)
 Overfull \hbox (62.00441pt too wide) in paragraph at lines 27--27
 []|  []| 
  []
 
-<figures/proseplots/expanding-lims.pdf, id=350, 433.62pt x 289.08pt>
+<figures/proseplots/expanding-lims.pdf, id=420, 433.62pt x 289.08pt>
 File: figures/proseplots/expanding-lims.pdf Graphic file (type pdf)
 <use figures/proseplots/expanding-lims.pdf>
 Package pdftex.def Info: figures/proseplots/expanding-lims.pdf  used on input l
@@ -1228,7 +1204,7 @@ Overfull \hbox (51.45451pt too wide) in paragraph at lines 35--35
 []|  []| 
  []
 
-<figures/proseplots/circle-clip.pdf, id=388, 433.62pt x 289.08pt>
+<figures/proseplots/circle-clip.pdf, id=459, 433.62pt x 289.08pt>
 File: figures/proseplots/circle-clip.pdf Graphic file (type pdf)
 <use figures/proseplots/circle-clip.pdf>
 Package pdftex.def Info: figures/proseplots/circle-clip.pdf  used on input line
@@ -1237,22 +1213,18 @@ Package pdftex.def Info: figures/proseplots/circle-clip.pdf  used on input line
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13.23 <./figures/proseplots/expanding-lims.pdf>]
-
-LaTeX Warning: Reference `chapter:oop' on page 14 undefined on input line 45.
-
-(./python/no-axis.py)
+ [13.23 <./figures/proseplots/expanding-lims.pdf>] (./python/no-axis.py)
 Overfull \hbox (37.38799pt too wide) in paragraph at lines 48--48
 []|  []| 
  []
 
-<figures/proseplots/no-axis.pdf, id=422, 433.62pt x 289.08pt>
+<figures/proseplots/no-axis.pdf, id=494, 433.62pt x 289.08pt>
 File: figures/proseplots/no-axis.pdf Graphic file (type pdf)
 <use figures/proseplots/no-axis.pdf>
 Package pdftex.def Info: figures/proseplots/no-axis.pdf  used on input line 51.
 
 (pdftex.def)             Requested size: 130.08511pt x 86.72466pt.
-<figures/proseplots/yes-axis.pdf, id=423, 433.62pt x 289.08pt>
+<figures/proseplots/yes-axis.pdf, id=495, 433.62pt x 289.08pt>
 File: figures/proseplots/yes-axis.pdf Graphic file (type pdf)
 <use figures/proseplots/yes-axis.pdf>
 Package pdftex.def Info: figures/proseplots/yes-axis.pdf  used on input line 51
@@ -1264,25 +1236,25 @@ Overfull \hbox (44.42125pt too wide) in paragraph at lines 58--58
 []|  []| 
  []
 
-<figures/proseplots/spine-vis-bottom.pdf, id=492, 433.62pt x 289.08pt>
+<figures/proseplots/spine-vis-bottom.pdf, id=562, 433.62pt x 289.08pt>
 File: figures/proseplots/spine-vis-bottom.pdf Graphic file (type pdf)
 <use figures/proseplots/spine-vis-bottom.pdf>
 Package pdftex.def Info: figures/proseplots/spine-vis-bottom.pdf  used on input
  line 62.
 (pdftex.def)             Requested size: 138.75717pt x 92.50307pt.
-<figures/proseplots/spine-vis-top.pdf, id=493, 433.62pt x 289.08pt>
+<figures/proseplots/spine-vis-top.pdf, id=563, 433.62pt x 289.08pt>
 File: figures/proseplots/spine-vis-top.pdf Graphic file (type pdf)
 <use figures/proseplots/spine-vis-top.pdf>
 Package pdftex.def Info: figures/proseplots/spine-vis-top.pdf  used on input li
 ne 62.
 (pdftex.def)             Requested size: 138.75717pt x 92.50307pt.
-<figures/proseplots/spine-vis-left.pdf, id=494, 433.62pt x 289.08pt>
+<figures/proseplots/spine-vis-left.pdf, id=564, 433.62pt x 289.08pt>
 File: figures/proseplots/spine-vis-left.pdf Graphic file (type pdf)
 <use figures/proseplots/spine-vis-left.pdf>
 Package pdftex.def Info: figures/proseplots/spine-vis-left.pdf  used on input l
 ine 63.
 (pdftex.def)             Requested size: 138.75717pt x 92.50307pt.
-<figures/proseplots/spine-vis-right.pdf, id=495, 433.62pt x 289.08pt>
+<figures/proseplots/spine-vis-right.pdf, id=565, 433.62pt x 289.08pt>
 File: figures/proseplots/spine-vis-right.pdf Graphic file (type pdf)
 <use figures/proseplots/spine-vis-right.pdf>
 Package pdftex.def Info: figures/proseplots/spine-vis-right.pdf  used on input 
@@ -1293,7 +1265,7 @@ Overfull \hbox (54.97115pt too wide) in paragraph at lines 68--68
 []|  []| 
  []
 
-<figures/proseplots/thick-spines.pdf, id=498, 433.62pt x 289.08pt>
+<figures/proseplots/thick-spines.pdf, id=568, 433.62pt x 289.08pt>
 File: figures/proseplots/thick-spines.pdf Graphic file (type pdf)
 <use figures/proseplots/thick-spines.pdf>
 Package pdftex.def Info: figures/proseplots/thick-spines.pdf  used on input lin
@@ -1306,7 +1278,7 @@ Overfull \hbox (51.45451pt too wide) in paragraph at lines 75--75
 []|  []| 
  []
 
-<figures/proseplots/zero-spines.pdf, id=611, 433.62pt x 289.08pt>
+<figures/proseplots/zero-spines.pdf, id=682, 433.62pt x 289.08pt>
 File: figures/proseplots/zero-spines.pdf Graphic file (type pdf)
 <use figures/proseplots/zero-spines.pdf>
 Package pdftex.def Info: figures/proseplots/zero-spines.pdf  used on input line
@@ -1318,15 +1290,12 @@ Overfull \hbox (47.93788pt too wide) in paragraph at lines 84--84
 []|  []| 
  []
 
-<figures/proseplots/arrow-axes.pdf, id=671, 433.62pt x 289.08pt>
+<figures/proseplots/arrow-axes.pdf, id=742, 433.62pt x 289.08pt>
 File: figures/proseplots/arrow-axes.pdf Graphic file (type pdf)
 <use figures/proseplots/arrow-axes.pdf>
 Package pdftex.def Info: figures/proseplots/arrow-axes.pdf  used on input line 
 87.
 (pdftex.def)             Requested size: 202.35512pt x 134.906pt.
-
-LaTeX Warning: Reference `sec:ticks' on page 17 undefined on input line 90.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 99--100
 \T1/cmr/m/n/10 The im-por-tant axes meth-ods for ticks are [][][][],
@@ -1343,7 +1312,7 @@ Overfull \hbox (33.87135pt too wide) in paragraph at lines 101--101
 []|  []| 
  []
 
-<figures/proseplots/ticks1.pdf, id=728, 433.62pt x 289.08pt>
+<figures/proseplots/ticks1.pdf, id=798, 433.62pt x 289.08pt>
 File: figures/proseplots/ticks1.pdf Graphic file (type pdf)
 <use figures/proseplots/ticks1.pdf>
 Package pdftex.def Info: figures/proseplots/ticks1.pdf  used on input line 104.
@@ -1354,7 +1323,7 @@ Overfull \hbox (54.97115pt too wide) in paragraph at lines 113--113
 []|  []| 
  []
 
-<figures/proseplots/tall-ballers.pdf, id=762, 289.08pt x 505.89pt>
+<figures/proseplots/tall-ballers.pdf, id=832, 289.08pt x 505.89pt>
 File: figures/proseplots/tall-ballers.pdf Graphic file (type pdf)
 <use figures/proseplots/tall-ballers.pdf>
 Package pdftex.def Info: figures/proseplots/tall-ballers.pdf  used on input lin
@@ -1369,7 +1338,7 @@ Overfull \hbox (54.97115pt too wide) in paragraph at lines 123--123
 []|  []| 
  []
 
-<figures/proseplots/mult-locator.pdf, id=799, 433.62pt x 289.08pt>
+<figures/proseplots/mult-locator.pdf, id=870, 433.62pt x 289.08pt>
 File: figures/proseplots/mult-locator.pdf Graphic file (type pdf)
 <use figures/proseplots/mult-locator.pdf>
 Package pdftex.def Info: figures/proseplots/mult-locator.pdf  used on input lin
@@ -1383,7 +1352,7 @@ Overfull \hbox (47.93788pt too wide) in paragraph at lines 133--133
 []|  []| 
  []
 
-<figures/proseplots/tick-right.pdf, id=854, 433.62pt x 289.08pt>
+<figures/proseplots/tick-right.pdf, id=925, 433.62pt x 289.08pt>
 File: figures/proseplots/tick-right.pdf Graphic file (type pdf)
 <use figures/proseplots/tick-right.pdf>
 Package pdftex.def Info: figures/proseplots/tick-right.pdf  used on input line 
@@ -1394,7 +1363,7 @@ Overfull \hbox (47.93788pt too wide) in paragraph at lines 143--143
 []|  []| 
  []
 
-<figures/proseplots/grid-false.pdf, id=895, 433.62pt x 289.08pt>
+<figures/proseplots/grid-false.pdf, id=965, 433.62pt x 289.08pt>
 File: figures/proseplots/grid-false.pdf Graphic file (type pdf)
 <use figures/proseplots/grid-false.pdf>
 Package pdftex.def Info: figures/proseplots/grid-false.pdf  used on input line 
@@ -1406,7 +1375,7 @@ Overfull \hbox (44.42125pt too wide) in paragraph at lines 151--151
 []|  []| 
  []
 
-<figures/proseplots/grid-true.pdf, id=948, 433.62pt x 289.08pt>
+<figures/proseplots/grid-true.pdf, id=1017, 433.62pt x 289.08pt>
 File: figures/proseplots/grid-true.pdf Graphic file (type pdf)
 <use figures/proseplots/grid-true.pdf>
 Package pdftex.def Info: figures/proseplots/grid-true.pdf  used on input line 1
@@ -1422,27 +1391,24 @@ Overfull \hbox (51.45451pt too wide) in paragraph at lines 161--161
 []|  []| 
  []
 
-<figures/proseplots/y-grid-false.pdf, id=995, 433.62pt x 289.08pt>
+<figures/proseplots/y-grid-false.pdf, id=1065, 433.62pt x 289.08pt>
 File: figures/proseplots/y-grid-false.pdf Graphic file (type pdf)
 <use figures/proseplots/y-grid-false.pdf>
 Package pdftex.def Info: figures/proseplots/y-grid-false.pdf  used on input lin
 e 164.
 (pdftex.def)             Requested size: 138.75717pt x 92.50307pt.
-<figures/proseplots/y-grid-true.pdf, id=996, 433.62pt x 289.08pt>
+<figures/proseplots/y-grid-true.pdf, id=1066, 433.62pt x 289.08pt>
 File: figures/proseplots/y-grid-true.pdf Graphic file (type pdf)
 <use figures/proseplots/y-grid-true.pdf>
 Package pdftex.def Info: figures/proseplots/y-grid-true.pdf  used on input line
  164.
 (pdftex.def)             Requested size: 138.75717pt x 92.50307pt.
-
-LaTeX Warning: Reference `sec:ticks' on page 24 undefined on input line 169.
-
 (./python/grids-auto.py)
 Overfull \hbox (47.93788pt too wide) in paragraph at lines 172--172
 []|  []| 
  []
 
-<figures/proseplots/grids-auto.pdf, id=999, 433.62pt x 289.08pt>
+<figures/proseplots/grids-auto.pdf, id=1070, 433.62pt x 289.08pt>
 File: figures/proseplots/grids-auto.pdf Graphic file (type pdf)
 <use figures/proseplots/grids-auto.pdf>
 Package pdftex.def Info: figures/proseplots/grids-auto.pdf  used on input line 
@@ -1458,7 +1424,7 @@ Overfull \hbox (51.45451pt too wide) in paragraph at lines 178--178
 []|  []| 
  []
 
-<figures/proseplots/grids-multi.pdf, id=1040, 433.62pt x 289.08pt>
+<figures/proseplots/grids-multi.pdf, id=1111, 433.62pt x 289.08pt>
 File: figures/proseplots/grids-multi.pdf Graphic file (type pdf)
 <use figures/proseplots/grids-multi.pdf>
 Package pdftex.def Info: figures/proseplots/grids-multi.pdf  used on input line
@@ -1488,58 +1454,45 @@ File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  3A97AFC7E9735AD6D20DF81E414E97BA;2322.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 3A97AFC7E9735AD6D20DF81E414E97BA;2322.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28275 strings out of 478268
- 487726 string characters out of 5846348
- 1461534 words of memory out of 5000000
- 45592 multiletter control sequences out of 15000+600000
- 488824 words of font info for 73 fonts, out of 8000000 for 9000
+ 28306 strings out of 478268
+ 488056 string characters out of 5846348
+ 1462596 words of memory out of 5000000
+ 45618 multiletter control sequences out of 15000+600000
+ 489600 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,16n,131p,1489b,5162s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,16n,131p,1485b,5162s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeon
 e.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.
 enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome/FontAwes
 ome.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
 10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
 .pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.p
-fb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
-></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><
-/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></u
-sr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/loc
-al/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local
-/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/t
-exlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/tex
-live/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texli
-ve/2022/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive
-/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2
-022/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/202
-2/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (39 pages, 790692 bytes).
+fb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb
+></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><
+/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr
+/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/l
+ocal/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/loc
+al/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local
+/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/t
+exlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/tex
+live/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive
+/2022/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2
+022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/202
+2/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2022/
+texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on main.pdf (39 pages, 811707 bytes).
 PDF statistics:
- 1259 PDF objects out of 1440 (max. 8388607)
- 773 compressed objects within 8 object streams
+ 1335 PDF objects out of 1440 (max. 8388607)
+ 846 compressed objects within 9 object streams
  356 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 275 words of extra memory for PDF output out of 10000 (max. 10000000)
 
