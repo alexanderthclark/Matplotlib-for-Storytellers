@@ -109,6 +109,23 @@ We can convert a point or sequence of points from one coordinate system to anoth
 
 
 
-\section{Window Extents}
+\section{Use Window Extents}
 
-Another useful method is \code{get_window_extent()}, which allows you to find the bounding box for something added to a plot. This can be used to find the coordinates for where an annotate begins or ends, for example. 
+Another useful method is \code{get_window_extent()}, which allows you to find the bounding box (the coordinates for the corners of the enclosing rectangle) for something added to a plot. This can be used to find the display coordinates for where an annotate begins or ends, for example. Like in the previous section, note that the results will not update and be inaccurate if changes are made to the figure size, axes limits, or the canvas used. The method also requires a renderer. The technicalities for why can be put aside. Either include \code{fig.canvas.draw()} first, so the rendered is already cached, or include the argument \code{renderer = fig.canvas.get_renderer()} in the call to \code{get_window_extent()}. Another atypical feature of \code{get_window_extent()} usage is the assigning the Text object to a variable \code{center_text} instead of simply running \code{ax.text()} to insert text. Below is straightforward example where we obtain the data coordinates for the bounding box of a Text object and then add vertical lines before and after the text.
+%https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_window_extent.html
+
+
+\pyfile{window-extent.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/window-extent.pdf}
+\end{center}
+
+So what? A formatted title can stand in for a legend, helping reduce clutter. This helps us heed the call from \cite{schwabish2021better} to label data directly and avoid legends when possible. In the line chart below, a legend is unnecessary given the color-coding in the title. 
+
+
+\pyfile{multicolor-title.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/multicolor-title.pdf}
+\end{center}

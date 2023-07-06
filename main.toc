@@ -20,4 +20,4 @@
 \contentsline {subsubsection}{Custom Ordering}{30}{lstnumber.-28.40}%
 \contentsline {subsubsection}{Axes and Tick Ordering}{31}{lstnumber.-29.13}%
 \contentsline {section}{\numberline {3.2}Coordinate Systems and Transformations}{33}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Window Extents}{37}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Use Window Extents}{37}{section.3.3}%
