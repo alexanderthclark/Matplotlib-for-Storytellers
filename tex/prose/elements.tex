@@ -102,11 +102,7 @@ We can convert a point or sequence of points from one coordinate system to anoth
     \includegraphics[width = .7\textwidth]{figures/proseplots/coord-trans.pdf}
 \end{center}
 
-
-
 %Let's test this by created a plot with a window extended 10 data units wide and 10 data units high. 
-
-
 
 
 \section{Use Window Extents}
@@ -121,7 +117,7 @@ Another useful method is \code{get_window_extent()}, which allows you to find th
     \includegraphics[width = .7\textwidth]{figures/proseplots/window-extent.pdf}
 \end{center}
 
-So what? A formatted title can stand in for a legend, helping reduce clutter. This helps us heed the call from \cite{schwabish2021better} to label data directly and avoid legends when possible. In the line chart below, a legend is unnecessary given the color-coding in the title. 
+So what? A formatted title can stand in for a legend, helping reduce clutter. This helps us heed the call from \cite{schwabish2021better} to label data directly and avoid legends when possible. In the line chart below, a legend is unnecessary given the color-coding in the title. A single Text object can't have multiple colors and this ensures the spacing is done well. The \code{ha} parameter is for horizontal alignment, and this is covered in more detail in a later chapter. % add reference when new chapter is added. 
 
 
 \pyfile{multicolor-title.py}
@@ -129,3 +125,5 @@ So what? A formatted title can stand in for a legend, helping reduce clutter. Th
 \begin{center}
     \includegraphics[width = .7\textwidth]{figures/proseplots/multicolor-title.pdf}
 \end{center}
+
+
