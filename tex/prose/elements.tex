@@ -28,7 +28,7 @@ By default, text is plotted over lines and lines are plotted over patches, like 
 First, we create and plot without specifying the \code{zorder} for any object to observe default behavior. We also print the zorder for each object using \code{get_zorder()}. Text has a \code{zorder} of 3, lines have a \code{zorder} of 2, and each patch object will have \code{zorder = 1}. Note \code{patch1} and \code{patch2} have the same \code{zorder}, but the red \code{patch2} is added later in the program so it is plotted over the green \code{patch1}, being as if \code{patch1} has a lower \code{zorder}. 
 
 
-\pyfile{default-z}
+\pyfile{default-z.py}
 
 \begin{center}
     \includegraphics[width = .7\textwidth]{figures/proseplots/default-z.pdf}
@@ -38,7 +38,7 @@ First, we create and plot without specifying the \code{zorder} for any object to
 
 Then, we reverse the ordering.
 
-\pyfile{reverse-z}
+\pyfile{reverse-z.py}
 
 \begin{center}
     \includegraphics[width = .8\textwidth]{figures/proseplots/reverse-z.pdf}
@@ -49,19 +49,19 @@ Then, we reverse the ordering.
 
 Notice that by default, gridlines are ordered below artists added to a plot regardless of where the call to show the gridlines is placed. This can be changed using \code{ax.set_axisbelow()}, which also reorders the ticks. The \code{XAxis} and \text{YAxis} can be ordered independently using the \code{set_order()} axis method.
 
-\pyfile{default-axes}
+\pyfile{default-axes.py}
 
 \begin{center}
     \includegraphics[width = .8\textwidth]{figures/proseplots/default-axes.pdf}
 \end{center}
 
-\pyfile{front-axes}
+\pyfile{front-axes.py}
 
 \begin{center}
     \includegraphics[width = .8\textwidth]{figures/proseplots/front-axes.pdf}
 \end{center}
 
-\pyfile{front-xaxis}
+\pyfile{front-xaxis.py}
 
 \begin{center}
     \includegraphics[width = .8\textwidth]{figures/proseplots/front-xaxis.pdf}
@@ -74,38 +74,41 @@ Notice that by default, gridlines are ordered below artists added to a plot rega
 
 \section{Coordinate Systems and Transformations}
 
-So far we have worked with data coordinates and you might not even realize there could be anything else. When we plotted a line between the points $(0,0)$ and $(1,1)$, we meant those as values in the usual $xy$-plane. But with use of transformations, we might also plot according to axes, figure, and display coordinates. In axes coordinates, $(0,0)$ is the bottom left of the axes and $(1,1)$ is the top right. Similarly, in figure coordinates, $(0,0)$ is the bottom left of the figure and $(1,1)$ is the top right. We won't cover the fourth type, display coordinates, which is the pixel coordinate system. 
+So far we have worked with data coordinates and you might not even realize there could be anything else. When we plotted a line between the points $(0,0)$ and $(1,1)$, we meant those as values in the usual $xy$-plane. But with use of transformations, we might also plot according to axes, figure, and display coordinates. In axes coordinates, $(0,0)$ is the bottom left of the axes and $(1,1)$ is the top right. Similarly, in figure coordinates, $(0,0)$ is the bottom left of the figure and $(1,1)$ is the top right. We won't cover the fourth type, display coordinates, which is the pixel coordinate system (for certain backends). The matplotlib \link{https://matplotlib.org/stable/tutorials/advanced/transforms_tutorial.html}{documentation} cautions that you should rarely work with display coordinates. However, display coordinates are a necessary evil when converting from one system to another. Note, it is important not to manipulate the figure or axes dimensions after referencing the display coordinate system or you might encounter unexpected behavior. 
 
 The plot below features a group of plot calls using axes coordinates, then a group using figure coordinates, and then a single call using data coordinates. 
-
-\pyfile{coords}
+\pyfile{coords.py}
 
 \begin{center}
     \includegraphics[width = .8\textwidth]{figures/proseplots/coords.pdf}
 \end{center}
 
 
+Axes and figure coordinates are often useful when you would like placement to be independent of the data, perhaps to enforce that something remain in the center of the plot by using an axes coordinate of 0.5. Below, we make use of that to set a vanishing point at the vertical halfway point.
 
-\begin{lstlisting}[language = Python]
-fig, ax = plt.figure(), plt.axes()
-
-for i in np.linspace(0,1,50):
-    ax.plot([i,.5], [0.00, .5], 
-            transform = ax.transAxes)
-
-for i in np.linspace(0,1,4):
-    ax.plot([i,.5], [1, .5], 
-            transform = fig.transFigure)
-    
-# Choose any x and y
-ax.plot([1,2],[1,1])
-\end{lstlisting}
+\pyfile{coord-horizon.py}
 
 \begin{center}
-    \includegraphics[width = .7\textwidth]{proseplots/CoordinateSystems.pdf}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/coord-horizon.pdf}
 \end{center}
+
+
+We can convert a point or sequence of points from one coordinate system to another using the appropriate transform object. \code{ax.transData.transform([x,y])} converts \code{x,y} from data coordinates to display coordinates. Simply replacing \code{ax.transData} with \code{ax.transAxes} or \code{fig.transFigure} converts from the corresponding coordinate system to display coordinates. The opposite direction is achieved by inverting the transformation---\code{ax.transData.inverted().transform([x,y])}. To go from data coordinates to figure or axes coordinates, you can make a pit stop in display coordinates. For example, \code{ax.transData.inverted().transform(ax.transAxes.transform([0.5, 0.5]))}  returns the middle of the axes window in data coordinates. The example below breaks this up into two steps. Again, take note that all plotting is done after setting a tight layout and after setting the axes limits to avoid resizing the figure and endangering the reliability of our coordinate transformations. 
+
+
+\pyfile{coord-trans.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/coord-trans.pdf}
+\end{center}
+
+
+
+%Let's test this by created a plot with a window extended 10 data units wide and 10 data units high. 
+
+
 
 
 \section{Window Extents}
 
-Another useful method is \code{get_window_extent()}.
+Another useful method is \code{get_window_extent()}, which allows you to find the bounding box for something added to a plot. This can be used to find the coordinates for where an annotate begins or ends, for example. 
