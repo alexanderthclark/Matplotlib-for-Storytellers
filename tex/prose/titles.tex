@@ -289,8 +289,11 @@ Below, we build on the solution from Chapter \code{chapter:elements} by creating
 
 \section{Fonts}
 
-Finally, you might want to customize the fonts. First, we'll consider the customizations available in matplotlib by default. 
+Finally, you might want to customize the fonts. In matplotlib 3.6 and newer, there is a \code{get_font_names()} method that can be used to display available font names. The code below creates a figure for each font. I get several warnings with messages like ``Glyph 105 (i) missing from current font.''
 
+\pyfile{get-fonts.py}
+
+%First, we'll consider the customizations available in matplotlib by default. 
 % t.get_font().__dict__
 
 
