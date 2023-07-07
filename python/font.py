@@ -8,12 +8,12 @@ for font_file in font_files:
 
 # Make Figure
 fig, ax  = plt.figure(), plt.axes()
-t = fig.text(0.5,0.5,'Live Laugh Love', #fontname = 'DancingScript',# font = 'DancingScript',
-        ha = 'center', va = 'center')
+t = fig.text(0.5,0.5,
+             'Live Laugh Love',
+             ha = 'center',
+             va = 'center')
 ax.axis('off')
 t.set_size(50)
 t.set_name("Pacifico")
-
 t.set_color('yellow')
-#t.set_weight('bold')
 fig.set_facecolor('brown')
