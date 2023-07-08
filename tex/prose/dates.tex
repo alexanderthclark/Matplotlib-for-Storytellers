@@ -1,4 +1,4 @@
-Matplotlib can handle dates, helping you to create better axis ticks and label formatting. Matplotlibs capabilities are built on the datetime and dateutil modules. 
+Matplotlib can handle dates, helping you to create better axis ticks and label formatting. Matplotlib's capabilities are built on the datetime and dateutil modules. 
 
 
 \section{Plotting}
@@ -18,7 +18,7 @@ Before we try to improve the formatting, see what happens if we try to use the a
     \includegraphics[width = .7\textwidth]{figures/proseplots/ax-dates.pdf}
 \end{center}
 
-In the old days, \code{plot_date()} was used in place of \code{plot()}, but this is no longer necessary.
+You might find code using \code{plot_date()}, which used to be used in place of \code{plot()}. This is no longer necessary.
 
 
 \subsection{Time Zone Handling}
@@ -26,10 +26,9 @@ In the old days, \code{plot_date()} was used in place of \code{plot()}, but this
 %\code{plot_date()} also plots the dates according to a default UTC timezone, sometimes converting dates given in a different timezone. This can be modified with the \code{tz} parameter, but this requires covering 
 
 
-For a deeper knowledge, see the \code{datetime.tzinfo} class and the \code{pytz} library. 
+For a deeper knowledge, see the \code{datetime.tzinfo} class and the \code{pytz} library. TK
 
 \section{Ticks and Formatting}
-
 
 \subsection{Date Formats}
 
