@@ -1,0 +1,50 @@
+\contentsline {chapter}{Preface}{vii}{chapter*.4}%
+\contentsline {section}{Technical Notes and Prerequisites}{vii}{section*.5}%
+\contentsline {section}{Why Matplotlib?}{vii}{section*.5}%
+\contentsline {section}{Good Visualization is like Good Writing}{vii}{section*.5}%
+\contentsline {section}{Resources and Inspiration}{ix}{section*.5}%
+\contentsline {section}{Text Organization}{x}{section*.5}%
+\contentsline {part}{I\hspace {1em}Prose}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}The Object-oriented Interface}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Figure, Axes}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Mixing the Interfaces}{6}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Axes Appearance, Ticks, and Grids}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Axis Aspect and Limits}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Axis Lines and Spines}{14}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Ticks}{18}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Grids}{22}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Plot Elements and Coordinate Systems}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Primitives and Containers}{27}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Ordering with \lstinline [language = Python]{zorder}}{29}{subsection.3.1.1}%
+\contentsline {subsubsection}{Default Ordering}{29}{subsection.3.1.1}%
+\contentsline {subsubsection}{Custom Ordering}{30}{lstnumber.-28.40}%
+\contentsline {subsubsection}{Axes and Tick Ordering}{31}{lstnumber.-29.13}%
+\contentsline {section}{\numberline {3.2}Coordinate Systems and Transformations}{33}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Use Window Extents}{37}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Text and Titles}{41}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Simple Titles}{41}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Text and Placement}{43}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Text Formatting for Numbers}{47}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Legends}{49}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Annotations}{54}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Labeling and Arrows}{54}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Fancy Titles}{58}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Multi-colored Titles}{59}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Fonts}{62}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Importing Fonts with Font Manager}{63}{subsection.4.6.1}%
+\contentsline {chapter}{\numberline {5}Dates}{65}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Plotting}{65}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Time Zone Handling}{66}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Ticks and Formatting}{67}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Date Formats}{67}{subsection.5.2.1}%
+\contentsline {chapter}{\numberline {6}Colors}{69}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Colormaps}{69}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Red, Green, Blue, Alpha}{70}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Multiple Axes and Plots}{77}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Multiple Axes}{77}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Using \lstinline [language = Python]{twinx()} and \lstinline [language = Python]{twiny()}}{79}{subsection.7.1.1}%
+\contentsline {section}{\numberline {7.2}Multiple Plots}{84}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Using \lstinline [language = Python]{subplots}}{84}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Using \lstinline [language = Python]{add_subplot}}{87}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Figure Annotations and Legends}{87}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.3}GridSpec}{90}{section.7.3}%
