@@ -2799,22 +2799,23 @@
     <bcf:citekey order="6">knaflic2015storytelling</bcf:citekey>
     <bcf:citekey order="7">schwabish2021better</bcf:citekey>
     <bcf:citekey order="8">knaflic2015storytelling</bcf:citekey>
-    <bcf:citekey order="9">knaflic2015storytelling</bcf:citekey>
-    <bcf:citekey order="10">schwabish2021better</bcf:citekey>
-    <bcf:citekey order="11">schwabish2014economist</bcf:citekey>
-    <bcf:citekey order="12" nocite="1">vanderplas2016python</bcf:citekey>
-    <bcf:citekey order="13" nocite="1">Turrell2021</bcf:citekey>
-    <bcf:citekey order="14" nocite="1">orwell2013politics</bcf:citekey>
-    <bcf:citekey order="15" nocite="1">borg2018applied</bcf:citekey>
-    <bcf:citekey order="16" nocite="1">pythonternary</bcf:citekey>
-    <bcf:citekey order="17">schwabish2014economist</bcf:citekey>
-    <bcf:citekey order="18">knaflic2015storytelling</bcf:citekey>
-    <bcf:citekey order="19">schwabish2021better</bcf:citekey>
-    <bcf:citekey order="20">vanderplas2016python</bcf:citekey>
-    <bcf:citekey order="21">Turrell2021</bcf:citekey>
-    <bcf:citekey order="22">orwell2013politics</bcf:citekey>
-    <bcf:citekey order="23">borg2018applied</bcf:citekey>
-    <bcf:citekey order="24">pythonternary</bcf:citekey>
+    <bcf:citekey order="9">schwabish2021better</bcf:citekey>
+    <bcf:citekey order="10">knaflic2015storytelling</bcf:citekey>
+    <bcf:citekey order="11">schwabish2021better</bcf:citekey>
+    <bcf:citekey order="12">schwabish2014economist</bcf:citekey>
+    <bcf:citekey order="13" nocite="1">vanderplas2016python</bcf:citekey>
+    <bcf:citekey order="14" nocite="1">Turrell2021</bcf:citekey>
+    <bcf:citekey order="15" nocite="1">orwell2013politics</bcf:citekey>
+    <bcf:citekey order="16" nocite="1">borg2018applied</bcf:citekey>
+    <bcf:citekey order="17" nocite="1">pythonternary</bcf:citekey>
+    <bcf:citekey order="18">schwabish2014economist</bcf:citekey>
+    <bcf:citekey order="19">knaflic2015storytelling</bcf:citekey>
+    <bcf:citekey order="20">schwabish2021better</bcf:citekey>
+    <bcf:citekey order="21">vanderplas2016python</bcf:citekey>
+    <bcf:citekey order="22">Turrell2021</bcf:citekey>
+    <bcf:citekey order="23">orwell2013politics</bcf:citekey>
+    <bcf:citekey order="24">borg2018applied</bcf:citekey>
+    <bcf:citekey order="25">pythonternary</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

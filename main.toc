@@ -1,7 +1,7 @@
 \contentsline {chapter}{Preface}{vii}{chapter*.4}%
 \contentsline {section}{Technical Notes and Prerequisites}{vii}{section*.5}%
 \contentsline {section}{Why Matplotlib?}{vii}{section*.5}%
-\contentsline {section}{Good Visualization is like Good Writing}{vii}{section*.5}%
+\contentsline {section}{Good Visualization is like Good Writing}{viii}{section*.5}%
 \contentsline {section}{Resources and Inspiration}{ix}{section*.5}%
 \contentsline {section}{Text Organization}{x}{section*.5}%
 \contentsline {part}{I\hspace {1em}Prose}{1}{part.1}%
@@ -48,3 +48,10 @@
 \contentsline {subsection}{\numberline {7.2.2}Using \lstinline [language = Python]{add_subplot}}{87}{subsection.7.2.2}%
 \contentsline {subsection}{\numberline {7.2.3}Figure Annotations and Legends}{87}{subsection.7.2.3}%
 \contentsline {section}{\numberline {7.3}GridSpec}{90}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Style Configuration}{93}{chapter.8}%
+\contentsline {section}{\numberline {8.1}rcParams}{93}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Defining Your Own Style}{95}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Temporary Configurations}{97}{subsection.8.2.1}%
+\contentsline {section}{\numberline {8.3}A Final Prose Example}{99}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}A First Go}{100}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Reconfigured, Refactored, and Reusable}{103}{subsection.8.3.2}%
