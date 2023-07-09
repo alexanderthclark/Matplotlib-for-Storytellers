@@ -39,7 +39,10 @@
 \link{https://www.youtube.com/channel/UC7zSpQsXo4ezksvHaGYTvzg}{youtube.com/@alexanderthclark}
 
 \tableofcontents
+\vfill
 %% Add list of listings for code
+%\pagebreak
+
 \input{tex/codeTOC}
 
 \newpage
@@ -122,6 +125,32 @@
 \part{Mathematical Interlude}\label{part:math}
 \input{tex/math/math}
 
+
+% Poetry
+
+\cleardoublepage
+\epigraphhead[200]{\vspace{4cm}\hfil\includegraphics[width = .9\textwidth]{Images/NewtonBlake.jpg}\hfil\\
+\begin{center}\emph{Newton} by William Blake (Public Domain)\end{center}}
+% https://en.wikipedia.org/wiki/File:William_Blake_-_Newton.png
+
+\part{Poetry}\label{part:poetry}
+\input{tex/poetry/poetrychap}
+%\input{poetryArtist}
+
+
+% Special topics
+
+\cleardoublepage
+\epigraphhead[200]{\vspace{4cm}\hfil\includegraphics[width = .9\textwidth]{images/DomenichinounicornPalFarnese.jpeg}\hfil\\
+\begin{center}\emph{A Virgin with a Unicorn} by Domenichino (Public Domain)\end{center}}
+% https://en.wikipedia.org/wiki/Domenichino#/media/File:DomenichinounicornPalFarnese.jpg
+
+\part{Special Topics}\label{part:topics}
+
+\chapter{Ternary Plots}\label{chapter:ternary}
+\input{tex/special/ternary}
+
+
 %%%% EARLY ENDING
 \input{tex/ghostcites} % get in some extra cites
 % Back Matter
@@ -140,17 +169,6 @@ His name is Alexander. He is a data scientist at LinkedIn and is an adjunct assi
 
 
 
-
-% Poetry
-
-\cleardoublepage
-\epigraphhead[200]{\vspace{4cm}\hfil\includegraphics[width = .9\textwidth]{Images/NewtonBlake.jpg}\hfil\\
-\begin{center}\emph{Newton} by William Blake (Public Domain)\end{center}}
-% https://en.wikipedia.org/wiki/File:William_Blake_-_Newton.png
-
-\part{Poetry}\label{part:poetry}
-\input{poetrychap}
-\input{poetryArtist}
 
 %\section{A Rectangle for Every Occasion}
 

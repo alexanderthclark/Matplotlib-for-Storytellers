@@ -17,7 +17,6 @@ from sklearn.decomposition import PCA
 from scipy import stats
 
 # Made redundant in the text
-from matplotlib import colors
 from matplotlib.patches import ConnectionPatch
 from matplotlib.patches import Rectangle
 import matplotlib.gridspec as gridspec

@@ -203,6 +203,45 @@
       \field{year}{2021}
       \keyw{guides}
     \endentry
+    \entry{scruton2015poetry}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6fbae792bd0714da3d94d52c7b372d0f}{%
+           family={Scruton},
+           familyi={S\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=d262cead031d825ec8b0b20b5e437a74}{%
+           family={Gibson},
+           familyi={G\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{6fbae792bd0714da3d94d52c7b372d0f}
+      \strng{fullhash}{6fbae792bd0714da3d94d52c7b372d0f}
+      \strng{bibnamehash}{6fbae792bd0714da3d94d52c7b372d0f}
+      \strng{authorbibnamehash}{6fbae792bd0714da3d94d52c7b372d0f}
+      \strng{authornamehash}{6fbae792bd0714da3d94d52c7b372d0f}
+      \strng{authorfullhash}{6fbae792bd0714da3d94d52c7b372d0f}
+      \strng{editorbibnamehash}{d262cead031d825ec8b0b20b5e437a74}
+      \strng{editornamehash}{d262cead031d825ec8b0b20b5e437a74}
+      \strng{editorfullhash}{d262cead031d825ec8b0b20b5e437a74}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Philosophy of Poetry}
+      \field{title}{Poetry and truth}
+      \field{year}{2015}
+    \endentry
     \entry{Turrell2021}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=ce8edcc25c7cbde1d43753a15c8b0531}{%
