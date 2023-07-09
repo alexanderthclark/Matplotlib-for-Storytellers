@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.5)  8 JUL 2023 13:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.5)  9 JUL 2023 15:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1012,7 +1012,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./tex/copyright.tex
-<Images/by-nc-sa.png, id=225, 97.0827pt x 33.9669pt>
+<Images/by-nc-sa.png, id=273, 97.0827pt x 33.9669pt>
 File: Images/by-nc-sa.png Graphic file (type png)
 <use Images/by-nc-sa.png>
 Package pdftex.def Info: Images/by-nc-sa.png  used on input line 3.
@@ -1025,55 +1025,52 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [3.3
 
-])
+] [4.4])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
 
-(./tex/codeTOC.tex [4.4] (./main.lol)
+(./tex/codeTOC.tex [5.5] [6.6
+
+] (./main.lol)
 \tf@lol=\write7
 \openout7 = `main.lol'.
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 7.
- (./python/imports.py [5.5
-
-])
+ (./python/imports.py [7.7])
 Overfull \hbox (38.96254pt too wide) in paragraph at lines 7--7
 []|  []| 
  []
 
-) [6.6]
+) [8.8]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 53.
 
 (./tex/preface/techandprereq.tex) (./tex/preface/whympl.tex
 
-LaTeX Warning: Reference `part:poetry' on page vii undefined on input line 4.
+LaTeX Warning: Reference `part:poetry' on page ix undefined on input line 4.
 
 ) (./tex/preface/writingorwell.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7.7
+ [9.9
 
 ]
-[8.8]) (./tex/preface/resourcesinsp.tex [9.9]) (./tex/preface/textorg.tex
+[10.10]) (./tex/preface/resourcesinsp.tex [11.11]) (./tex/preface/textorg.tex
 
-LaTeX Warning: Hyper reference `part:poetry' on page x undefined on input line 
-1.
-
-
-LaTeX Warning: Reference `part:math' on page x undefined on input line 1.
+LaTeX Warning: Hyper reference `part:poetry' on page xii undefined on input lin
+e 1.
 
 
-LaTeX Warning: Reference `part:poetry' on page x undefined on input line 1.
+LaTeX Warning: Reference `part:poetry' on page xii undefined on input line 1.
 
 
-LaTeX Warning: Reference `part:topics' on page x undefined on input line 1.
+LaTeX Warning: Reference `part:topics' on page xii undefined on input line 1.
 
-) [10.10]
-<images/monetgrapes.jpg, id=394, 803.0pt x 645.41125pt>
+) [12.12]
+<images/monetgrapes.jpg, id=463, 803.0pt x 645.41125pt>
 File: images/monetgrapes.jpg Graphic file (type jpg)
 <use images/monetgrapes.jpg>
 Package pdftex.def Info: images/monetgrapes.jpg  used on input line 87.
@@ -1083,11 +1080,11 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[1.11
+[1.13
 
 
 
- <./images/monetgrapes.jpg>] [2.12]
+ <./images/monetgrapes.jpg>] [2.14]
 Chapter 1.
 (./tex/prose/oop.tex (./python/matlab-plot.py)
 Overfull \hbox (51.45451pt too wide) in paragraph at lines 5--5
@@ -1099,14 +1096,14 @@ Overfull \hbox (40.90462pt too wide) in paragraph at lines 9--9
 []|  []| 
  []
 
-[3.13
+[3.15
 
 ] (./python/figparams.py)
 Overfull \hbox (44.42125pt too wide) in paragraph at lines 21--21
 []|  []| 
  []
 
-<figures/proseplots/figparams.pdf, id=426, 144.54pt x 216.81pt>
+<figures/proseplots/figparams.pdf, id=495, 144.54pt x 216.81pt>
 File: figures/proseplots/figparams.pdf Graphic file (type pdf)
 <use figures/proseplots/figparams.pdf>
 Package pdftex.def Info: figures/proseplots/figparams.pdf  used on input line 2
@@ -1115,13 +1112,13 @@ Package pdftex.def Info: figures/proseplots/figparams.pdf  used on input line 2
 
 Underfull \vbox (badness 2512) has occurred while \output is active []
 
- [4.14]
-(./python/gettersetter.py [5.15 <./figures/proseplots/figparams.pdf>])
+ [4.16]
+(./python/gettersetter.py [5.17 <./figures/proseplots/figparams.pdf>])
 Overfull \hbox (54.97115pt too wide) in paragraph at lines 35--35
 []|  []| 
  []
 
-<figures/proseplots/gettersetter.pdf, id=458, 578.16pt x 289.08pt>
+<figures/proseplots/gettersetter.pdf, id=526, 578.16pt x 289.08pt>
 File: figures/proseplots/gettersetter.pdf Graphic file (type pdf)
 <use figures/proseplots/gettersetter.pdf>
 Package pdftex.def Info: figures/proseplots/gettersetter.pdf  used on input lin
@@ -1137,35 +1134,35 @@ Overfull \hbox (30.35472pt too wide) in paragraph at lines 49--49
 []|  []| 
  []
 
-<figures/proseplots/chart.pdf, id=462, 578.16pt x 361.35pt>
+<figures/proseplots/chart.pdf, id=530, 578.16pt x 361.35pt>
 File: figures/proseplots/chart.pdf Graphic file (type pdf)
 <use figures/proseplots/chart.pdf>
 Package pdftex.def Info: figures/proseplots/chart.pdf  used on input line 52.
 (pdftex.def)             Requested size: 231.2649pt x 144.53743pt.
-[6.16 <./figures/proseplots/gettersetter.pdf>] (./python/colorful.py)
+[6.18 <./figures/proseplots/gettersetter.pdf>] (./python/colorful.py)
 Overfull \hbox (40.90462pt too wide) in paragraph at lines 58--58
 []|  []| 
  []
 
-<figures/proseplots/colorful.pdf, id=518, 578.16pt x 361.35pt>
+<figures/proseplots/colorful.pdf, id=586, 578.16pt x 361.35pt>
 File: figures/proseplots/colorful.pdf Graphic file (type pdf)
 <use figures/proseplots/colorful.pdf>
 Package pdftex.def Info: figures/proseplots/colorful.pdf  used on input line 63
 .
 (pdftex.def)             Requested size: 231.2649pt x 144.53743pt.
-[7.17 <./figures/proseplots/chart.pdf>] (./python/irisbox.py)
+[7.19 <./figures/proseplots/chart.pdf>] (./python/irisbox.py)
 Overfull \hbox (37.38799pt too wide) in paragraph at lines 70--70
 []|  []| 
  []
 
-<figures/proseplots/irisbox.pdf, id=546, 462.52798pt x 346.89601pt>
+<figures/proseplots/irisbox.pdf, id=616, 462.52798pt x 346.89601pt>
 File: figures/proseplots/irisbox.pdf Graphic file (type pdf)
 <use figures/proseplots/irisbox.pdf>
 Package pdftex.def Info: figures/proseplots/irisbox.pdf  used on input line 73.
 
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-[8.18 <./figures/proseplots/colorful.pdf> <./figures/proseplots/irisbox.pdf>])
-[9.19] [10.20
+[8.20 <./figures/proseplots/colorful.pdf> <./figures/proseplots/irisbox.pdf>])
+[9.21] [10.22
 
 ]
 Chapter 2.
@@ -1174,17 +1171,17 @@ Overfull \hbox (30.35472pt too wide) in paragraph at lines 6--6
 []|  []| 
  []
 
-<figures/proseplots/empty.pdf, id=592, 462.52798pt x 346.89601pt>
+<figures/proseplots/empty.pdf, id=661, 462.52798pt x 346.89601pt>
 File: figures/proseplots/empty.pdf Graphic file (type pdf)
 <use figures/proseplots/empty.pdf>
 Package pdftex.def Info: figures/proseplots/empty.pdf  used on input line 9.
 (pdftex.def)             Requested size: 173.44977pt x 130.08568pt.
-(./python/empty-square.py [11.21 <./figures/proseplots/empty.pdf>])
+(./python/empty-square.py [11.23 <./figures/proseplots/empty.pdf>])
 Overfull \hbox (54.97115pt too wide) in paragraph at lines 15--15
 []|  []| 
  []
 
-<figures/proseplots/empty-square.pdf, id=614, 462.52798pt x 346.89601pt>
+<figures/proseplots/empty-square.pdf, id=682, 462.52798pt x 346.89601pt>
 File: figures/proseplots/empty-square.pdf Graphic file (type pdf)
 <use figures/proseplots/empty-square.pdf>
 Package pdftex.def Info: figures/proseplots/empty-square.pdf  used on input lin
@@ -1195,18 +1192,18 @@ Overfull \hbox (62.00441pt too wide) in paragraph at lines 27--27
 []|  []| 
  []
 
-<figures/proseplots/expanding-lims.pdf, id=618, 462.52798pt x 346.89601pt>
+<figures/proseplots/expanding-lims.pdf, id=686, 462.52798pt x 346.89601pt>
 File: figures/proseplots/expanding-lims.pdf Graphic file (type pdf)
 <use figures/proseplots/expanding-lims.pdf>
 Package pdftex.def Info: figures/proseplots/expanding-lims.pdf  used on input l
 ine 30.
 (pdftex.def)             Requested size: 173.44977pt x 130.08568pt.
-[12.22 <./figures/proseplots/empty-square.pdf>] (./python/circle-clip.py)
+[12.24 <./figures/proseplots/empty-square.pdf>] (./python/circle-clip.py)
 Overfull \hbox (51.45451pt too wide) in paragraph at lines 35--35
 []|  []| 
  []
 
-<figures/proseplots/circle-clip.pdf, id=656, 462.52798pt x 346.89601pt>
+<figures/proseplots/circle-clip.pdf, id=724, 462.52798pt x 346.89601pt>
 File: figures/proseplots/circle-clip.pdf Graphic file (type pdf)
 <use figures/proseplots/circle-clip.pdf>
 Package pdftex.def Info: figures/proseplots/circle-clip.pdf  used on input line
@@ -1215,48 +1212,48 @@ Package pdftex.def Info: figures/proseplots/circle-clip.pdf  used on input line
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13.23 <./figures/proseplots/expanding-lims.pdf>] (./python/no-axis.py)
+ [13.25 <./figures/proseplots/expanding-lims.pdf>] (./python/no-axis.py)
 Overfull \hbox (37.38799pt too wide) in paragraph at lines 48--48
 []|  []| 
  []
 
-<figures/proseplots/no-axis.pdf, id=691, 462.52798pt x 346.89601pt>
+<figures/proseplots/no-axis.pdf, id=761, 462.52798pt x 346.89601pt>
 File: figures/proseplots/no-axis.pdf Graphic file (type pdf)
 <use figures/proseplots/no-axis.pdf>
 Package pdftex.def Info: figures/proseplots/no-axis.pdf  used on input line 51.
 
 (pdftex.def)             Requested size: 130.08511pt x 97.56425pt.
-<figures/proseplots/yes-axis.pdf, id=692, 462.52798pt x 346.89601pt>
+<figures/proseplots/yes-axis.pdf, id=762, 462.52798pt x 346.89601pt>
 File: figures/proseplots/yes-axis.pdf Graphic file (type pdf)
 <use figures/proseplots/yes-axis.pdf>
 Package pdftex.def Info: figures/proseplots/yes-axis.pdf  used on input line 51
 .
 (pdftex.def)             Requested size: 130.08511pt x 97.56425pt.
-[14.24 <./figures/proseplots/circle-clip.pdf> <./figures/proseplots/no-axis.pdf
+[14.26 <./figures/proseplots/circle-clip.pdf> <./figures/proseplots/no-axis.pdf
 > <./figures/proseplots/yes-axis.pdf>] (./python/spine-vis.py)
 Overfull \hbox (44.42125pt too wide) in paragraph at lines 58--58
 []|  []| 
  []
 
-<figures/proseplots/spine-vis-bottom.pdf, id=759, 462.52798pt x 346.89601pt>
+<figures/proseplots/spine-vis-bottom.pdf, id=829, 462.52798pt x 346.89601pt>
 File: figures/proseplots/spine-vis-bottom.pdf Graphic file (type pdf)
 <use figures/proseplots/spine-vis-bottom.pdf>
 Package pdftex.def Info: figures/proseplots/spine-vis-bottom.pdf  used on input
  line 62.
 (pdftex.def)             Requested size: 138.75717pt x 104.0696pt.
-<figures/proseplots/spine-vis-top.pdf, id=760, 462.52798pt x 346.89601pt>
+<figures/proseplots/spine-vis-top.pdf, id=830, 462.52798pt x 346.89601pt>
 File: figures/proseplots/spine-vis-top.pdf Graphic file (type pdf)
 <use figures/proseplots/spine-vis-top.pdf>
 Package pdftex.def Info: figures/proseplots/spine-vis-top.pdf  used on input li
 ne 62.
 (pdftex.def)             Requested size: 138.75717pt x 104.0696pt.
-<figures/proseplots/spine-vis-left.pdf, id=761, 462.52798pt x 346.89601pt>
+<figures/proseplots/spine-vis-left.pdf, id=831, 462.52798pt x 346.89601pt>
 File: figures/proseplots/spine-vis-left.pdf Graphic file (type pdf)
 <use figures/proseplots/spine-vis-left.pdf>
 Package pdftex.def Info: figures/proseplots/spine-vis-left.pdf  used on input l
 ine 63.
 (pdftex.def)             Requested size: 138.75717pt x 104.0696pt.
-<figures/proseplots/spine-vis-right.pdf, id=762, 462.52798pt x 346.89601pt>
+<figures/proseplots/spine-vis-right.pdf, id=832, 462.52798pt x 346.89601pt>
 File: figures/proseplots/spine-vis-right.pdf Graphic file (type pdf)
 <use figures/proseplots/spine-vis-right.pdf>
 Package pdftex.def Info: figures/proseplots/spine-vis-right.pdf  used on input 
@@ -1267,38 +1264,38 @@ Overfull \hbox (54.97115pt too wide) in paragraph at lines 68--68
 []|  []| 
  []
 
-<figures/proseplots/thick-spines.pdf, id=765, 462.52798pt x 346.89601pt>
+<figures/proseplots/thick-spines.pdf, id=835, 462.52798pt x 346.89601pt>
 File: figures/proseplots/thick-spines.pdf Graphic file (type pdf)
 <use figures/proseplots/thick-spines.pdf>
 Package pdftex.def Info: figures/proseplots/thick-spines.pdf  used on input lin
 e 70.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-[15.25 <./figures/proseplots/spine-vis-bottom.pdf> <./figures/proseplots/spine-
+[15.27 <./figures/proseplots/spine-vis-bottom.pdf> <./figures/proseplots/spine-
 vis-top.pdf> <./figures/proseplots/spine-vis-left.pdf> <./figures/proseplots/sp
 ine-vis-right.pdf>] (./python/zero-spines.py)
 Overfull \hbox (51.45451pt too wide) in paragraph at lines 75--75
 []|  []| 
  []
 
-<figures/proseplots/zero-spines.pdf, id=879, 462.52798pt x 346.89601pt>
+<figures/proseplots/zero-spines.pdf, id=947, 462.52798pt x 346.89601pt>
 File: figures/proseplots/zero-spines.pdf Graphic file (type pdf)
 <use figures/proseplots/zero-spines.pdf>
 Package pdftex.def Info: figures/proseplots/zero-spines.pdf  used on input line
  78.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-[16.26 <./figures/proseplots/thick-spines.pdf> <./figures/proseplots/zero-spine
+[16.28 <./figures/proseplots/thick-spines.pdf> <./figures/proseplots/zero-spine
 s.pdf>] (./python/arrow-axes.py)
 Overfull \hbox (47.93788pt too wide) in paragraph at lines 84--84
 []|  []| 
  []
 
-<figures/proseplots/arrow-axes.pdf, id=939, 462.52798pt x 346.89601pt>
+<figures/proseplots/arrow-axes.pdf, id=1007, 462.52798pt x 346.89601pt>
 File: figures/proseplots/arrow-axes.pdf Graphic file (type pdf)
 <use figures/proseplots/arrow-axes.pdf>
 Package pdftex.def Info: figures/proseplots/arrow-axes.pdf  used on input line 
 87.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-[17.27 <./figures/proseplots/arrow-axes.pdf>]
+[17.29 <./figures/proseplots/arrow-axes.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 99--100
 \T1/cmr/m/n/10 The im-por-tant axes meth-ods for ticks are [][][][],
  []
@@ -1314,18 +1311,18 @@ Overfull \hbox (33.87135pt too wide) in paragraph at lines 101--101
 []|  []| 
  []
 
-<figures/proseplots/ticks1.pdf, id=995, 462.52798pt x 346.89601pt>
+<figures/proseplots/ticks1.pdf, id=1064, 462.52798pt x 346.89601pt>
 File: figures/proseplots/ticks1.pdf Graphic file (type pdf)
 <use figures/proseplots/ticks1.pdf>
 Package pdftex.def Info: figures/proseplots/ticks1.pdf  used on input line 104.
 
 (pdftex.def)             Requested size: 216.81001pt x 162.6071pt.
-[18.28 <./figures/proseplots/ticks1.pdf>] (./python/tall-ballers.py)
+[18.30 <./figures/proseplots/ticks1.pdf>] (./python/tall-ballers.py)
 Overfull \hbox (54.97115pt too wide) in paragraph at lines 113--113
 []|  []| 
  []
 
-<figures/proseplots/tall-ballers.pdf, id=1030, 289.08pt x 505.89pt>
+<figures/proseplots/tall-ballers.pdf, id=1098, 289.08pt x 505.89pt>
 File: figures/proseplots/tall-ballers.pdf Graphic file (type pdf)
 <use figures/proseplots/tall-ballers.pdf>
 Package pdftex.def Info: figures/proseplots/tall-ballers.pdf  used on input lin
@@ -1334,13 +1331,13 @@ e 116.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19.29]
+ [19.31]
 (./python/mult-locator.py)
 Overfull \hbox (54.97115pt too wide) in paragraph at lines 123--123
 []|  []| 
  []
 
-<figures/proseplots/mult-locator.pdf, id=1067, 462.52798pt x 346.89601pt>
+<figures/proseplots/mult-locator.pdf, id=1136, 462.52798pt x 346.89601pt>
 File: figures/proseplots/mult-locator.pdf Graphic file (type pdf)
 <use figures/proseplots/mult-locator.pdf>
 Package pdftex.def Info: figures/proseplots/mult-locator.pdf  used on input lin
@@ -1349,35 +1346,35 @@ e 125.
 
 Underfull \vbox (badness 5460) has occurred while \output is active []
 
- [20.30 <./figures/proseplots/tall-ballers.pdf>] (./python/tick-right.py)
+ [20.32 <./figures/proseplots/tall-ballers.pdf>] (./python/tick-right.py)
 Overfull \hbox (47.93788pt too wide) in paragraph at lines 133--133
 []|  []| 
  []
 
-<figures/proseplots/tick-right.pdf, id=1122, 462.52798pt x 346.89601pt>
+<figures/proseplots/tick-right.pdf, id=1191, 462.52798pt x 346.89601pt>
 File: figures/proseplots/tick-right.pdf Graphic file (type pdf)
 <use figures/proseplots/tick-right.pdf>
 Package pdftex.def Info: figures/proseplots/tick-right.pdf  used on input line 
 136.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-[21.31 <./figures/proseplots/mult-locator.pdf>] (./python/grid-false.py)
+[21.33 <./figures/proseplots/mult-locator.pdf>] (./python/grid-false.py)
 Overfull \hbox (47.93788pt too wide) in paragraph at lines 143--143
 []|  []| 
  []
 
-<figures/proseplots/grid-false.pdf, id=1162, 462.52798pt x 346.89601pt>
+<figures/proseplots/grid-false.pdf, id=1231, 462.52798pt x 346.89601pt>
 File: figures/proseplots/grid-false.pdf Graphic file (type pdf)
 <use figures/proseplots/grid-false.pdf>
 Package pdftex.def Info: figures/proseplots/grid-false.pdf  used on input line 
 146.
 (pdftex.def)             Requested size: 231.2649pt x 173.45287pt.
-[22.32 <./figures/proseplots/tick-right.pdf> <./figures/proseplots/grid-false.p
+[22.34 <./figures/proseplots/tick-right.pdf> <./figures/proseplots/grid-false.p
 df>] (./python/grid-true.py)
 Overfull \hbox (44.42125pt too wide) in paragraph at lines 151--151
 []|  []| 
  []
 
-<figures/proseplots/grid-true.pdf, id=1215, 462.52798pt x 346.89601pt>
+<figures/proseplots/grid-true.pdf, id=1284, 462.52798pt x 346.89601pt>
 File: figures/proseplots/grid-true.pdf Graphic file (type pdf)
 <use figures/proseplots/grid-true.pdf>
 Package pdftex.def Info: figures/proseplots/grid-true.pdf  used on input line 1
@@ -1388,18 +1385,18 @@ Overfull \hbox (54.97115pt too wide) in paragraph at lines 159--159
 []|  []| 
  []
 
-(./python/y-grid-true.py [23.33 <./figures/proseplots/grid-true.pdf>])
+(./python/y-grid-true.py [23.35 <./figures/proseplots/grid-true.pdf>])
 Overfull \hbox (51.45451pt too wide) in paragraph at lines 161--161
 []|  []| 
  []
 
-<figures/proseplots/y-grid-false.pdf, id=1258, 462.52798pt x 346.89601pt>
+<figures/proseplots/y-grid-false.pdf, id=1326, 462.52798pt x 346.89601pt>
 File: figures/proseplots/y-grid-false.pdf Graphic file (type pdf)
 <use figures/proseplots/y-grid-false.pdf>
 Package pdftex.def Info: figures/proseplots/y-grid-false.pdf  used on input lin
 e 164.
 (pdftex.def)             Requested size: 138.75717pt x 104.0696pt.
-<figures/proseplots/y-grid-true.pdf, id=1259, 462.52798pt x 346.89601pt>
+<figures/proseplots/y-grid-true.pdf, id=1327, 462.52798pt x 346.89601pt>
 File: figures/proseplots/y-grid-true.pdf Graphic file (type pdf)
 <use figures/proseplots/y-grid-true.pdf>
 Package pdftex.def Info: figures/proseplots/y-grid-true.pdf  used on input line
@@ -1410,35 +1407,35 @@ Overfull \hbox (47.93788pt too wide) in paragraph at lines 172--172
 []|  []| 
  []
 
-<figures/proseplots/grids-auto.pdf, id=1263, 462.52798pt x 346.89601pt>
+<figures/proseplots/grids-auto.pdf, id=1331, 462.52798pt x 346.89601pt>
 File: figures/proseplots/grids-auto.pdf Graphic file (type pdf)
 <use figures/proseplots/grids-auto.pdf>
 Package pdftex.def Info: figures/proseplots/grids-auto.pdf  used on input line 
 175.
 (pdftex.def)             Requested size: 231.2649pt x 173.45287pt.
-[24.34 <./figures/proseplots/y-grid-false.pdf> <./figures/proseplots/y-grid-tru
+[24.36 <./figures/proseplots/y-grid-false.pdf> <./figures/proseplots/y-grid-tru
 e.pdf>] (./python/grids-multi.py)
 Overfull \hbox (51.45451pt too wide) in paragraph at lines 178--178
 []|  []| 
  []
 
-<figures/proseplots/grids-multi.pdf, id=1309, 462.52798pt x 346.89601pt>
+<figures/proseplots/grids-multi.pdf, id=1378, 462.52798pt x 346.89601pt>
 File: figures/proseplots/grids-multi.pdf Graphic file (type pdf)
 <use figures/proseplots/grids-multi.pdf>
 Package pdftex.def Info: figures/proseplots/grids-multi.pdf  used on input line
  181.
 (pdftex.def)             Requested size: 231.2649pt x 173.45287pt.
-) [25.35 <./figures/proseplots/grids-auto.pdf> <./figures/proseplots/grids-mult
-i.pdf>] [26.36
+) [25.37 <./figures/proseplots/grids-auto.pdf> <./figures/proseplots/grids-mult
+i.pdf>] [26.38
 
 ]
 Chapter 3.
-(./tex/prose/elements.tex (./python/artists.py [27.37])
+(./tex/prose/elements.tex (./python/artists.py [27.39])
 Overfull \hbox (37.38799pt too wide) in paragraph at lines 10--10
 []|  []| 
  []
 
-<figures/proseplots/artists.pdf, id=1362, 462.52798pt x 346.89601pt>
+<figures/proseplots/artists.pdf, id=1431, 462.52798pt x 346.89601pt>
 File: figures/proseplots/artists.pdf Graphic file (type pdf)
 <use figures/proseplots/artists.pdf>
 Package pdftex.def Info: figures/proseplots/artists.pdf  used on input line 13.
@@ -1452,12 +1449,12 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\lstinline' on input line 22.
 
-[28.38 <./figures/proseplots/artists.pdf>] (./python/default-z.py [29.39])
+[28.40 <./figures/proseplots/artists.pdf>] (./python/default-z.py [29.41])
 Overfull \hbox (44.42125pt too wide) in paragraph at lines 31--31
 []|  []| 
  []
 
-<figures/proseplots/default-z.pdf, id=1439, 462.52798pt x 346.89601pt>
+<figures/proseplots/default-z.pdf, id=1507, 462.52798pt x 346.89601pt>
 File: figures/proseplots/default-z.pdf Graphic file (type pdf)
 <use figures/proseplots/default-z.pdf>
 Package pdftex.def Info: figures/proseplots/default-z.pdf  used on input line 3
@@ -1468,18 +1465,18 @@ Overfull \hbox (44.42125pt too wide) in paragraph at lines 41--41
 []|  []| 
  []
 
-<figures/proseplots/reverse-z.pdf, id=1442, 462.52798pt x 346.89601pt>
+<figures/proseplots/reverse-z.pdf, id=1510, 462.52798pt x 346.89601pt>
 File: figures/proseplots/reverse-z.pdf Graphic file (type pdf)
 <use figures/proseplots/reverse-z.pdf>
 Package pdftex.def Info: figures/proseplots/reverse-z.pdf  used on input line 4
 4.
 (pdftex.def)             Requested size: 231.2649pt x 173.45287pt.
-[30.40 <./figures/proseplots/default-z.pdf>] (./python/default-axes.py)
+[30.42 <./figures/proseplots/default-z.pdf>] (./python/default-axes.py)
 Overfull \hbox (54.97115pt too wide) in paragraph at lines 52--52
 []|  []| 
  []
 
-<figures/proseplots/default-axes.pdf, id=1486, 462.52798pt x 346.89601pt>
+<figures/proseplots/default-axes.pdf, id=1555, 462.52798pt x 346.89601pt>
 File: figures/proseplots/default-axes.pdf Graphic file (type pdf)
 <use figures/proseplots/default-axes.pdf>
 Package pdftex.def Info: figures/proseplots/default-axes.pdf  used on input lin
@@ -1488,102 +1485,102 @@ e 55.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31.41 <./figures/proseplots/reverse-z.pdf>] (./python/front-axes.py)
+ [31.43 <./figures/proseplots/reverse-z.pdf>] (./python/front-axes.py)
 Overfull \hbox (47.93788pt too wide) in paragraph at lines 58--58
 []|  []| 
  []
 
-<figures/proseplots/front-axes.pdf, id=1515, 462.52798pt x 346.89601pt>
+<figures/proseplots/front-axes.pdf, id=1584, 462.52798pt x 346.89601pt>
 File: figures/proseplots/front-axes.pdf Graphic file (type pdf)
 <use figures/proseplots/front-axes.pdf>
 Package pdftex.def Info: figures/proseplots/front-axes.pdf  used on input line 
 61.
 (pdftex.def)             Requested size: 231.2649pt x 173.45287pt.
-(./python/front-xaxis.py [32.42 <./figures/proseplots/default-axes.pdf> <./figu
+(./python/front-xaxis.py [32.44 <./figures/proseplots/default-axes.pdf> <./figu
 res/proseplots/front-axes.pdf>])
 Overfull \hbox (51.45451pt too wide) in paragraph at lines 64--64
 []|  []| 
  []
 
-<figures/proseplots/front-xaxis.pdf, id=1556, 462.52798pt x 346.89601pt>
+<figures/proseplots/front-xaxis.pdf, id=1625, 462.52798pt x 346.89601pt>
 File: figures/proseplots/front-xaxis.pdf Graphic file (type pdf)
 <use figures/proseplots/front-xaxis.pdf>
 Package pdftex.def Info: figures/proseplots/front-xaxis.pdf  used on input line
  67.
 (pdftex.def)             Requested size: 231.2649pt x 173.45287pt.
-[33.43 <./figures/proseplots/front-xaxis.pdf>] (./python/coords.py)
+[33.45 <./figures/proseplots/front-xaxis.pdf>] (./python/coords.py)
 Overfull \hbox (33.87135pt too wide) in paragraph at lines 80--80
 []|  []| 
  []
 
-<figures/proseplots/coords.pdf, id=1586, 462.52798pt x 346.89601pt>
+<figures/proseplots/coords.pdf, id=1654, 462.52798pt x 346.89601pt>
 File: figures/proseplots/coords.pdf Graphic file (type pdf)
 <use figures/proseplots/coords.pdf>
 Package pdftex.def Info: figures/proseplots/coords.pdf  used on input line 83.
 (pdftex.def)             Requested size: 231.2649pt x 173.45287pt.
-[34.44 <./figures/proseplots/coords.pdf>] (./python/coord-horizon.py)
+[34.46 <./figures/proseplots/coords.pdf>] (./python/coord-horizon.py)
 Overfull \hbox (58.48778pt too wide) in paragraph at lines 89--89
 []|  []| 
  []
 
-<figures/proseplots/coord-horizon.pdf, id=1641, 462.52798pt x 346.89601pt>
+<figures/proseplots/coord-horizon.pdf, id=1710, 462.52798pt x 346.89601pt>
 File: figures/proseplots/coord-horizon.pdf Graphic file (type pdf)
 <use figures/proseplots/coord-horizon.pdf>
 Package pdftex.def Info: figures/proseplots/coord-horizon.pdf  used on input li
 ne 92.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-[35.45 <./figures/proseplots/coord-horizon.pdf>] (./python/coord-trans.py)
+[35.47 <./figures/proseplots/coord-horizon.pdf>] (./python/coord-trans.py)
 Overfull \hbox (51.45451pt too wide) in paragraph at lines 99--99
 []|  []| 
  []
 
-[36.46]
-<figures/proseplots/coord-trans.pdf, id=1713, 462.52798pt x 346.89601pt>
+[36.48]
+<figures/proseplots/coord-trans.pdf, id=1781, 462.52798pt x 346.89601pt>
 File: figures/proseplots/coord-trans.pdf Graphic file (type pdf)
 <use figures/proseplots/coord-trans.pdf>
 Package pdftex.def Info: figures/proseplots/coord-trans.pdf  used on input line
  102.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
- (./python/window-extent.py [37.47 <./figures/proseplots/coord-trans.pdf>])
+ (./python/window-extent.py [37.49 <./figures/proseplots/coord-trans.pdf>])
 Overfull \hbox (58.48778pt too wide) in paragraph at lines 115--115
 []|  []| 
  []
 
-<figures/proseplots/window-extent.pdf, id=1745, 462.52798pt x 346.89601pt>
+<figures/proseplots/window-extent.pdf, id=1815, 462.52798pt x 346.89601pt>
 File: figures/proseplots/window-extent.pdf Graphic file (type pdf)
 <use figures/proseplots/window-extent.pdf>
 Package pdftex.def Info: figures/proseplots/window-extent.pdf  used on input li
 ne 118.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-(./python/multicolor-title.py [38.48 <./figures/proseplots/window-extent.pdf>])
+(./python/multicolor-title.py [38.50 <./figures/proseplots/window-extent.pdf>])
 
 Overfull \hbox (69.03767pt too wide) in paragraph at lines 123--123
 []|  []| 
  []
 
-<figures/proseplots/multicolor-title.pdf, id=1791, 505.89pt x 361.35pt>
+<figures/proseplots/multicolor-title.pdf, id=1861, 505.89pt x 361.35pt>
 File: figures/proseplots/multicolor-title.pdf Graphic file (type pdf)
 <use figures/proseplots/multicolor-title.pdf>
 Package pdftex.def Info: figures/proseplots/multicolor-title.pdf  used on input
  line 126.
 (pdftex.def)             Requested size: 202.35512pt x 144.54295pt.
-[39.49]) [40.50 <./figures/proseplots/multicolor-title.pdf>]
+[39.51]) [40.52 <./figures/proseplots/multicolor-title.pdf>]
 Chapter 4.
 (./tex/prose/titles.tex (./python/title-pad.py)
 Overfull \hbox (44.42125pt too wide) in paragraph at lines 13--13
 []|  []| 
  []
 
-[41.51
+[41.53
 
 ]
-<figures/proseplots/title-pad.pdf, id=1902, 462.52798pt x 346.89601pt>
+<figures/proseplots/title-pad.pdf, id=1971, 462.52798pt x 346.89601pt>
 File: figures/proseplots/title-pad.pdf Graphic file (type pdf)
 <use figures/proseplots/title-pad.pdf>
 Package pdftex.def Info: figures/proseplots/title-pad.pdf  used on input line 1
 6.
 (pdftex.def)             Requested size: 138.75717pt x 104.0696pt.
-<figures/proseplots/title-no-pad.pdf, id=1903, 462.52798pt x 346.89601pt>
+<figures/proseplots/title-no-pad.pdf, id=1972, 462.52798pt x 346.89601pt>
 File: figures/proseplots/title-no-pad.pdf Graphic file (type pdf)
 <use figures/proseplots/title-no-pad.pdf>
 Package pdftex.def Info: figures/proseplots/title-no-pad.pdf  used on input lin
@@ -1594,7 +1591,7 @@ Overfull \hbox (44.42125pt too wide) in paragraph at lines 23--23
 []|  []| 
  []
 
-<figures/proseplots/title-loc.pdf, id=1906, 462.52798pt x 346.89601pt>
+<figures/proseplots/title-loc.pdf, id=1975, 462.52798pt x 346.89601pt>
 File: figures/proseplots/title-loc.pdf Graphic file (type pdf)
 <use figures/proseplots/title-loc.pdf>
 Package pdftex.def Info: figures/proseplots/title-loc.pdf  used on input line 2
@@ -1603,14 +1600,14 @@ Package pdftex.def Info: figures/proseplots/title-loc.pdf  used on input line 2
 
 Underfull \vbox (badness 1688) has occurred while \output is active []
 
- [42.52 <./figures/proseplots/title-pad.pdf> <./figures/proseplots/title-no-pad
+ [42.54 <./figures/proseplots/title-pad.pdf> <./figures/proseplots/title-no-pad
 .pdf>]
 (./python/text-methods.py)
 Overfull \hbox (54.97115pt too wide) in paragraph at lines 35--35
 []|  []| 
  []
 
-<figures/proseplots/text-methods.pdf, id=1989, 462.52798pt x 346.89601pt>
+<figures/proseplots/text-methods.pdf, id=2057, 462.52798pt x 346.89601pt>
 File: figures/proseplots/text-methods.pdf Graphic file (type pdf)
 <use figures/proseplots/text-methods.pdf>
 Package pdftex.def Info: figures/proseplots/text-methods.pdf  used on input lin
@@ -1619,25 +1616,25 @@ e 38.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43.53 <./figures/proseplots/title-loc.pdf>] (./python/text-default-align.py)
+ [43.55 <./figures/proseplots/title-loc.pdf>] (./python/text-default-align.py)
 Overfull \hbox (76.07094pt too wide) in paragraph at lines 45--45
 []|  []| 
  []
 
-<figures/proseplots/text-default-align.pdf, id=2029, 462.52798pt x 346.89601pt>
+<figures/proseplots/text-default-align.pdf, id=2098, 462.52798pt x 346.89601pt>
 
 File: figures/proseplots/text-default-align.pdf Graphic file (type pdf)
 <use figures/proseplots/text-default-align.pdf>
 Package pdftex.def Info: figures/proseplots/text-default-align.pdf  used on inp
 ut line 48.
 (pdftex.def)             Requested size: 144.54001pt x 108.40472pt.
-[44.54 <./figures/proseplots/text-methods.pdf> <./figures/proseplots/text-defau
+[44.56 <./figures/proseplots/text-methods.pdf> <./figures/proseplots/text-defau
 lt-align.pdf>] (./python/text-align.py)
 Overfull \hbox (47.93788pt too wide) in paragraph at lines 53--53
 []|  []| 
  []
 
-<figures/proseplots/text-align.pdf, id=2073, 462.52798pt x 346.89601pt>
+<figures/proseplots/text-align.pdf, id=2142, 462.52798pt x 346.89601pt>
 File: figures/proseplots/text-align.pdf Graphic file (type pdf)
 <use figures/proseplots/text-align.pdf>
 Package pdftex.def Info: figures/proseplots/text-align.pdf  used on input line 
@@ -1646,23 +1643,19 @@ Package pdftex.def Info: figures/proseplots/text-align.pdf  used on input line
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45.55]
-
-LaTeX Warning: Reference `sec:slopingtext' on page 46 undefined on input line 6
-0.
-
+ [45.57]
 (./python/text-rotation2.py)
 Overfull \hbox (62.00441pt too wide) in paragraph at lines 62--62
 []|  []| 
  []
 
-<figures/proseplots/text-rotation2.pdf, id=2110, 462.52798pt x 346.89601pt>
+<figures/proseplots/text-rotation2.pdf, id=2180, 462.52798pt x 346.89601pt>
 File: figures/proseplots/text-rotation2.pdf Graphic file (type pdf)
 <use figures/proseplots/text-rotation2.pdf>
 Package pdftex.def Info: figures/proseplots/text-rotation2.pdf  used on input l
 ine 66.
 (pdftex.def)             Requested size: 95.39693pt x 71.54817pt.
-<figures/proseplots/text-rotation1.pdf, id=2111, 462.52798pt x 346.89601pt>
+<figures/proseplots/text-rotation1.pdf, id=2181, 462.52798pt x 346.89601pt>
 File: figures/proseplots/text-rotation1.pdf Graphic file (type pdf)
 <use figures/proseplots/text-rotation1.pdf>
 Package pdftex.def Info: figures/proseplots/text-rotation1.pdf  used on input l
@@ -1671,43 +1664,43 @@ ine 68.
 
 Underfull \vbox (badness 4518) has occurred while \output is active []
 
- [46.56 <./figures/proseplots/text-align.pdf> <./figures/proseplots/text-rotati
+ [46.58 <./figures/proseplots/text-align.pdf> <./figures/proseplots/text-rotati
 on2.pdf>]
-<figures/proseplots/text-rotation05.pdf, id=2161, 462.52798pt x 346.89601pt>
+<figures/proseplots/text-rotation05.pdf, id=2230, 462.52798pt x 346.89601pt>
 File: figures/proseplots/text-rotation05.pdf Graphic file (type pdf)
 <use figures/proseplots/text-rotation05.pdf>
 Package pdftex.def Info: figures/proseplots/text-rotation05.pdf  used on input 
 line 70.
 (pdftex.def)             Requested size: 95.39693pt x 71.54817pt.
 
-[47.57 <./figures/proseplots/text-rotation1.pdf> <./figures/proseplots/text-rot
-ation05.pdf>] (./python/text-formatting.py [48.58])
+[47.59 <./figures/proseplots/text-rotation1.pdf> <./figures/proseplots/text-rot
+ation05.pdf>] (./python/text-formatting.py [48.60])
 Overfull \hbox (65.52104pt too wide) in paragraph at lines 143--143
 []|  []| 
  []
 
-<figures/proseplots/0000.pdf, id=2217, 462.52798pt x 346.89601pt>
+<figures/proseplots/0000.pdf, id=2286, 462.52798pt x 346.89601pt>
 File: figures/proseplots/0000.pdf Graphic file (type pdf)
 <use figures/proseplots/0000.pdf>
 Package pdftex.def Info: figures/proseplots/0000.pdf  used on input line 146.
 (pdftex.def)             Requested size: 86.72488pt x 65.04283pt.
-<figures/proseplots/0001.pdf, id=2218, 462.52798pt x 346.89601pt>
+<figures/proseplots/0001.pdf, id=2287, 462.52798pt x 346.89601pt>
 File: figures/proseplots/0001.pdf Graphic file (type pdf)
 <use figures/proseplots/0001.pdf>
 Package pdftex.def Info: figures/proseplots/0001.pdf  used on input line 146.
 (pdftex.def)             Requested size: 86.72488pt x 65.04283pt.
-<figures/proseplots/0002.pdf, id=2219, 462.52798pt x 346.89601pt>
+<figures/proseplots/0002.pdf, id=2288, 462.52798pt x 346.89601pt>
 File: figures/proseplots/0002.pdf Graphic file (type pdf)
 <use figures/proseplots/0002.pdf>
 Package pdftex.def Info: figures/proseplots/0002.pdf  used on input line 147.
 (pdftex.def)             Requested size: 86.72488pt x 65.04283pt.
-(./python/legend-labels.py [49.59 <./figures/proseplots/0000.pdf> <./figures/pr
+(./python/legend-labels.py [49.61 <./figures/proseplots/0000.pdf> <./figures/pr
 oseplots/0001.pdf> <./figures/proseplots/0002.pdf>])
 Overfull \hbox (58.48778pt too wide) in paragraph at lines 156--156
 []|  []| 
  []
 
-<figures/proseplots/legend-labels.pdf, id=2317, 462.52798pt x 346.89601pt>
+<figures/proseplots/legend-labels.pdf, id=2388, 462.52798pt x 346.89601pt>
 File: figures/proseplots/legend-labels.pdf Graphic file (type pdf)
 <use figures/proseplots/legend-labels.pdf>
 Package pdftex.def Info: figures/proseplots/legend-labels.pdf  used on input li
@@ -1718,8 +1711,8 @@ Overfull \hbox (44.42125pt too wide) in paragraph at lines 165--165
 []|  []| 
  []
 
-[50.60 <./figures/proseplots/legend-labels.pdf>]
-<figures/proseplots/pd-legend.pdf, id=2368, 462.52798pt x 346.89601pt>
+[50.62 <./figures/proseplots/legend-labels.pdf>]
+<figures/proseplots/pd-legend.pdf, id=2438, 462.52798pt x 346.89601pt>
 File: figures/proseplots/pd-legend.pdf Graphic file (type pdf)
 <use figures/proseplots/pd-legend.pdf>
 Package pdftex.def Info: figures/proseplots/pd-legend.pdf  used on input line 1
@@ -1735,63 +1728,63 @@ Overfull \hbox (44.42125pt too wide) in paragraph at lines 181--181
 []|  []| 
  []
 
-<figures/proseplots/legend-bb.pdf, id=2371, 462.52798pt x 346.89601pt>
+<figures/proseplots/legend-bb.pdf, id=2441, 462.52798pt x 346.89601pt>
 File: figures/proseplots/legend-bb.pdf Graphic file (type pdf)
 <use figures/proseplots/legend-bb.pdf>
 Package pdftex.def Info: figures/proseplots/legend-bb.pdf  used on input line 1
 84.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-[51.61 <./figures/proseplots/pd-legend.pdf>] (./python/legend-bb-loc.py)
+[51.63 <./figures/proseplots/pd-legend.pdf>] (./python/legend-bb-loc.py)
 Overfull \hbox (58.48778pt too wide) in paragraph at lines 187--187
 []|  []| 
  []
 
-<figures/proseplots/legend-bb-loc.pdf, id=2416, 462.52798pt x 346.89601pt>
+<figures/proseplots/legend-bb-loc.pdf, id=2485, 462.52798pt x 346.89601pt>
 File: figures/proseplots/legend-bb-loc.pdf Graphic file (type pdf)
 <use figures/proseplots/legend-bb-loc.pdf>
 Package pdftex.def Info: figures/proseplots/legend-bb-loc.pdf  used on input li
 ne 190.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-(./python/legend-transform.py [52.62 <./figures/proseplots/legend-bb.pdf> <./fi
+(./python/legend-transform.py [52.64 <./figures/proseplots/legend-bb.pdf> <./fi
 gures/proseplots/legend-bb-loc.pdf>])
 Overfull \hbox (69.03767pt too wide) in paragraph at lines 196--196
 []|  []| 
  []
 
-<figures/proseplots/legend-transform.pdf, id=2475, 462.52798pt x 346.89601pt>
+<figures/proseplots/legend-transform.pdf, id=2545, 462.52798pt x 346.89601pt>
 File: figures/proseplots/legend-transform.pdf Graphic file (type pdf)
 <use figures/proseplots/legend-transform.pdf>
 Package pdftex.def Info: figures/proseplots/legend-transform.pdf  used on input
  line 199.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-(./python/legend-shape.py [53.63 <./figures/proseplots/legend-transform.pdf>])
+(./python/legend-shape.py [53.65 <./figures/proseplots/legend-transform.pdf>])
 Overfull \hbox (54.97115pt too wide) in paragraph at lines 204--204
 []|  []| 
  []
 
-<figures/proseplots/legend-shape.pdf, id=2528, 462.52798pt x 346.89601pt>
+<figures/proseplots/legend-shape.pdf, id=2598, 462.52798pt x 346.89601pt>
 File: figures/proseplots/legend-shape.pdf Graphic file (type pdf)
 <use figures/proseplots/legend-shape.pdf>
 Package pdftex.def Info: figures/proseplots/legend-shape.pdf  used on input lin
 e 207.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-(./python/label-data.py [54.64 <./figures/proseplots/legend-shape.pdf>])
+(./python/label-data.py [54.66 <./figures/proseplots/legend-shape.pdf>])
 Overfull \hbox (47.93788pt too wide) in paragraph at lines 222--222
 []|  []| 
  []
 
-<figures/proseplots/label-data.pdf, id=2575, 462.52798pt x 346.89601pt>
+<figures/proseplots/label-data.pdf, id=2644, 462.52798pt x 346.89601pt>
 File: figures/proseplots/label-data.pdf Graphic file (type pdf)
 <use figures/proseplots/label-data.pdf>
 Package pdftex.def Info: figures/proseplots/label-data.pdf  used on input line 
 225.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-(./python/annotate-arrow.py [55.65 <./figures/proseplots/label-data.pdf>])
+(./python/annotate-arrow.py [55.67 <./figures/proseplots/label-data.pdf>])
 Overfull \hbox (62.00441pt too wide) in paragraph at lines 231--231
 []|  []| 
  []
 
-<figures/proseplots/annotate-arrow.pdf, id=2639, 462.52798pt x 346.89601pt>
+<figures/proseplots/annotate-arrow.pdf, id=2709, 462.52798pt x 346.89601pt>
 File: figures/proseplots/annotate-arrow.pdf Graphic file (type pdf)
 <use figures/proseplots/annotate-arrow.pdf>
 Package pdftex.def Info: figures/proseplots/annotate-arrow.pdf  used on input l
@@ -1802,20 +1795,20 @@ Overfull \hbox (47.93788pt too wide) in paragraph at lines 240--240
 []|  []| 
  []
 
-[56.66 <./figures/proseplots/annotate-arrow.pdf>]
-<figures/proseplots/arrow-only.pdf, id=2702, 462.52798pt x 346.89601pt>
+[56.68 <./figures/proseplots/annotate-arrow.pdf>]
+<figures/proseplots/arrow-only.pdf, id=2773, 462.52798pt x 346.89601pt>
 File: figures/proseplots/arrow-only.pdf Graphic file (type pdf)
 <use figures/proseplots/arrow-only.pdf>
 Package pdftex.def Info: figures/proseplots/arrow-only.pdf  used on input line 
 243.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
 
-(./python/direct-annotation.py [57.67 <./figures/proseplots/arrow-only.pdf>])
+(./python/direct-annotation.py [57.69 <./figures/proseplots/arrow-only.pdf>])
 Overfull \hbox (72.5543pt too wide) in paragraph at lines 249--249
 []|  []| 
  []
 
-<figures/proseplots/direct-annotation.pdf, id=2748, 462.52798pt x 346.89601pt>
+<figures/proseplots/direct-annotation.pdf, id=2817, 462.52798pt x 346.89601pt>
 File: figures/proseplots/direct-annotation.pdf Graphic file (type pdf)
 <use figures/proseplots/direct-annotation.pdf>
 Package pdftex.def Info: figures/proseplots/direct-annotation.pdf  used on inpu
@@ -1826,38 +1819,38 @@ Overfull \hbox (40.90462pt too wide) in paragraph at lines 261--261
 []|  []| 
  []
 
-[58.68 <./figures/proseplots/direct-annotation.pdf>]
-<figures/proseplots/subtitle.pdf, id=2807, 462.52798pt x 346.89601pt>
+[58.70 <./figures/proseplots/direct-annotation.pdf>]
+<figures/proseplots/subtitle.pdf, id=2877, 462.52798pt x 346.89601pt>
 File: figures/proseplots/subtitle.pdf Graphic file (type pdf)
 <use figures/proseplots/subtitle.pdf>
 Package pdftex.def Info: figures/proseplots/subtitle.pdf  used on input line 26
 4.
 (pdftex.def)             Requested size: 231.2649pt x 173.45287pt.
 
-(./python/multicolor-inexact.py [59.69 <./figures/proseplots/subtitle.pdf>])
+(./python/multicolor-inexact.py [59.71 <./figures/proseplots/subtitle.pdf>])
 Overfull \hbox (76.07094pt too wide) in paragraph at lines 273--273
 []|  []| 
  []
 
-<figures/proseplots/multicolor-inexact.pdf, id=2870, 462.52798pt x 346.89601pt>
+<figures/proseplots/multicolor-inexact.pdf, id=2940, 462.52798pt x 346.89601pt>
 
 File: figures/proseplots/multicolor-inexact.pdf Graphic file (type pdf)
 <use figures/proseplots/multicolor-inexact.pdf>
 Package pdftex.def Info: figures/proseplots/multicolor-inexact.pdf  used on inp
 ut line 276.
 (pdftex.def)             Requested size: 231.2649pt x 173.45287pt.
-(./python/color-title.py [60.70 <./figures/proseplots/multicolor-inexact.pdf>])
+(./python/color-title.py [60.72 <./figures/proseplots/multicolor-inexact.pdf>])
 
 Overfull \hbox (51.45451pt too wide) in paragraph at lines 282--282
 []|  []| 
  []
 
-(./python/color-title-ex.py [61.71])
+(./python/color-title-ex.py [61.73])
 Overfull \hbox (62.00441pt too wide) in paragraph at lines 284--284
 []|  []| 
  []
 
-<figures/proseplots/color-title-ex.pdf, id=2986, 462.52798pt x 346.89601pt>
+<figures/proseplots/color-title-ex.pdf, id=3057, 462.52798pt x 346.89601pt>
 File: figures/proseplots/color-title-ex.pdf Graphic file (type pdf)
 <use figures/proseplots/color-title-ex.pdf>
 Package pdftex.def Info: figures/proseplots/color-title-ex.pdf  used on input l
@@ -1868,12 +1861,12 @@ Overfull \hbox (44.42125pt too wide) in paragraph at lines 294--294
 []|  []| 
  []
 
-[62.72 <./figures/proseplots/color-title-ex.pdf>] (./python/font.py)
+[62.74 <./figures/proseplots/color-title-ex.pdf>] (./python/font.py)
 Overfull \hbox (26.83809pt too wide) in paragraph at lines 305--305
 []|  []| 
  []
 
-<figures/proseplots/font.pdf, id=3050, 462.52798pt x 346.89601pt>
+<figures/proseplots/font.pdf, id=3120, 462.52798pt x 346.89601pt>
 File: figures/proseplots/font.pdf Graphic file (type pdf)
 <use figures/proseplots/font.pdf>
 Package pdftex.def Info: figures/proseplots/font.pdf  used on input line 309.
@@ -1881,15 +1874,15 @@ Package pdftex.def Info: figures/proseplots/font.pdf  used on input line 309.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63.73])
-[64.74 <./figures/proseplots/font.pdf>]
+ [63.75])
+[64.76 <./figures/proseplots/font.pdf>]
 Chapter 5.
 (./tex/prose/dates.tex (./python/pd-dates.py)
 Overfull \hbox (40.90462pt too wide) in paragraph at lines 7--7
 []|  []| 
  []
 
-<figures/proseplots/pd-dates.pdf, id=3097, 462.52798pt x 346.89601pt>
+<figures/proseplots/pd-dates.pdf, id=3166, 462.52798pt x 346.89601pt>
 File: figures/proseplots/pd-dates.pdf Graphic file (type pdf)
 <use figures/proseplots/pd-dates.pdf>
 Package pdftex.def Info: figures/proseplots/pd-dates.pdf  used on input line 10
@@ -1898,7 +1891,7 @@ Package pdftex.def Info: figures/proseplots/pd-dates.pdf  used on input line 10
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65.75
+ [65.77
 
 ]
 (./python/ax-dates.py)
@@ -1906,13 +1899,13 @@ Overfull \hbox (40.90462pt too wide) in paragraph at lines 15--15
 []|  []| 
  []
 
-<figures/proseplots/ax-dates.pdf, id=3112, 462.52798pt x 346.89601pt>
+<figures/proseplots/ax-dates.pdf, id=3181, 462.52798pt x 346.89601pt>
 File: figures/proseplots/ax-dates.pdf Graphic file (type pdf)
 <use figures/proseplots/ax-dates.pdf>
 Package pdftex.def Info: figures/proseplots/ax-dates.pdf  used on input line 18
 .
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-[66.76 <./figures/proseplots/pd-dates.pdf> <./figures/proseplots/ax-dates.pdf>]
+[66.78 <./figures/proseplots/pd-dates.pdf> <./figures/proseplots/ax-dates.pdf>]
 
 Underfull \hbox (badness 10000) in paragraph at lines 37--38
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
@@ -1924,8 +1917,8 @@ Overfull \hbox (40.90462pt too wide) in paragraph at lines 69--69
 []|  []| 
  []
 
-[67.77]
-<figures/proseplots/date-fmt.pdf, id=3192, 462.52798pt x 346.89601pt>
+[67.79]
+<figures/proseplots/date-fmt.pdf, id=3263, 462.52798pt x 346.89601pt>
 File: figures/proseplots/date-fmt.pdf Graphic file (type pdf)
 <use figures/proseplots/date-fmt.pdf>
 Package pdftex.def Info: figures/proseplots/date-fmt.pdf  used on input line 72
@@ -1936,13 +1929,13 @@ Overfull \hbox (44.42125pt too wide) in paragraph at lines 75--75
 []|  []| 
  []
 
-<figures/proseplots/date-fmt2.pdf, id=3195, 462.52798pt x 346.89601pt>
+<figures/proseplots/date-fmt2.pdf, id=3266, 462.52798pt x 346.89601pt>
 File: figures/proseplots/date-fmt2.pdf Graphic file (type pdf)
 <use figures/proseplots/date-fmt2.pdf>
 Package pdftex.def Info: figures/proseplots/date-fmt2.pdf  used on input line 7
 8.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-) [68.78 <./figures/proseplots/date-fmt.pdf> <./figures/proseplots/date-fmt2.pd
+) [68.80 <./figures/proseplots/date-fmt.pdf> <./figures/proseplots/date-fmt2.pd
 f>]
 Chapter 6.
 (./tex/prose/colors.tex (./python/colors.py)
@@ -1950,33 +1943,33 @@ Overfull \hbox (33.87135pt too wide) in paragraph at lines 7--7
 []|  []| 
  []
 
-[69.79
+[69.81
 
 ]
-<figures/proseplots/colors.pdf, id=3314, 462.52798pt x 346.89601pt>
+<figures/proseplots/colors.pdf, id=3383, 462.52798pt x 346.89601pt>
 File: figures/proseplots/colors.pdf Graphic file (type pdf)
 <use figures/proseplots/colors.pdf>
 Package pdftex.def Info: figures/proseplots/colors.pdf  used on input line 10.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-<figures/proseplots/color-cube.pdf, id=3315, 433.62pt x 433.62pt>
+<figures/proseplots/color-cube.pdf, id=3384, 433.62pt x 433.62pt>
 File: figures/proseplots/color-cube.pdf Graphic file (type pdf)
 <use figures/proseplots/color-cube.pdf>
 Package pdftex.def Info: figures/proseplots/color-cube.pdf  used on input line 
 19.
 (pdftex.def)             Requested size: 141.65079pt x 141.65263pt.
-<figures/proseplots/color-cube-back.pdf, id=3316, 433.62pt x 433.62pt>
+<figures/proseplots/color-cube-back.pdf, id=3385, 433.62pt x 433.62pt>
 File: figures/proseplots/color-cube-back.pdf Graphic file (type pdf)
 <use figures/proseplots/color-cube-back.pdf>
 Package pdftex.def Info: figures/proseplots/color-cube-back.pdf  used on input 
 line 19.
 (pdftex.def)             Requested size: 141.65079pt x 141.65263pt.
- (./python/gradient.py [70.80 <./figures/proseplots/colors.pdf> <./figures/pros
+ (./python/gradient.py [70.82 <./figures/proseplots/colors.pdf> <./figures/pros
 eplots/color-cube.pdf> <./figures/proseplots/color-cube-back.pdf>])
 Overfull \hbox (40.90462pt too wide) in paragraph at lines 25--25
 []|  []| 
  []
 
-<figures/proseplots/gradient.pdf, id=3374, 578.16pt x 578.16pt>
+<figures/proseplots/gradient.pdf, id=3443, 578.16pt x 578.16pt>
 File: figures/proseplots/gradient.pdf Graphic file (type pdf)
 <use figures/proseplots/gradient.pdf>
 Package pdftex.def Info: figures/proseplots/gradient.pdf  used on input line 28
@@ -1985,44 +1978,44 @@ Package pdftex.def Info: figures/proseplots/gradient.pdf  used on input line 28
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71.81]
-(./python/color-map.py [72.82 <./figures/proseplots/gradient.pdf>])
+ [71.83]
+(./python/color-map.py [72.84 <./figures/proseplots/gradient.pdf>])
 Overfull \hbox (44.42125pt too wide) in paragraph at lines 36--36
 []|  []| 
  []
 
-<figures/proseplots/color-map.pdf, id=3428, 1011.78pt x 578.16pt>
+<figures/proseplots/color-map.pdf, id=3498, 1011.78pt x 578.16pt>
 File: figures/proseplots/color-map.pdf Graphic file (type pdf)
 <use figures/proseplots/color-map.pdf>
 Package pdftex.def Info: figures/proseplots/color-map.pdf  used on input line 3
 9.
 (pdftex.def)             Requested size: 231.2649pt x 132.14473pt.
-[73.83 <./figures/proseplots/color-map.pdf>] (./python/color-cube.py [74.84])
+[73.85 <./figures/proseplots/color-map.pdf>] (./python/color-cube.py [74.86])
 Overfull \hbox (47.93788pt too wide) in paragraph at lines 47--47
 []|  []| 
  []
 
-) [75.85] [76.86
+) [75.87] [76.88
 
 ]
 Chapter 7.
-(./tex/prose/multi.tex (./python/norm-pdf.py [77.87])
+(./tex/prose/multi.tex (./python/norm-pdf.py [77.89])
 Overfull \hbox (40.90462pt too wide) in paragraph at lines 9--9
 []|  []| 
  []
 
-<figures/proseplots/norm-pdf.pdf, id=3582, 462.52798pt x 346.89601pt>
+<figures/proseplots/norm-pdf.pdf, id=3651, 462.52798pt x 346.89601pt>
 File: figures/proseplots/norm-pdf.pdf Graphic file (type pdf)
 <use figures/proseplots/norm-pdf.pdf>
 Package pdftex.def Info: figures/proseplots/norm-pdf.pdf  used on input line 12
 .
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-[78.88 <./figures/proseplots/norm-pdf.pdf>] (./python/cdf-pdf.py)
+[78.90 <./figures/proseplots/norm-pdf.pdf>] (./python/cdf-pdf.py)
 Overfull \hbox (37.38799pt too wide) in paragraph at lines 17--17
 []|  []| 
  []
 
-<figures/proseplots/cdf-pdf.pdf, id=3647, 462.52798pt x 346.89601pt>
+<figures/proseplots/cdf-pdf.pdf, id=3717, 462.52798pt x 346.89601pt>
 File: figures/proseplots/cdf-pdf.pdf Graphic file (type pdf)
 <use figures/proseplots/cdf-pdf.pdf>
 Package pdftex.def Info: figures/proseplots/cdf-pdf.pdf  used on input line 20.
@@ -2036,23 +2029,23 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\lstinline' on input line 25.
 
-[79.89 <./figures/proseplots/cdf-pdf.pdf>] (./python/dual-bad.py)
+[79.91 <./figures/proseplots/cdf-pdf.pdf>] (./python/dual-bad.py)
 Overfull \hbox (40.90462pt too wide) in paragraph at lines 31--31
 []|  []| 
  []
 
-<figures/proseplots/dual-bad.pdf, id=3681, 462.52798pt x 346.89601pt>
+<figures/proseplots/dual-bad.pdf, id=3752, 462.52798pt x 346.89601pt>
 File: figures/proseplots/dual-bad.pdf Graphic file (type pdf)
 <use figures/proseplots/dual-bad.pdf>
 Package pdftex.def Info: figures/proseplots/dual-bad.pdf  used on input line 35
 .
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-[80.90 <./figures/proseplots/dual-bad.pdf>] (./python/dual-ok.py)
+[80.92 <./figures/proseplots/dual-bad.pdf>] (./python/dual-ok.py)
 Overfull \hbox (37.38799pt too wide) in paragraph at lines 49--49
 []|  []| 
  []
 
-<figures/proseplots/dual-ok.pdf, id=3746, 462.52798pt x 346.89601pt>
+<figures/proseplots/dual-ok.pdf, id=3816, 462.52798pt x 346.89601pt>
 File: figures/proseplots/dual-ok.pdf Graphic file (type pdf)
 <use figures/proseplots/dual-ok.pdf>
 Package pdftex.def Info: figures/proseplots/dual-ok.pdf  used on input line 52.
@@ -2061,13 +2054,13 @@ Package pdftex.def Info: figures/proseplots/dual-ok.pdf  used on input line 52.
 
 Underfull \vbox (badness 2376) has occurred while \output is active []
 
- [81.91]
+ [81.93]
 (./python/dual-norm.py)
 Overfull \hbox (44.42125pt too wide) in paragraph at lines 56--56
 []|  []| 
  []
 
-<figures/proseplots/dual-norm.pdf, id=3781, 462.52798pt x 346.89601pt>
+<figures/proseplots/dual-norm.pdf, id=3850, 462.52798pt x 346.89601pt>
 File: figures/proseplots/dual-norm.pdf Graphic file (type pdf)
 <use figures/proseplots/dual-norm.pdf>
 Package pdftex.def Info: figures/proseplots/dual-norm.pdf  used on input line 5
@@ -2076,13 +2069,13 @@ Package pdftex.def Info: figures/proseplots/dual-norm.pdf  used on input line 5
 
 Underfull \vbox (badness 2080) has occurred while \output is active []
 
- [82.92 <./figures/proseplots/dual-ok.pdf>] (./python/dual-norm-b.py [83.93 <./
+ [82.94 <./figures/proseplots/dual-ok.pdf>] (./python/dual-norm-b.py [83.95 <./
 figures/proseplots/dual-norm.pdf>])
 Overfull \hbox (51.45451pt too wide) in paragraph at lines 68--68
 []|  []| 
  []
 
-<figures/proseplots/dual-norm-b.pdf, id=3916, 462.52798pt x 346.89601pt>
+<figures/proseplots/dual-norm-b.pdf, id=3985, 462.52798pt x 346.89601pt>
 File: figures/proseplots/dual-norm-b.pdf Graphic file (type pdf)
 <use figures/proseplots/dual-norm-b.pdf>
 Package pdftex.def Info: figures/proseplots/dual-norm-b.pdf  used on input line
@@ -2092,12 +2085,12 @@ Package pdftex.def Info: figures/proseplots/dual-norm-b.pdf  used on input line
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\lstinline' on input line 83.
 
-(./python/trivial-sub.py [84.94 <./figures/proseplots/dual-norm-b.pdf>])
+(./python/trivial-sub.py [84.96 <./figures/proseplots/dual-norm-b.pdf>])
 Overfull \hbox (51.45451pt too wide) in paragraph at lines 86--86
 []|  []| 
  []
 
-<figures/proseplots/trivial-sub.pdf, id=3957, 462.52798pt x 346.89601pt>
+<figures/proseplots/trivial-sub.pdf, id=4026, 462.52798pt x 346.89601pt>
 File: figures/proseplots/trivial-sub.pdf Graphic file (type pdf)
 <use figures/proseplots/trivial-sub.pdf>
 Package pdftex.def Info: figures/proseplots/trivial-sub.pdf  used on input line
@@ -2108,7 +2101,7 @@ Overfull \hbox (51.45451pt too wide) in paragraph at lines 94--94
 []|  []| 
  []
 
-<figures/proseplots/subplots-1d.pdf, id=3960, 462.52798pt x 346.89601pt>
+<figures/proseplots/subplots-1d.pdf, id=4029, 462.52798pt x 346.89601pt>
 File: figures/proseplots/subplots-1d.pdf Graphic file (type pdf)
 <use figures/proseplots/subplots-1d.pdf>
 Package pdftex.def Info: figures/proseplots/subplots-1d.pdf  used on input line
@@ -2119,19 +2112,19 @@ Overfull \hbox (69.03767pt too wide) in paragraph at lines 102--102
 []|  []| 
  []
 
-<figures/proseplots/subplots-1d-vert.pdf, id=3963, 462.52798pt x 346.89601pt>
+<figures/proseplots/subplots-1d-vert.pdf, id=4032, 462.52798pt x 346.89601pt>
 File: figures/proseplots/subplots-1d-vert.pdf Graphic file (type pdf)
 <use figures/proseplots/subplots-1d-vert.pdf>
 Package pdftex.def Info: figures/proseplots/subplots-1d-vert.pdf  used on input
  line 105.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-[85.95 <./figures/proseplots/trivial-sub.pdf> <./figures/proseplots/subplots-1d
+[85.97 <./figures/proseplots/trivial-sub.pdf> <./figures/proseplots/subplots-1d
 .pdf>] (./python/subplots-2d.py)
 Overfull \hbox (51.45451pt too wide) in paragraph at lines 110--110
 []|  []| 
  []
 
-<figures/proseplots/subplots-2d.pdf, id=4033, 462.52798pt x 346.89601pt>
+<figures/proseplots/subplots-2d.pdf, id=4104, 462.52798pt x 346.89601pt>
 File: figures/proseplots/subplots-2d.pdf Graphic file (type pdf)
 <use figures/proseplots/subplots-2d.pdf>
 Package pdftex.def Info: figures/proseplots/subplots-2d.pdf  used on input line
@@ -2145,24 +2138,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 120.
 
-[86.96 <./figures/proseplots/subplots-1d-vert.pdf> <./figures/proseplots/subplo
+[86.98 <./figures/proseplots/subplots-1d-vert.pdf> <./figures/proseplots/subplo
 ts-2d.pdf>] (./python/add-subplot.py)
 Overfull \hbox (51.45451pt too wide) in paragraph at lines 124--124
 []|  []| 
  []
 
-<figures/proseplots/add-subplot.pdf, id=4084, 462.52798pt x 346.89601pt>
+<figures/proseplots/add-subplot.pdf, id=4155, 462.52798pt x 346.89601pt>
 File: figures/proseplots/add-subplot.pdf Graphic file (type pdf)
 <use figures/proseplots/add-subplot.pdf>
 Package pdftex.def Info: figures/proseplots/add-subplot.pdf  used on input line
  127.
 (pdftex.def)             Requested size: 231.2649pt x 173.45287pt.
-[87.97 <./figures/proseplots/add-subplot.pdf>] (./python/suptitle.py)
+[87.99 <./figures/proseplots/add-subplot.pdf>] (./python/suptitle.py)
 Overfull \hbox (40.90462pt too wide) in paragraph at lines 140--140
 []|  []| 
  []
 
-<figures/proseplots/suptitle.pdf, id=4116, 462.52798pt x 346.89601pt>
+<figures/proseplots/suptitle.pdf, id=4185, 462.52798pt x 346.89601pt>
 File: figures/proseplots/suptitle.pdf Graphic file (type pdf)
 <use figures/proseplots/suptitle.pdf>
 Package pdftex.def Info: figures/proseplots/suptitle.pdf  used on input line 14
@@ -2171,29 +2164,30 @@ Package pdftex.def Info: figures/proseplots/suptitle.pdf  used on input line 14
 
 LaTeX Warning: Reference `part:poetry' on page 88 undefined on input line 150.
 
-[88.98 <./figures/proseplots/suptitle.pdf>] (./python/connect-path.py [89.99])
+[88.100 <./figures/proseplots/suptitle.pdf>] (./python/connect-path.py [89.101]
+)
 Overfull \hbox (54.97115pt too wide) in paragraph at lines 154--154
 []|  []| 
  []
 
-<figures/proseplots/connect-path.pdf, id=4207, 505.89pt x 433.62pt>
+<figures/proseplots/connect-path.pdf, id=4277, 505.89pt x 433.62pt>
 File: figures/proseplots/connect-path.pdf Graphic file (type pdf)
 <use figures/proseplots/connect-path.pdf>
 Package pdftex.def Info: figures/proseplots/connect-path.pdf  used on input lin
 e 157.
 (pdftex.def)             Requested size: 260.17024pt x 223.00912pt.
-[90.100 <./figures/proseplots/connect-path.pdf>] (./python/gridspec.py)
+[90.102 <./figures/proseplots/connect-path.pdf>] (./python/gridspec.py)
 Overfull \hbox (40.90462pt too wide) in paragraph at lines 167--167
 []|  []| 
  []
 
-<figures/proseplots/gridspec.pdf, id=4254, 867.24pt x 433.62pt>
+<figures/proseplots/gridspec.pdf, id=4323, 867.24pt x 433.62pt>
 File: figures/proseplots/gridspec.pdf Graphic file (type pdf)
 <use figures/proseplots/gridspec.pdf>
 Package pdftex.def Info: figures/proseplots/gridspec.pdf  used on input line 17
 0.
 (pdftex.def)             Requested size: 260.17024pt x 130.087pt.
-) [91.101 <./figures/proseplots/gridspec.pdf>] [92.102
+) [91.103 <./figures/proseplots/gridspec.pdf>] [92.104
 
 ]
 Chapter 8.
@@ -2209,7 +2203,7 @@ Underfull \hbox (badness 1448) in paragraph at lines 5--6
 
  []
 
-(./python/style-manual.py [93.103])
+(./python/style-manual.py [93.105])
 Overfull \hbox (54.97115pt too wide) in paragraph at lines 9--9
 []|  []| 
  []
@@ -2219,28 +2213,28 @@ Overfull \hbox (40.90462pt too wide) in paragraph at lines 16--16
 []|  []| 
  []
 
-<figures/proseplots/style1.pdf, id=4318, 462.52798pt x 346.89601pt>
+<figures/proseplots/style1.pdf, id=4388, 462.52798pt x 346.89601pt>
 File: figures/proseplots/style1.pdf Graphic file (type pdf)
 <use figures/proseplots/style1.pdf>
 Package pdftex.def Info: figures/proseplots/style1.pdf  used on input line 20.
 (pdftex.def)             Requested size: 138.75717pt x 104.0696pt.
-<figures/proseplots/style2.pdf, id=4319, 462.52798pt x 346.89601pt>
+<figures/proseplots/style2.pdf, id=4389, 462.52798pt x 346.89601pt>
 File: figures/proseplots/style2.pdf Graphic file (type pdf)
 <use figures/proseplots/style2.pdf>
 Package pdftex.def Info: figures/proseplots/style2.pdf  used on input line 22.
 (pdftex.def)             Requested size: 138.75717pt x 104.0696pt.
-[94.104 <./figures/proseplots/style1.pdf> <./figures/proseplots/style2.pdf>]
+[94.106 <./figures/proseplots/style1.pdf> <./figures/proseplots/style2.pdf>]
 (./stylelib/tiny-style.mplstyle)
 Overfull \hbox (69.03767pt too wide) in paragraph at lines 35--35
 []|  []| 
  []
 
-(./python/tiny-style-ex.py [95.105])
+(./python/tiny-style-ex.py [95.107])
 Overfull \hbox (58.48778pt too wide) in paragraph at lines 39--39
 []|  []| 
  []
 
-<figures/proseplots/tiny-style-ex.pdf, id=4401, 462.52798pt x 346.89601pt>
+<figures/proseplots/tiny-style-ex.pdf, id=4470, 462.52798pt x 346.89601pt>
 File: figures/proseplots/tiny-style-ex.pdf Graphic file (type pdf)
 <use figures/proseplots/tiny-style-ex.pdf>
 Package pdftex.def Info: figures/proseplots/tiny-style-ex.pdf  used on input li
@@ -2256,13 +2250,13 @@ Overfull \hbox (44.42125pt too wide) in paragraph at lines 53--53
 []|  []| 
  []
 
-<figures/proseplots/py-styled.pdf, id=4406, 462.52798pt x 346.89601pt>
+<figures/proseplots/py-styled.pdf, id=4475, 462.52798pt x 346.89601pt>
 File: figures/proseplots/py-styled.pdf Graphic file (type pdf)
 <use figures/proseplots/py-styled.pdf>
 Package pdftex.def Info: figures/proseplots/py-styled.pdf  used on input line 5
 8.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-[96.106 <./figures/proseplots/tiny-style-ex.pdf>] (./python/spine-mod.py)
+[96.108 <./figures/proseplots/tiny-style-ex.pdf>] (./python/spine-mod.py)
 Overfull \hbox (44.42125pt too wide) in paragraph at lines 69--69
 []|  []| 
  []
@@ -2272,13 +2266,13 @@ Overfull \hbox (54.97115pt too wide) in paragraph at lines 71--71
 []|  []| 
  []
 
-<figures/proseplots/spine-mod-ex.pdf, id=4454, 462.52798pt x 346.89601pt>
+<figures/proseplots/spine-mod-ex.pdf, id=4524, 462.52798pt x 346.89601pt>
 File: figures/proseplots/spine-mod-ex.pdf Graphic file (type pdf)
 <use figures/proseplots/spine-mod-ex.pdf>
 Package pdftex.def Info: figures/proseplots/spine-mod-ex.pdf  used on input lin
 e 74.
 (pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
-[97.107 <./figures/proseplots/py-styled.pdf>] (./python/spine-mod2.py)
+[97.109 <./figures/proseplots/py-styled.pdf>] (./python/spine-mod2.py)
 Overfull \hbox (47.93788pt too wide) in paragraph at lines 81--81
 []|  []| 
  []
@@ -2288,7 +2282,7 @@ Overfull \hbox (58.48778pt too wide) in paragraph at lines 83--83
 []|  []| 
  []
 
-<figures/proseplots/spine-mod2-ex.pdf, id=4498, 462.52798pt x 346.89601pt>
+<figures/proseplots/spine-mod2-ex.pdf, id=4569, 462.52798pt x 346.89601pt>
 File: figures/proseplots/spine-mod2-ex.pdf Graphic file (type pdf)
 <use figures/proseplots/spine-mod2-ex.pdf>
 Package pdftex.def Info: figures/proseplots/spine-mod2-ex.pdf  used on input li
@@ -2297,12 +2291,12 @@ ne 86.
 
 Underfull \vbox (badness 1394) has occurred while \output is active []
 
- [98.108 <./figures/proseplots/spine-mod-ex.pdf>] (./python/spine-mod3.py)
+ [98.110 <./figures/proseplots/spine-mod-ex.pdf>] (./python/spine-mod3.py)
 Overfull \hbox (47.93788pt too wide) in paragraph at lines 93--93
 []|  []| 
  []
 
-<Images/nytATUS.png, id=4545, 627.34375pt x 468.75125pt>
+<Images/nytATUS.png, id=4615, 627.34375pt x 468.75125pt>
 File: Images/nytATUS.png Graphic file (type png)
 <use Images/nytATUS.png>
 Package pdftex.def Info: Images/nytATUS.png  used on input line 104.
@@ -2310,16 +2304,16 @@ Package pdftex.def Info: Images/nytATUS.png  used on input line 104.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [99.109 <./figures/proseplots/spine-mod2-ex.pdf>] (./python/nyt-rep1.py [100.1
-10 <./Images/nytATUS.png>]
+ [99.111 <./figures/proseplots/spine-mod2-ex.pdf>] (./python/nyt-rep1.py [100.1
+12 <./Images/nytATUS.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [101.111])
+ [101.113])
 Overfull \hbox (40.90462pt too wide) in paragraph at lines 113--113
 []|  []| 
  []
 
-<figures/proseplots/nyt-rep1.pdf, id=4667, 505.89pt x 469.755pt>
+<figures/proseplots/nyt-rep1.pdf, id=4736, 505.89pt x 469.755pt>
 File: figures/proseplots/nyt-rep1.pdf Graphic file (type pdf)
 <use figures/proseplots/nyt-rep1.pdf>
 Package pdftex.def Info: figures/proseplots/nyt-rep1.pdf  used on input line 11
@@ -2328,13 +2322,13 @@ Package pdftex.def Info: figures/proseplots/nyt-rep1.pdf  used on input line 11
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [102.112]
+ [102.114]
 (./stylelib/nyt-helper.mplstyle)
 Overfull \hbox (69.03767pt too wide) in paragraph at lines 151--151
 []|  []| 
  []
 
-[103.113 <./figures/proseplots/nyt-rep1.pdf>] (./python/nyt-helper-function.py)
+[103.115 <./figures/proseplots/nyt-rep1.pdf>] (./python/nyt-helper-function.py)
 
 Overfull \hbox (79.58757pt too wide) in paragraph at lines 153--153
 []|  []| 
@@ -2345,26 +2339,195 @@ Overfull \hbox (65.52104pt too wide) in paragraph at lines 155--155
 []|  []| 
  []
 
-[104.114] (./python/nyt-refactor.py [105.115])
+[104.116] (./python/nyt-refactor.py [105.117])
 Overfull \hbox (54.97115pt too wide) in paragraph at lines 157--157
 []|  []| 
  []
 
-<figures/proseplots/nyt-refactor.pdf, id=4892, 505.89pt x 469.755pt>
+<figures/proseplots/nyt-refactor.pdf, id=4962, 505.89pt x 469.755pt>
 File: figures/proseplots/nyt-refactor.pdf Graphic file (type pdf)
 <use figures/proseplots/nyt-refactor.pdf>
 Package pdftex.def Info: figures/proseplots/nyt-refactor.pdf  used on input lin
 e 160.
 (pdftex.def)             Requested size: 231.2649pt x 214.74953pt.
-) (./tex/ghostcites.tex) [106.116 <./figures/proseplots/nyt-refactor.pdf>]
-[107.117
+) [106.118 <./figures/proseplots/nyt-refactor.pdf>]
+<Images/venicefloor.jpg, id=5058, 545.03625pt x 568.1225pt>
+File: Images/venicefloor.jpg Graphic file (type jpg)
+<use Images/venicefloor.jpg>
+Package pdftex.def Info: Images/venicefloor.jpg  used on input line 122.
+(pdftex.def)             Requested size: 197.29437pt x 205.65088pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[107.119
 
 
-] [108.118
+ <./Images/venicefloor.jpg>] [108.120] (./tex/math/math.tex
+Chapter 9.
+
+LaTeX Warning: Reference `part:poetry' on page 109 undefined on input line 4.
+
+[109.121
+
+]
+<figures/mathplots/unit-circle.pdf, id=5073, 361.35pt x 361.35pt>
+File: figures/mathplots/unit-circle.pdf Graphic file (type pdf)
+<use figures/mathplots/unit-circle.pdf>
+Package pdftex.def Info: figures/mathplots/unit-circle.pdf  used on input line 
+18.
+(pdftex.def)             Requested size: 202.35512pt x 202.35461pt.
+ (./python/unit-circle.py [110.122 <./figures/mathplots/unit-circle.pdf>])
+Overfull \hbox (51.45451pt too wide) in paragraph at lines 21--21
+[]|  []| 
+ []
+
+[111.123] (./python/unit-circle-shift.py)
+Overfull \hbox (72.5543pt too wide) in paragraph at lines 35--35
+[]|  []| 
+ []
+
+<figures/mathplots/unit-circle-shift.pdf, id=5157, 462.52798pt x 346.89601pt>
+File: figures/mathplots/unit-circle-shift.pdf Graphic file (type pdf)
+<use figures/mathplots/unit-circle-shift.pdf>
+Package pdftex.def Info: figures/mathplots/unit-circle-shift.pdf  used on input
+ line 38.
+(pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
+[112.124 <./figures/mathplots/unit-circle-shift.pdf>] (./python/tform-matrix.py
+)
+Overfull \hbox (54.97115pt too wide) in paragraph at lines 71--71
+[]|  []| 
+ []
+
+(./python/ellipse-tform.py [113.125]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [114.126])
+Overfull \hbox (58.48778pt too wide) in paragraph at lines 75--75
+[]|  []| 
+ []
+
+<figures/mathplots/ellipse-tform.pdf, id=5268, 462.52798pt x 346.89601pt>
+File: figures/mathplots/ellipse-tform.pdf Graphic file (type pdf)
+<use figures/mathplots/ellipse-tform.pdf>
+Package pdftex.def Info: figures/mathplots/ellipse-tform.pdf  used on input lin
+e 78.
+(pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
+[115.127 <./figures/mathplots/ellipse-tform.pdf>] (./python/r-triangle.py
+[116.128])
+Overfull \hbox (47.93788pt too wide) in paragraph at lines 101--101
+[]|  []| 
+ []
+
+<figures/mathplots/r-triangle.pdf, id=5332, 462.52798pt x 346.89601pt>
+File: figures/mathplots/r-triangle.pdf Graphic file (type pdf)
+<use figures/mathplots/r-triangle.pdf>
+Package pdftex.def Info: figures/mathplots/r-triangle.pdf  used on input line 1
+04.
+(pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
+[117.129 <./figures/mathplots/r-triangle.pdf>] [118.130
+
+]
+Chapter 10.
+(./python/no-slope.py)
+Overfull \hbox (40.90462pt too wide) in paragraph at lines 121--121
+[]|  []| 
+ []
+
+<figures/mathplots/no-slope.pdf, id=5372, 462.52798pt x 346.89601pt>
+File: figures/mathplots/no-slope.pdf Graphic file (type pdf)
+<use figures/mathplots/no-slope.pdf>
+Package pdftex.def Info: figures/mathplots/no-slope.pdf  used on input line 124
+.
+(pdftex.def)             Requested size: 173.44977pt x 130.08568pt.
+[119.131 <./figures/mathplots/no-slope.pdf>]
+<figures/mathplots/bad-slope.pdf, id=5397, 462.52798pt x 346.89601pt>
+File: figures/mathplots/bad-slope.pdf Graphic file (type pdf)
+<use figures/mathplots/bad-slope.pdf>
+Package pdftex.def Info: figures/mathplots/bad-slope.pdf  used on input line 13
+2.
+(pdftex.def)             Requested size: 173.44977pt x 130.08568pt.
+ (./python/slope-label.py [120.132 <./figures/mathplots/bad-slope.pdf>])
+Overfull \hbox (51.45451pt too wide) in paragraph at lines 137--137
+[]|  []| 
+ []
+
+<figures/mathplots/slope-label.pdf, id=5435, 462.52798pt x 346.89601pt>
+File: figures/mathplots/slope-label.pdf Graphic file (type pdf)
+<use figures/mathplots/slope-label.pdf>
+Package pdftex.def Info: figures/mathplots/slope-label.pdf  used on input line 
+140.
+(pdftex.def)             Requested size: 173.44977pt x 130.08568pt.
+(./python/circle.py [121.133 <./figures/mathplots/slope-label.pdf>])
+Overfull \hbox (33.87135pt too wide) in paragraph at lines 148--148
+[]|  []| 
+ []
+
+<figures/mathplots/circle.pdf, id=5479, 462.52798pt x 346.89601pt>
+File: figures/mathplots/circle.pdf Graphic file (type pdf)
+<use figures/mathplots/circle.pdf>
+Package pdftex.def Info: figures/mathplots/circle.pdf  used on input line 153.
+(pdftex.def)             Requested size: 173.44977pt x 130.08568pt.
+(./python/circle-grad.py [122.134 <./figures/mathplots/circle.pdf>])
+Overfull \hbox (51.45451pt too wide) in paragraph at lines 159--159
+[]|  []| 
+ []
+
+<figures/mathplots/circle-grad.pdf, id=5515, 578.16pt x 578.16pt>
+File: figures/mathplots/circle-grad.pdf Graphic file (type pdf)
+<use figures/mathplots/circle-grad.pdf>
+Package pdftex.def Info: figures/mathplots/circle-grad.pdf  used on input line 
+162.
+(pdftex.def)             Requested size: 231.2649pt x 231.2599pt.
+[123.135 <./figures/mathplots/circle-grad.pdf>] (./python/arc-graph.py)
+Overfull \hbox (44.42125pt too wide) in paragraph at lines 173--173
+[]|  []| 
+ []
+
+<figures/mathplots/arc-graph.pdf, id=5538, 462.52798pt x 346.89601pt>
+File: figures/mathplots/arc-graph.pdf Graphic file (type pdf)
+<use figures/mathplots/arc-graph.pdf>
+Package pdftex.def Info: figures/mathplots/arc-graph.pdf  used on input line 17
+6.
+(pdftex.def)             Requested size: 202.35512pt x 151.76662pt.
+[124.136 <./figures/mathplots/arc-graph.pdf>] (./python/circle-graph.py
+Underfull \vbox (badness 5036) has occurred while \output is active []
+
+ [125.137])
+Overfull \hbox (54.97115pt too wide) in paragraph at lines 181--181
+[]|  []| 
+ []
+
+<figures/mathplots/circle-graph.pdf, id=5622, 462.52798pt x 346.89601pt>
+File: figures/mathplots/circle-graph.pdf Graphic file (type pdf)
+<use figures/mathplots/circle-graph.pdf>
+Package pdftex.def Info: figures/mathplots/circle-graph.pdf  used on input line
+ 184.
+(pdftex.def)             Requested size: 239.93694pt x 179.95291pt.
+(./python/tony-hawk.py [126.138 <./figures/mathplots/circle-graph.pdf>])
+Overfull \hbox (44.42125pt too wide) in paragraph at lines 195--195
+[]|  []| 
+ []
+
+<figures/mathplots/tony-hawk.pdf, id=5651, 867.24pt x 216.81pt>
+File: figures/mathplots/tony-hawk.pdf Graphic file (type pdf)
+<use figures/mathplots/tony-hawk.pdf>
+Package pdftex.def Info: figures/mathplots/tony-hawk.pdf  used on input line 19
+8.
+(pdftex.def)             Requested size: 289.08002pt x 72.2687pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [127.139]) (./tex/ghostcites.tex) [128.140 <./figures/mathplots/tony-hawk.pdf>
+] [129.141
+
+
+] [130.142
 
 ]
 LaTeX Font Info:    Trying to load font information for U+fontawesomeone on inp
-ut line 127.
+ut line 137.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
 File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
@@ -2374,53 +2537,62 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/stringenc/se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [109.119] (./main.aux)
+) [131.143] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3430922729734C15F0C48F74740334BA;8761.
+(rerunfilecheck)             Checksum: F217761C49E26ED6AAC6E011E351418F;10410.
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31094 strings out of 478268
- 543270 string characters out of 5846348
- 1649209 words of memory out of 5000000
- 46561 multiletter control sequences out of 15000+600000
+ 31789 strings out of 478268
+ 556389 string characters out of 5846348
+ 1649529 words of memory out of 5000000
+ 46766 multiletter control sequences out of 15000+600000
  493222 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,131p,1489b,5162s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeon
 e.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.
 enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome/FontAwes
-ome.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
-.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pf
-b></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><
-/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></u
-sr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/loc
-al/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local
-/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/t
-exlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/tex
-live/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texli
-ve/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive
-/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2
-022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/202
-2/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/
-texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/te
-xmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2022/texm
-f-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-
-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2022/texmf-di
-st/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (119 pages, 1983386 bytes).
+ome.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex
+10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.
+pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></us
+r/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/
+local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/lo
+cal/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/loca
+l/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/
+texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/te
+xlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/
+2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/20
+22/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022
+/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/tex
+mf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf
+-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2022/texmf-d
+ist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dis
+t/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2022/texmf-dist/
+fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on main.pdf (143 pages, 2349293 bytes).
 PDF statistics:
- 5514 PDF objects out of 6186 (max. 8388607)
- 3579 compressed objects within 36 object streams
- 1949 named destinations out of 2073 (max. 500000)
- 932 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6327 PDF objects out of 7423 (max. 8388607)
+ 4288 compressed objects within 43 object streams
+ 2398 named destinations out of 2487 (max. 500000)
+ 1093 words of extra memory for PDF output out of 10000 (max. 10000000)
 
