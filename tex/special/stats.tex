@@ -51,9 +51,30 @@ Finally, we plot $A \cap B^C$ or $A\setminus B$. For this, we again need a third
 \end{center}
 
 
-
 \section{Distributions}
 
+We use the \code{hist()} Axes method to create a histogram. Beautifying the plot is only a matter of modifying the background elements, like the spines and labels, and then choosing the right number of bins and colors for the histogram. A histogram includes Patch objects, meaning we can specify both an \code{edgecolor} and \code{facecolor}. 
 
+Below, we create a histogram using the defaults. 
 
+\pyfile{default-hist.py}
 
+\begin{center}
+    \includegraphics[width = 0.7\textwidth]{figures/specialplots/default-hist.pdf}
+\end{center}
+
+When you are only interested in the shape of the data, you will find the $y$-axis information unimportant. Accordingly, we'll remove the $y$-axis to (repeat after me) reduce clutter. 
+
+\pyfile{clean-hist.py}
+
+\begin{center}
+    \includegraphics[width = 0.7\textwidth]{figures/specialplots/clean-hist.pdf}
+\end{center}
+
+The last modification considered is the simple use of the \code{bins} parameter to adjust the number of bins in the histogram. 
+
+\pyfile{bins-hist.py}
+
+\begin{center}
+    \includegraphics[width = 0.7\textwidth]{figures/specialplots/bins-hist.pdf}
+\end{center}

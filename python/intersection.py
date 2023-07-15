@@ -17,8 +17,10 @@ x = np.cos(angles) - 0.5
 t = 0
 while x[t] > 0:
     t += 1
-ax.fill_between(x[:t], -y[0:t], y[0:t], color = 'gray', zorder = -1)
-ax.fill_between(-x[:t] , -y[0:t], y[0:t], color = 'gray', zorder = -1)
+ax.fill_between(x[:t], -y[0:t], y[0:t],
+                color = 'gray', zorder = -1)
+ax.fill_between(-x[:t] , -y[0:t], y[0:t],
+                color = 'gray', zorder = -1)
 
 # Label
 ax.text(0, 1.05,
