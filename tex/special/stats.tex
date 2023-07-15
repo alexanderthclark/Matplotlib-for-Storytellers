@@ -10,3 +10,50 @@ It's true that you might achieve the same goals using languages like R or Ti$k$z
 \begin{center}
     \includegraphics[width = 0.95\textwidth]{figures/specialplots/errors-stacked.pdf}
 \end{center}
+
+
+\section{Probability Diagrams}
+
+%Venn diagrams are a standard illustration for concepts like the intersection of two sets. 
+Below, we produce Venn diagrams to consider set operations for two sets, $A$ and $B$. These sets are outlined as circles, either by plotting the outline or by using the Circle artist object. The result of the set operation will be filled with gray. This can be tricky because I insist that the circle outlines (the Artist object's edge) are always visible, meaning we have to be mindful of how one circle overlapping another could obscure the other's outline. 
+
+First, we plot $A$ and $B$, filling only $A$. $A$ and $B$ are Circle objects and I plot $B$ second so that it is in front of $A$. This means that the outline of $B$ is not lost underneath $A$. We want the opposite from the fill color of $B$---we do not want it to overlap $A$. To prevent this, $B$ is filled with \code{facecolor = (1, 1, 1, 0)}, which is the RGBA color for white (RGB 1,1,1) and an alpha or opacity of 0\%, leaving it transparent. We could also have used an alpha parameter, but this would apply to both the \code{facecolor} and \code{edgecolor} arguments, which we want to treat separately. 
+
+\pyfile{event-A.py}
+
+\begin{center}
+    \includegraphics[width = 0.7\textwidth]{figures/specialplots/event-A.pdf}
+\end{center}
+
+Next, we consider the union of $A$ and $B$. This presents a similar challenge in not having the fill of one circle cover the outline of the other circle. First, we create two Circle objects, filled gray and with a black outline.  If we stopped there, we would have a visible overlap. To recover the outline of $A$, we add a third circle with a black outline but a transparent fill. 
+
+\pyfile{union.py}
+
+\begin{center}
+    \includegraphics[width = 0.7\textwidth]{figures/specialplots/union.pdf}
+\end{center}
+
+
+To plot the intersection of $A$ and $B$, we abandon Circle objects for the \code{plot()} and \code{fill_between()} Axes methods. Filling the intersection is done in two pieces. 
+
+\pyfile{intersection.py}
+
+\begin{center}
+    \includegraphics[width = 0.7\textwidth]{figures/specialplots/intersection.pdf}
+\end{center}
+
+Finally, we plot $A \cap B^C$ or $A\setminus B$. For this, we again need a third transparent circle. We allow a white-filled $B$ to cover $A \cap B$, essentially removing the fill from that region. Then, we use the Circle \code{left_circle_helper} to restore the outline of $A$. 
+
+\pyfile{A-minus-B.py}
+
+\begin{center}
+    \includegraphics[width = 0.7\textwidth]{figures/specialplots/A-minus-B.pdf}
+\end{center}
+
+
+
+\section{Distributions}
+
+
+
+
