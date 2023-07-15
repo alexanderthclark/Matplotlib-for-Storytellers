@@ -53,9 +53,8 @@ Finally, we plot $A \cap B^C$ or $A\setminus B$. For this, we again need a third
 
 \section{Distributions}
 
-We use the \code{hist()} Axes method to create a histogram. Beautifying the plot is only a matter of modifying the background elements, like the spines and labels, and then choosing the right number of bins and colors for the histogram. A histogram includes Patch objects, meaning we can specify both an \code{edgecolor} and \code{facecolor}. 
 
-Below, we create a histogram using the defaults. 
+We use the \code{hist()} Axes method to create a histogram. Beautifying the plot is only a matter of modifying the background elements, like the spines and labels, and then choosing the right number of bins and colors for the histogram. A histogram includes Patch objects, meaning we can specify both an \code{edgecolor} and \code{facecolor}. Below, we create a histogram using the defaults. 
 
 \pyfile{default-hist.py}
 
@@ -77,4 +76,12 @@ The last modification considered is the simple use of the \code{bins} parameter 
 
 \begin{center}
     \includegraphics[width = 0.7\textwidth]{figures/specialplots/bins-hist.pdf}
+\end{center}
+
+Next, density plots can be produced the SciPy package and its statistics module, which has been imported already with \code{import scipy.stats as stats}. Below is a simple plot for a normal distribution. 
+
+\pyfile{normal-pdf.py}
+
+\begin{center}
+    \includegraphics[width = 0.7\textwidth]{figures/specialplots/normal-pdf.pdf}
 \end{center}
