@@ -85,3 +85,39 @@ Next, density plots can be produced the SciPy package and its statistics module,
 \begin{center}
     \includegraphics[width = 0.7\textwidth]{figures/specialplots/normal-pdf.pdf}
 \end{center}
+
+To motivate sampling distributions, it might be useful to label the $x$-axis not with numeric quantities but with $\mu$ and $\bar{x}$ for the true mean and the observed sample mean. This is done by with the \code{set_xticklabels()} Axes method, aligning the strings with ticks that are also manually set with \code{set_xticks()}. 
+
+
+\pyfile{sampling-dist.py}
+
+
+\begin{center}
+    \includegraphics[width = 0.7\textwidth]{figures/specialplots/sampling-dist.pdf}
+\end{center}
+
+
+
+Next, we conduct and illustrate a one-tailed $z$-test for a proportion,
+
+\begin{align*}
+H_0:  p & = \frac{1}{2} \\
+H_a:  p & > \frac{1}{2}.
+\end{align*}
+
+We set $\alpha = 0.05$ and suppose we observed 18 successes from 30 trials. The test statistic and $p$-value are calculated with the help of the statsmodels library and the \link{https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.proportions_ztest.html}{\code{proportions_ztest()}} function. 
+
+
+\pyfile{one-tail-norm.py}
+
+\begin{center}
+    \includegraphics[width = 0.7\textwidth]{figures/specialplots/one-tail-norm.pdf}
+\end{center}
+
+In the above, the two plots share the same $x$-axis scaling and I'd prefer the vertical line for the test statistic extend from one graph to the other, emphasizing that the two distributions are identical. We again face this challenge when using stacked plots to illustrate Type I and Type II error, and it is in that context that we solve the problem. This can be solved by using a Transform object. The $x$-axis coordinates are naturally expressed in data coordinates. Because we want the vertical line extending from one subplot Axes to the other, we should work in Figure coordinates. This requires just two special lines in the code below. The blended transformation is created with the \code{blended_transform_factory()} function and then we use the \code{transform} parameter in the Axes plotting method. 
+
+\pyfile{error-stack.py}
+
+\begin{center}
+    \includegraphics[width = 0.7\textwidth]{figures/specialplots/error-stack.pdf}
+\end{center}

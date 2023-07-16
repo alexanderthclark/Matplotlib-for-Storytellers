@@ -9,10 +9,7 @@ ax.fill_between(x,y, color = 'C0')
 ax.set_yticks([])
 for s in 'left', 'top', 'right':
     ax.spines[s].set_visible(False)
-    
+
 ylims = ax.get_ylim()
 ax.set_ylim(0, ylims[1])
 ax.set_title("Normal Distribution")
-#truncate
-plt.tight_layout()
-plt.savefig("normal-pdf.pdf")
