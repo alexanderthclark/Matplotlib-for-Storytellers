@@ -1,0 +1,1 @@
+speedometer(100, fsize = 65)
