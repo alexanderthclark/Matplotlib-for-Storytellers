@@ -1,0 +1,78 @@
+Matplotlib offers two interfaces: a MATLAB-style interface and the more cumbersome object-oriented interface. If you count yourself among the matplotlib-averse, you likely never had the stomach for object-oriented headaches. Still, we are using the object oriented interface because we can do more with this.
+
+The MATLAB-style interface looks like the following. 
+
+\pyfile{matlab-plot.py}
+
+The object-oriented interface looks like this. 
+
+\pyfile{oop-plot.py}
+
+
+There is no such thing as a free lunch, so you will observe this interface requires more code to do the same exact thing. Its virtues will be more apparent later. Object-oriented programming (OOP) also requires some new vocabulary. OOP might be contrasted with procedural programming as another common method of programming. In procedural programming, the MATLAB-style interface being an example, the data and code are separate and the programmer creates procedures that operate on the program's data. OOP instead focuses on the creation of \emph{objects} which encapsulate both data and procedures. 
+
+An object's data are called its \emph{attributes} and the procedures or functions are called \emph{methods}. In the previous code, we have figure and axes objects, making use of axes methods \code{plot()} and \code{set_title()}, both of which add data to the axes object in some sense, as we could extract the lines and title from \code{ax} with more code. Objects themselves are instances of a \emph{class}. So \code{ax} is an object and an instance of the Axes class. Classes can also branch into subclasses, meaning a particular kind of object might also belong to a more general class. A deeper knowledge is beyond our scope, but this establishes enough vocabulary for us to continue building an applied knowledge of matplotlib. Because \code{ax} contains its data, you can think of \code{set_title()} as changing \code{ax} and this helps make sense of the \code{get_title()} method, which simply returns the title belonging to \code{ax}. Having some understanding that these objects contain both procedures and data will be helpful in starting to make sense of intimidating programs or inscrutable documentation you might come across.  %These are Just as there is a \code{set_title()}
+
+\section{Figure, Axes}
+
+A plot requires a figure object and an axes object, typically defined as \code{fig} and \code{ax}. The figure object is the top level container. In many cases like in the above, you'll define it at the beginning of your code and never need to reference it again, as plotting is usually done with axes methods. A commonly used figure parameter is \code{figsize}, to which you can pass a sequence to alter the size of the figure. Both the figure and axes objects have a \code{facecolor} parameter which might help to illustrate the difference between the axes and figure. 
+
+
+\pyfile{figparams.py}
+
+\begin{center}
+    \includegraphics[width = .45\textwidth]{figures/proseplots/figparams.pdf}
+\end{center}
+
+
+The axes object, named \code{ax} by convention, gets more use in most programs. In place of \code{plt.plot()}, you'll use \code{ax.plot()}. Similary, \code{plt.hist()} is replaced with \code{ax.hist()} to create a histogram. If you have experience with the MATLAB interface, you might get reasonably far with the object-oriented style just replacing the \code{plt} prefix on your pyplot functions with \code{ax} to see if you have an equivalent axes method.
+
+This wishful coding won't take you everywhere though. For example, \code{plt.xlim()} is replaced by \code{ax.set_xlim()} to set the $x$-axis view limits. To modfiy the title, \code{plt.title()} is replaced with \code{ax.set_title()} and there is \code{ax.get_title()} simply to get the title. The axes object also happens to have a \code{title} attribute, which is only used to access the title, similar to the \code{get_title()} method. Many matplotlib methods can be classified as \emph{getters} or \emph{setters} like for these title methods. The plot method and its logic is different. Later calls of \code{ax.plot()} don't overwrite earlier calls and there is not the same getter and setter form. There's a \code{plot()} method but no single \code{plot} attribute being mutated. Whatever has been plotted can be retrieved, or gotten (getter'd?), but it's more complicated and rarely necessary. Use the code below to see what happens with two calls of \code{plot()} and two calls of \code{set_title()}. The second print statement demonstrates that the second call of \code{set_title()} overwrites the title attribute, but a second plot does not nullify the first. 
+
+%It's part of the object-oriented construction, which goes beyond our scope.
+%\newpage
+
+\pyfile{gettersetter.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/gettersetter.pdf}
+\end{center}
+
+Axes methods \code{set_xlim()} and \code{get_xlim()} behave just like \code{set_title()} and \code{get_title()}, but note there is no attribute simply accessible with \code{ax.xlim}, so the existence of getters and setters is the more fundamental pattern.\footnote{Getters and setters are thought of as old-fashioned. It's more Pythonic to access attributes directly, but matplotlib doesn't yet support this.}
+%https://matplotlib.org/stable/tutorials/intermediate/artists.html?highlight=artist%20tutorial for old fashioned comment
+
+\section{Mixing the Interfaces}
+
+You can also mix the interfaces. Use \code{plt.gca()} to \emph{g}et the \emph{c}urrent \emph{a}xis. Use \code{plt.gcf()} to \emph{g}et the \emph{c}urrent \emph{f}igure.
+
+
+\pyfile{chart.py}
+
+\begin{center}
+    \includegraphics[width = .8\textwidth]{figures/proseplots/chart.pdf}
+\end{center}
+
+
+In the above, we started with MATLAB and then converted to object-oriented. We can also go in the opposite direction, though it's not always ideal, especially when working with subplots. Below, we start with our figure and axes objects, and then revert back to the MATLAB style with the \code{axvline()} functions (producing vertical lines across the axes), toggling off the axis lines and labels, and then saving the figure. This graph would appear unchanged if you replaced \code{plt.axvline()} with \code{ax.axvline()}, \code{plt.axis()} with \code{ax.axis()}, and \code{fig.savefig()} would do the same as \code{plt.savefig()}.
+
+\pyfile{colorful.py}
+
+%\vspace{-10pt}
+\begin{figure}
+    \centering
+    \includegraphics[width = .8\textwidth]{figures/proseplots/colorful.pdf}    %\caption{Caption}
+    \label{fig:my_label}
+\end{figure}
+
+
+Matplotlib is also integrated into pandas, with a \code{plot()} method for both Series and DataFrame objects, among other functionalities. There is excellent documentation \link{https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html}{available}.\footnote{\scalebox{.83}{https://pandas.pydata.org/pandas-docs/stable/user\_guide/visualization.html}} These plots can be mixed with the object-oriented interface. You can use a plot method and specify the appropriate axes object as an argument. Below we import the iris dataset and make a boxplot with a mix of axes methods and then pyplot functions. 
+
+\pyfile{irisbox.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/irisbox.pdf}
+\end{center}
+
+The above capability is handy, especially with subplots, where every subplot will have its own axes object as we will see later.  
+%\link{https://matplotlib.org/stable/api/figure_api.html?highlight=figure\#module-matplotlib.figure}{test}
+

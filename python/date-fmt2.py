@@ -1,0 +1,6 @@
+fig, ax = plt.figure(), plt.axes()
+xformatter = mdates.DateFormatter('%-I%p')
+ax.plot(df.Time, df.weather)
+ax.set_title("Searches for \"weather\" spike in the morning.")
+ax.set_xlabel("Time (UTC)")
+ax.xaxis.set_major_formatter(xformatter)

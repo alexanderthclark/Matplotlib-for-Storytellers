@@ -1,0 +1,6 @@
+axes.spines.left : True
+axes.spines.right : False
+axes.spines.bottom : True
+axes.spines.top : False
+xtick.labelsize : large
+font.family : Times

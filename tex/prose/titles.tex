@@ -1,0 +1,310 @@
+\section{Simple Titles}
+
+As we learned in Chapter \ref{chapter:oop}, we can add a title with the axes method \code{set_title()}. Simply pass the string of your choice as the argument. For multi-line titles, recall \code{\\n} can be used in a string to start a new line. Common optional arguments include \code{color}, \code{fontsize}, \code{weight}, and \code{loc}. 
+
+Colors will be addressed in Chapter \ref{chapter:colors}, but to start you can simply use the name of any not-too-exotic color as a string.
+
+\code{fontsize} (or \code{size}) can be a number or chosen from \code{'small'}, \code{'medium'}, or \code{'large'}, and \code{'small'} and \code{'large'} may be intensified with a \code{'x-'} or \code{'xx-'} prefix. Similarly, \code{weight} (or \code{fontweight}) can be a number or chosen from options like \code{'bold'} or \code{'light'}.
+
+\code{loc} determines the location of the title, either \code{'left'}, \code{'center'}, or \code{'right'}. In the default style, the default value will be \code{'center'}. You might prefer using \code{'left'} to match the Google Sheets default (thus matching the vast majority of plots I've seen in industry). %Consider using \code{'left'} to match the Google Sheets default. 
+\code{pad} controls the space between the title and the top of the axes. 
+
+
+\pyfile{title-pad.py}
+
+\begin{center}
+    \includegraphics[width = .48\textwidth]{figures/proseplots/title-pad.pdf}
+\end{center} \begin{center}
+    \includegraphics[width = .48\textwidth]{figures/proseplots/title-no-pad.pdf}
+\end{center}
+
+A plot can actually have one title for every \code{loc} value as well. 
+
+\pyfile{title-loc.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/title-loc.pdf}
+\end{center}
+
+
+\section{Text and Placement}\label{sec:textplacement}
+
+Matplotlib offers \code{text} as both a figure and an axes method. Let's start with some code to understand what they do. Both take $x$ and $y$ positions as the first two arguments and then a string. The figure method method is the same as using the axes method with a transformation to figure coordinates. 
+
+
+\pyfile{text-methods.py}
+
+\begin{center}
+    \includegraphics[width = .8\textwidth]{figures/proseplots/text-methods.pdf}
+\end{center}
+
+Immediately, we see that despite passing the same $x$ and $y$ position values, the figure and axes methods place the text differently. By default, the figure method uses ``figure'' coordinates, where (0,0) is the bottom left and (1,1) is the top right. The axes method uses $x$ and $y$ data coordinates by default. We will modify this shortly. 
+
+A more common concern is the alignment of the text. Both figure and axes text methods include parameters \code{verticalalignment} and \code{horizontalalignment}, which can be abbreviated as \code{va} and \code{ha}. By default, the text is placed so that the given coordinate is at the bottom-left corner of the text. 
+
+\pyfile{text-default-align.py}
+
+\begin{center}
+    \includegraphics[width = 0.5\textwidth]{figures/proseplots/text-default-align.pdf}
+\end{center}
+
+\noindent For vertical alignment, the options are \code{'top'}, \code{'bottom'}, or \code{'center'}. For horizontal alignment, the options are \code{'left'}, \code{'right'}, or \code{'center'}. The default demonstrated above was \code{'bottom'} and \code{'left'}. It does result in the text being above and to the right of the coordinate point, perhaps confusingly, but the interpretation is that the coordinate point is at the bottom-left of the text. The possible alignments are illustrated below. 
+
+\pyfile{text-align.py}
+
+\begin{center}
+    \includegraphics[width = 0.7\textwidth]{figures/proseplots/text-align.pdf}
+\end{center}
+
+
+Text can be rotated with the \code{rotation} parameter. By default, a plot isn't square---the aspect ratio (the ratio of $y$-unit to $x$-unit) is not one. That means that the 45 degree line created by $y=x$ is not actually plotted at 45 degrees. Yet according to the \code{rotation} parameter, text rotated at 45 degrees is plotted at 45 degrees---that angle is not converted based on the aspect ratio. Later in Section \ref{sec:slopingtext}, I go into further detail in how to use some trigonometry to get the exact angle if you'd like to slope text at some angle, accounting for the aspect ratio. 
+
+\pyfile{text-rotation2.py}
+
+
+\begin{center}
+    \includegraphics[width = 0.33\textwidth]{figures/proseplots/text-rotation2.pdf}
+\end{center} \begin{center}
+    \includegraphics[width = 0.33\textwidth]{figures/proseplots/text-rotation1.pdf}
+\end{center} \begin{center}
+    \includegraphics[width = 0.33\textwidth]{figures/proseplots/text-rotation05.pdf}
+\end{center}
+
+
+%\vspace{-1cm}
+
+%https://matplotlib.org/stable/tutorials/advanced/transforms_tutorial.html
+
+%\subsection{Coordinate System Transformations}
+%Now we return to the fact that \code{ax.text()} uses data coordinates by default, among all the possible coordinate systems described in Chapter \ref{chapter:elements}. This can be changed using the \code{transform} parameter, selecting from a number of possible transformations. Using \code{transform = ax.transAxes}, the $x$ and $y$ positions are based on the coordinate system of the axes object, where (0,0) is the bottom left and (1,1) is the top right. This is different than the default behavior of \code{fig.text()} which is based on the larger figure object. Below, observe that the figure text, in blue, is centered with respect to the larger figure (the axes and the light yellow background). The axes text is centered with respect to the axes which sits slightly right of center in the larger figure. 
+
+%\begin{lstlisting}[language = Python]
+%fig, ax = plt.figure(facecolor = 'lightyellow'), plt.axes()
+%ax.set_xlim([0,10])
+%ax.set_ylim([0,10])
+%fig.text(0.5, 0.5, 'Z', 
+%    ha = 'center', va = 'center', 
+%    color = 'C0', fontsize = 50)
+%ax.text(0.5, 0.5, 'Z', 
+%    transform = ax.transAxes, 
+%    ha = 'center', va = 'center',
+%    color = 'C1', fontsize = 50)
+%\end{lstlisting}
+
+
+%\begin{center}
+  %  \includegraphics[width = .8\textwidth]{proseplots/texttransform1.pdf}
+%\end{center}
+
+%You might also find it useful to blend two transformations, allowing you to, for example, mix data coordinates in one dimension with axes coordinates in another. 
+%You can learn more about the other available transformations from the \link{https://matplotlib.org/stable/tutorials/advanced/transforms\_tutorial.html}{matplotlib tutorial}\footnote{https://matplotlib.org/stable/tutorials/advanced/transforms\_tutorial.html}.
+%By default, a plot usually isn't square---the aspect ratio (the ratio of $y$-unit to $x$-unit) is not one. That means that the 45 degree line created by $y=x$ is not actually plotted at 45 degrees. Yet according to the \code{rotation} argument, text rotated at 45 degrees is plotted at 45 degrees---that angle is not converted based on the aspect ratio. Later in Section \ref{sec:slopingtext}, I go into further detail in how to use some trigonometry to get the exact angle if you'd like to slope text at some angle, accounting for the aspect ratio. 
+
+\subsection{Text Formatting for Numbers}\label{subsec:textformat}
+Here I've tucked away a subsection on formatting numbers in Python. This has nothing to do with matplotlib, formally speaking. Still, sometimes you want your text annotations or titles to contain numbers formatted just so and you'll want Python to figure that out instead of doing it by hand. You might want commas as the thousands separator (the more readable 1,000,000 instead of 1000000), you might want leading zeros (01 instead of 1), or you might want a currency symbol (\$2 instead of 2). The table below demonstrates by example how to do this with \code{str.format}.
+
+\begin{center}
+{\setlength{\tabcolsep}{2em}
+\begin{tabular}{ll}
+\toprule
+Code & Output \\
+\midrule
+\code{'\{:,\}'.format(10**6)} &    \code{'1,000,000'} \\
+\code{'\$\{:,.2f\}'.format(10**6)} & \code{'\$1,000,000.00'} \\
+\code{'\{:0>3.0f\}'.format(1)}  &    \code{'001'}\\
+\code{'\{:>3.0f\}'.format(1)}  &    \code{'  1'} \\
+\code{'\$\{:0>4.0f\}'.format(1)}  &   \code{'\$0001'} \\
+\code{'\{:+,.1f\}'.format(1000)} & \code{'+1,000.0'} \\
+\code{'\{:0<+4,.1f\}'.format(-1)} & \code{'-1.0'} \\
+\code{'\{:0<5.0f\}'.format(1)}  &    \code{'10000'} \\
+\code{'\{:0<5,.0f\}'.format(1)}  &    \code{'10000'} \\
+\code{'\{:0<8,.0f\}'.format(1000)} &  \code{'1,000000'} \\ 
+\code{'\{:.0e\}'.format(10.1**6)} & \code{'1e+06'} \\
+\code{'\{:.1f\} and \{:.1f\}'.format(9, 1)} & \code{'9.0 and 1.0'} \\
+\code{'\{1:.1f\} and \{0:.1f\}'.format(9, 1)} & \code{'1.0 and 9.0'} \\
+\code{'\{0:\} and \{0\}'.format(1)} & \code{'1 and 1'} \\
+\code{'\{:\} and \{:\}'.format(1)} & \code{IndexError}\\
+\bottomrule
+\end{tabular}}
+\end{center}
+
+Understanding everything above requires some knowledge of \link{https://docs.python.org/3/library/string.html\#format-specification-mini-language}{format specifications}. A format specifier is a string that can specify fill, align, sign, width, grouping option, precision, and type (\lstinline{[[fill]align][sign][#][0][width][grouping_option][.precision][type]}. These must be properly ordered but anything can be omitted to accept the default. These arguments go inside curly braces and to the right of a colon, \code{\{:\}}. The curly braces tell Python where to place the argument you pass to the \code{format()} method. You can also pass multiple arguments inside \code{format()}. By default, they are placed in order (the first argument replaces the first \code{\{\}} and so on), but to the left of the colon, you can also specify the index value for the argument to use.
+
+The \emph{fill} is a character that can be used to pad the number. Used with a \emph{align} and \emph{width}, we can add leading zeros. The default is a space if no fill character is provided. Using \code{'0>4'}, this will create leading zeros (right-aligned) up to a width of 4. So \code{1} becomes \code{'0001'} and \code{10000} is not padded, being simply \code{'10000'}. 
+
+The \emph{grouping option} would come next, allowing for a thousands separator of a comma or an underscore. \code{'\{:,\}'.format(10000)} produces \code{'10,000'}. Note that when used with padded numerals on the right, the padding is ignored in finding the thousands separators, so \code{'\{:0<8,.0f\}'.format(1000)} produces the confusing \code{'1,000000'}.
+
+\emph{Precision} is next with a decimal and then how many digits to display past the decimal place or before and after, depending on the lastly specified \emph{type}. Observe \code{'\{:.2\}'.format(np.pi)} produces \code{'3.1'} and \code{'\{:.2f\}'.format(np.pi)} produces \code{'3.14'}. You'll want type \code{'f'} for a float. Use \code{'e'} for scientific notation. You may read up on the many other types, including locale aware types, in the Python documentation.\footnote{https://docs.python.org/3/library/string.html\#grammar-token-type}
+
+Whatever we put outside the curly braces is simply concatenated to the text on the left or right. So \code{'\$\{\}'.format(123)} turns 123 into the dollar figure \code{'\$1231'}. And \code{'\{\} lbs.'.format(123)} would produce \code{'1231 lbs'}. 
+
+Perhaps this will come in handy when you'd like figure text or the filename in a certain format. I often use leading zeros in some filenames so that alphabetically ordering the files will be coherent (your file system will likely maintain \code{'1' < '10' < '2'}). If you are creating many plots that will be frames in an animation, and you'll have some number ticking up as the frames progress, the padding might help the eye.  
+
+\pyfile{text-formatting.py}
+
+\begin{center}
+    \includegraphics[width = 0.3\textwidth]{figures/proseplots/0000.pdf} \includegraphics[width = 0.3\textwidth]{figures/proseplots/0001.pdf}
+     \includegraphics[width = 0.3\textwidth]{figures/proseplots/0002.pdf}
+\end{center}
+
+\section{Legends}
+As you should know, legends provide a key to the colors and symbols used in a plot. You can create a legend with \code{legend()}, as either a figure or axes method. Without any extra customization this is done with \code{ax.legend()} or \code{fig.legend()}. Here, we will only cover axes legends. We'll return to figure legends when they are more naturally useful in Chapter \ref{chapter:multi} on multiple axes and multiple plots. 
+
+But first, you need labels for your plot elements (called \emph{artist} objects) before you can create a legend. This can be done with the \code{label} parameter in methods like \code{plot()}. Or you can use \code{set_label()} on the plot element object. Using \code{set_label()} adds some complication to the code, as seen below in an otherwise simple example. Note the legend needs to be added after the labeled plot elements you want included in the legend.
+
+
+\pyfile{legend-labels.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/legend-labels.pdf}
+\end{center}
+
+If you are using a pandas plot method, the labels will be set automatically according to the column or series names. For such instances where an element is automatically included in a legend and you want to exclude it, you can exclude that element by specifying \code{label = '_nolegend_'} in the plot call.
+
+
+\pyfile{pd-legend.py}
+
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/pd-legend.pdf}
+\end{center}
+
+
+A more common concern might be how to customize the placement of the legend and its actual appearance. 
+
+To change the placement of the legend, you may use the \code{loc} parameter. The default value is \code{'best'}, where best is determined by matplotlib. Other valid values are \code{'center'} and \code{'right'} (but not \code{'left'}) and then modifications like \code{'upper center'}, \code{'center right'}, and \code{'lower left'}. 
+
+For further customization of the placement, use the \code{bbox_to_anchor} parameter. This accepts 2-tuple or 4-tuple, giving the $x$ location, the $y$ location, and the width and height optionally.
+
+By default, $x$ and $y$ are in axes coordinates. So the program below places a legend in the top and center of the axes. The alignment is done accodring to \code{loc}. If, for example, \code{loc = 'lower right'}, then the lower right corner of the legend is placed at the specified $x$ and $y$. 
+
+\pyfile{legend-bb.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/legend-bb.pdf}
+\end{center}
+
+\pyfile{legend-bb-loc.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/legend-bb-loc.pdf}
+\end{center}
+If using a 4-tuple, the tuple is interpreted as the plot region in which to put the legend, according to \code{loc}. 
+
+Use \code{bbox_transform} to use a coordinate system other than the default axes coordinates. 
+
+\pyfile{legend-transform.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/legend-transform.pdf}
+\end{center}
+
+There are many parameters to change the appearance of the legend. We won't cover all of them. Two useful parameters are \code{facecolor} and \code{ncol}. The former changes the background color of the legend and the latter sets the number of columns, changing the default shape of the legend. I use these and a few other self-explanatory parameters in the program below. 
+
+\pyfile{legend-shape.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/legend-shape.pdf}
+\end{center}
+
+
+\section{Annotations}
+
+\cite{knaflic2015storytelling} and \cite{schwabish2021better} both advise to label data directly and to annotate graphs with explanatory notes when helpful, as this helps convey the meaning of the graph more simply and directly. 
+
+You can annotate a chart with \code{text()} method calls, or you can use the \code{annotate()} method, for which you specify the text placement and a line segment to the part of the graph the text references. 
+
+
+\subsection{Labeling and Arrows}
+
+The following graph is nothing special, but we avoid having to create a legend by labeling the data with the text color matching the line color. 
+
+\pyfile{label-data.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/label-data.pdf}
+\end{center}
+
+
+Next, we use the \code{annotate()} method. This method comes with the option to include an arrow pointing from \code{xytext} to the point \code{xy}. 
+
+\pyfile{annotate-arrow.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/annotate-arrow.pdf}
+\end{center}
+
+
+If you would like an arrow and no text, simply use the empty string \code{''}. It is necessary to pass a dictionary to the \code{arrowprops} property. 
+
+\pyfile{arrow-only.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/arrow-only.pdf}
+\end{center}
+
+
+Lastly, one can also reference specific artist objects in the annotation instead of coordinates. In the below we place the annotations at the end of \code{a_line} and \code{b_line}.  
+
+\pyfile{direct-annotation.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/direct-annotation.pdf}
+\end{center}
+
+
+%Now we are going to label our graph not by using the data itself, but by referencing the lines and patches. 
+
+\section{Fancy Titles}
+If you'd like to format different parts of the title different, you'll have to move beyond simply using \code{set_title}. The New York Times, for example, routinely includes a title and a subtitle in a plot. This requires using \code{text()} and \code{set_title()} separately, as there can only be one format style applied to a title. A simple example is below.
+
+\pyfile{subtitle.py}
+
+\begin{center}
+    \includegraphics[width = .80\textwidth]{figures/proseplots/subtitle.pdf}
+\end{center}
+
+
+\subsection{Multi-colored Titles}
+
+
+In Chapter \ref{chapter:elements}, we created a multi-colored title using the Artist method \code{get_window_extent()}. The advantage of a multi-colored title is that we can do without a legend. For someone who doesn't want to get into the complications of \code{get_window_extent()}, the $x$ and $y$ placement of the text could be done by sight. 
+
+\pyfile{multicolor-inexact.py}
+
+\begin{center}
+    \includegraphics[width = .80\textwidth]{figures/proseplots/multicolor-inexact.pdf}
+\end{center}
+
+Greater elegance requires greater complication. If you are (understandably) dissatisfied with the above, invest in the topics covered in Chapter \ref{chapter:elements}. 
+Below, we build on the solution from Chapter \code{chapter:elements} by creating a function that creates a multi-colored title. Note we remove text options with the \code{remove()} method and work all in a single figure. This replaces the work of tuning the centering by hand that was done previously. 
+
+\pyfile{color-title.py}
+
+\pyfile{color-title-ex.py}
+
+\begin{center}
+    \includegraphics[width = .80\textwidth]{figures/proseplots/color-title-ex.pdf}
+\end{center}
+
+\section{Fonts}
+
+Finally, you might want to customize the fonts. In matplotlib 3.6 and newer, there is a \code{get_font_names()} method that can be used to display available font names. The code below creates a figure for each font. I get several warnings with messages like ``Glyph 105 (i) missing from current font.''
+
+\pyfile{get-fonts.py}
+
+%First, we'll consider the customizations available in matplotlib by default. 
+% t.get_font().__dict__
+
+
+\subsection{Importing Fonts with Font Manager}
+If you're unsatisfied with the basic fonts available in matplotlib, just add your own. You can find fonts available for download from \link{https://www.theleagueofmoveabletype.com/}{theleagueofmoveabletype.com} or \link{https://fonts.google.com}{fonts.google.com}. 
+
+After you've downloaded a font family, you should have folder for that font with otf or ttf files. Matplotlib has a font manager and you just need to tell matplotlib to look for a font in that folder. This is done below using \code{fintSystemFonts()} and \code{addfont()}. Once the font files are added, you can simply specify the font in the \code{text()} call like any other in-built font. 
+
+\pyfile{font.py}
+
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/font.pdf}
+\end{center}

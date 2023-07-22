@@ -1,0 +1,26 @@
+axes.linewidth: 2
+axes.facecolor: (.94, .94, .96)
+axes.grid.axis: y
+axes.grid: True
+grid.color: white
+grid.linewidth: 2
+axes.spines.bottom: True
+axes.spines.top: False
+axes.spines.left: False
+axes.spines.right: False
+axes.edgecolor: darkgray
+xtick.bottom: False
+xtick.top: False
+ytick.left: False
+xtick.labeltop: True
+xtick.labelbottom : False
+ytick.labelleft: False
+xtick.color: (.3,.3,.3)
+text.color: (.3,.3,.3)
+font.size: 12
+lines.marker: o
+lines.markersize: 8
+lines.linewidth: 3
+axes.titlesize: 18
+axes.titleweight: bold
+axes.formatter.useoffset: False

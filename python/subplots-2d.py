@@ -1,0 +1,6 @@
+fig, ax = plt.subplots(2,2)
+ax[0][0].set_title("0, 0")
+ax[0][1].set_title("0, 1")
+ax[1][0].set_title("1, 0")
+ax[1][1].set_title("1, 1")
+plt.tight_layout()

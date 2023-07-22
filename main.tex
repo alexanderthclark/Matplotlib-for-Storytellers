@@ -1,0 +1,248 @@
+\documentclass{tex/kdp} % utf8,utf8x
+%\usepackage[utf8]{inputenc}
+
+\usepackage{tex/mplstyle} 
+\usepackage{tex/customcolors}
+\usepackage{tex/mycommands}
+
+% Title
+\title{Matplotlib for Storytellers}
+\author{\scalebox{0.91}{By: \link{https://github.com/alexanderthclark}{Alexander Clark}}}
+\vspace{4cm}
+\date{\scalebox{.8}{This version: \today}}
+
+% leanpub cover image
+% https://commons.wikimedia.org/wiki/File:William_Blake_-_The_First_Book_of_Urizen,_Plate_8,_%22In_Living_Creations_Appear%27d....%22_(Bentley_5)_-_Google_Art_Project.jpg
+% Public Domain
+
+% name the list of listings 
+\renewcommand\lstlistlistingname{Code} 
+%\setcounter{tocdepth}{1}
+
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+% Copyright stuff %\doclicenseThis
+\vfill 
+\input{tex/copyright}
+
+\smallskip
+\noindent The front cover image (on \link{https://leanpub.com/mplforstorytellers}{Leanpub}) is from The First Book of Urizen, Plate 8, ``In Living Creations Appear'd....'' by William Blake (public domain). 
+
+\bigskip 
+\noindent Find more material on this book's GitHub page and on YouTube.
+
+\noindent \link{https://github.com/alexanderthclark/Matplotlib-for-Storytellers}{github.com/alexanderthclark/Matplotlib-for-Storytellers}\\
+\link{https://www.youtube.com/channel/UC7zSpQsXo4ezksvHaGYTvzg}{youtube.com/@alexanderthclark}
+
+\tableofcontents
+\vfill
+%% Add list of listings for code
+%\pagebreak
+
+\input{tex/codeTOC}
+
+\newpage
+
+\chapter*{Preface}
+\addcontentsline{toc}{chapter}{Preface}
+\markboth{}{Preface}
+
+
+\section*{Technical Notes and Prerequisites}
+\addcontentsline{toc}{section}{Technical Notes and Prerequisites}
+\input{tex/preface/techandprereq}
+
+\section*{Why Matplotlib?}
+\addcontentsline{toc}{section}{Why Matplotlib?}
+\input{tex/preface/whympl}
+
+\section*{Good Visualization is Like Good Writing}\label{sec:writing}
+\addcontentsline{toc}{section}{Good Visualization is like Good Writing}
+\input{tex/preface/writingorwell}
+
+%\noindent \textbf{\emph{Resources and Inspiration}}:
+\section*{Resources and Inspiration}
+\addcontentsline{toc}{section}{Resources and Inspiration}
+\input{tex/preface/resourcesinsp}
+
+\section*{Text Organization}
+\addcontentsline{toc}{section}{Text Organization}
+\input{tex/preface/textorg}
+
+
+\mainmatter
+
+\clearpage
+
+
+% Prose
+\epigraphhead[200]{\vspace{4cm}\hfil\includegraphics[width = .9\textwidth]{images/monetgrapes}\hfill\\ %QuinceCabbageMelonandCucumber.jpg}\hfil\\ % monetgrapes.jpg}\hfil\\
+\begin{center}\emph{Still Life with Apples and Grapes} by Claude Monet (Public Domain) \end{center}}
+%\begin{center}\emph{Quince, Cabbage, Melon and Cucumber} by Juan Sánchez Cotán (Public Domain) \end{center}}
+%https://commons.wikimedia.org/wiki/File:Fra_Juan_Sánchez_Cotán_001.jpg
+%replaced https://commons.wikimedia.org/wiki/File:Monet-Still-Life-with-Apples-and-Grapes-1880.jpg
+
+
+\part{Prose}\label{part:prose}
+
+\chapter{The Object-oriented Interface}\label{chapter:oop}
+\input{tex/prose/oop}
+
+\chapter{Axes Appearance, Ticks, and Grids}\label{chapter:axes}
+\input{tex/prose/ticks}
+
+\chapter{Plot Elements and Coordinate Systems}\label{chapter:elements}
+\chaptermark{Elements and Coord. Sys.}
+\input{tex/prose/elements}
+
+\chapter{Text and Titles}\label{chapter:titles}
+\input{tex/prose/titles}
+
+\chapter{Dates}\label{chapter:dates}
+\input{tex/prose/dates}
+
+\chapter{Colors}\label{chapter:colors}
+\input{tex/prose/colors}
+
+\chapter{Multiple Axes and Plots}\label{chapter:multi}
+\input{tex/prose/multi}
+
+\chapter{Style Configuration}\label{chapter:styconfig}
+\input{tex/prose/styconfig}
+
+
+% Math interlude
+
+\cleardoublepage
+\epigraphhead[200]{\vspace{5cm}\hfil\includegraphics[width = .65\textwidth]{Images/venicefloor.jpg}\hfil\\
+\begin{center}St Mark's Basilica, Floor mosaic by Paolo Uccello (Public Domain)\end{center}}
+% https://commons.wikimedia.org/wiki/File:Marble_floor_mosaic_Basilica_of_St_Mark_Vencice.jpg
+
+\part{Mathematical Interlude}\label{part:math}
+\input{tex/math/math}
+
+
+% Poetry
+
+\cleardoublepage
+\epigraphhead[200]{\vspace{4cm}\hfil\includegraphics[width = .9\textwidth]{Images/NewtonBlake.jpg}\hfil\\
+\begin{center}\emph{Newton} by William Blake (Public Domain)\end{center}}
+% https://en.wikipedia.org/wiki/File:William_Blake_-_Newton.png
+
+\part{Poetry}\label{part:poetry}
+\input{tex/poetry/poetrychap}
+%\input{poetryArtist}
+
+
+\chapter{Applications}\label{chapter:poetryapp}
+
+\section{Activity Calendar}
+\input{tex/poetry/calendar.tex}
+
+\section{Heatmaps}
+\input{tex/poetry/heat.tex}
+
+\section{Directed Graphs}
+\input{tex/poetry/dag.tex}
+
+\section{Speedometer}
+\input{tex/poetry/speedometer.tex}
+
+
+% Special topics
+
+\cleardoublepage
+\epigraphhead[200]{\vspace{4cm}\hfil\includegraphics[width = .9\textwidth]{images/DomenichinounicornPalFarnese.jpeg}\hfil\\
+\begin{center}\emph{A Virgin with a Unicorn} by Domenichino (Public Domain)\end{center}}
+% https://en.wikipedia.org/wiki/Domenichino#/media/File:DomenichinounicornPalFarnese.jpg
+
+\part{Special Topics}\label{part:topics}
+
+\chapter{Ternary Plots}\label{chapter:ternary}
+\input{tex/special/ternary}
+
+\chapter{Intro Statistics}\label{chapter:stats}
+\input{tex/special/stats}
+
+\chapter{Multi-dimensional Scaling}\label{chapter:mds}
+\input{tex/special/MDS}
+
+
+
+%%%% EARLY ENDING
+\input{tex/ghostcites} % get in some extra cites
+% Back Matter
+\backmatter
+\printbibliography
+%\printbibliography[heading=bibintoc, title = {References}]
+%hey
+%Filters bibliography
+%\section*{References}
+%\printbibliography[heading=subbibintoc, keyword={guides},title={Visualization Guides}]
+%\printbibliography[heading=subbibintoc, keyword={nondata},title={Other}]
+\chapter*{About the Author}
+His name is Alexander. He is a data scientist at LinkedIn and is an adjunct assistant professor at Columbia University. He holds a Ph.D. in Economics from the University of Wisconsin–Madison and is an alumnus of the Insight Health Data Science Fellows Program. \faHandPeaceO
+\end{document}
+
+
+
+
+
+%\section{A Rectangle for Every Occasion}
+
+\chapter{Applications}\label{chapter:poetryapp}
+
+\section{Activity Calendar}
+\input{calendar.tex}
+
+\section{Heatmaps}
+\input{heat.tex}
+
+\section{Speedometer}
+\input{speed.tex}
+
+\section{Directed Graphs}
+\input{dag.tex}
+
+
+
+\cleardoublepage
+\epigraphhead[200]{\vspace{4cm}\hfil\includegraphics[width = .9\textwidth]{Images/DomenichinounicornPalFarnese.jpeg}\hfil\\
+\begin{center}\emph{A Virgin with a Unicorn} by Domenichino (Public Domain)\end{center}}
+% https://en.wikipedia.org/wiki/Domenichino#/media/File:DomenichinounicornPalFarnese.jpg
+
+
+\part{Special Topics}\label{part:topics}
+
+\chapter{Multi-dimensional Scaling}\label{chapter:mds}
+\input{MDS}
+
+\chapter{Ternary Plots}\label{chapter:ternary}
+\input{ternary}
+
+
+\input{ghostcites} % get in some extra cites
+% Back Matter
+\backmatter
+
+\printbibliography
+%\printbibliography[heading=bibintoc, title = {References}]
+%hey
+%Filters bibliography
+%\section*{References}
+%\printbibliography[heading=subbibintoc, keyword={guides},title={Visualization Guides}]
+%\printbibliography[heading=subbibintoc, keyword={nondata},title={Other}]
+
+
+\chapter*{About the Author}
+His name is Alexander. He is a data scientist at LinkedIn and is an adjunct lecturer at Columbia University. He holds a Ph.D. in Economics from the University of Wisconsin–Madison and is an alumnus of the Insight Health Data Science Fellows Program. \faHandPeaceO
+\end{document}
+
+
+
+
+\end{document}
