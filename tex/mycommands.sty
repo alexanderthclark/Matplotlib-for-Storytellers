@@ -1,0 +1,31 @@
+% inline code
+\newcommand{\code}[1]{\lstinline[language = Python]{#1}}
+
+% color links blue
+\newcommand{\link}[2]{\textcolor{blue}{\href{#1}{#2}}}
+
+% for referencing a py file directly
+
+\newcommand{\gitlink}[1]{\link{https://github.com/alexanderthclark/Matplotlib-for-Storytellers/blob/refactor/python/#1}{#1}}
+
+\newcommand{\pyfilenolink}[1]{
+\lstinputlisting[title = \hspace{\textwidth} \scalebox{.67}{\texttt{#1}}]{python/#1}}
+
+\newcommand{\pyfile}[1]{
+\lstinputlisting[title = \hspace{\textwidth} \scalebox{.67}{\texttt{\gitlink{#1}}}]{python/#1}}
+
+\newcommand{\pyfiletoc}[1]{
+\lstinputlisting[caption = {[#1]}, title = \hspace{\textwidth} \scalebox{.7}{\texttt{#1}}]{python/#1}}
+
+\newcommand{\mplstylefile}[1]{
+\lstinputlisting[title = \hspace{\textwidth} \scalebox{.67}{\texttt{\gitlink{#1}}}]{stylelib/#1}} % still uses python formatting
+
+
+%%% for notebook-like tex
+% https://tex.stackexchange.com/question/223465/ipython-notebook-cells-with-listings
+%\newcommand{\output}[1]{\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+%\prompt{Out}{outcolor}{1}{\boxspacing}
+%\begin{Verbatim}[commandchars=\\\{\}]
+%[#1]
+%\end{Verbatim}
+%\end{tcolorbox}}

@@ -1,0 +1,161 @@
+This is a brief chapter that might provide a sigh of relief. So many of the parameters we have tweaked so far, sometimes laboriously, can be altered in one go with \code{plt.style.use}. Try out the \link{https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html\#sphx-glr-gallery-style-sheets-style-sheets-reference-py}{many style sheets already available}.\footnote{https://matplotlib.org/stable/gallery/style\_sheets/style\_sheets\_reference.html\#sphx-glr-gallery-style-sheets-style-sheets-reference-py} You may also define your own or simply change certain parameters directly in your code to apply that styling for your entire session. 
+
+\section{rcParams}
+
+Change the matplotlib parameters directly by updating the dictionary-like variable \code{mpl.rcParams}. A full list of the available parameters can be found in the  \link{https://matplotlib.org/stable/api/matplotlib_configuration_api.html\#matplotlib.rcParams}{documentation} or you may simply print \code{mpl.rcParams} to inspect it directly. Note the above line is \code{mpl.rcParams} and not \code{plt.rcParams}, because we are not working within the pyplot submodule. Accordingly, you'll have to run \code{import matplotlib as mpl} first. Because this is like a Python dictionary, you can adjust the settings by simply updating the dictionary value, \code{mpl.rcParams['axes.grid'] = True} for example. 
+
+Working with \code{rcParams}, directly or through a custom style sheet, provides value that compounds as you add more and more plots to your code.  Consider the two programs below. Without \code{rcParams}, we update each plot.
+
+\pyfile{style-manual.py}
+
+\vspace{-0.3cm}
+Now let's update \code{rcParams} just once for a standard style.
+
+\vspace{-0.3cm}
+
+\pyfile{style-rc.py}
+
+\vspace{-0.5cm}
+\begin{center}
+    \includegraphics[width = .48\textwidth]{figures/proseplots/style1.pdf}
+    
+    \includegraphics[width = .48\textwidth]{figures/proseplots/style2.pdf}
+\end{center}
+
+
+This is a significant step, nearing us to a dramatic close of Part \ref{part:prose}. In the second program, we not only save on redundant code, we also revert back to pyplot functions. The object-oriented approach was useful in offering greater customization. But, at least in this case, that's a ladder we can kick away now that we've climbed it to the top.  
+
+\section{Defining Your Own Style}
+
+Once you understand rcParams, you can define your own style for repeated use. \cite{schwabish2021better} counsels organizations to adopt a data visualization style guide. Practically, that also means matplotlib-using organizations should choose or create a standard matplotlib style. 
+
+To define your own style, create a file with the \texttt{.mplstyle} extension, specifying a value for the various rcParams you wish to customize. Note that a colon separates the key and the default like in a dictionary, but that we do not separate key-value pairs by commas and each pair is on a separate line. Further, none of these values are formatted as strings, even though you would, for example, use a string \code{'Times'} when updating the font from rcParams dictionary. You only need to specify values you wish to change relative to the default.
+
+
+\mplstylefile{tiny-style.mplstyle}
+
+After saving the above as a file \texttt{tiny\_style.mplstyle} and placing it in the working directory, we can use our custom style with the program below. Note the colormap, among many other things, has not changed relative to the default because we did not alter that in the style file. 
+
+\pyfile{tiny-style-ex.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/tiny-style-ex.pdf}
+\end{center}
+
+You can also just save direct modifications to the rcParams dictionary and run that before plotting. 
+
+
+\pyfile{style-changes.py}
+
+Then add this code to ahead of creating your plot. I saved the above as \texttt{style\_changes.py} and below I use the Jupyter \code{\%run} magic command to run \texttt{style\_changes.py} without having to copy and paste. 
+
+
+\pyfile{py-styled.py}
+
+The result is 
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/py-styled.pdf}
+\end{center}
+
+\subsection{Temporary Configurations}
+
+%with plt.style.context(changes):
+
+With some creativity, you can also avoid modifying rcParams by defining a function or writing a Python file that makes certain standardized plot modifications and then run that after you've created your figure and axes objects, using the IPython \code{\%run} magic command. 
+
+We save the following as \texttt{spine-mod.py} and then use it below to modify a plot. 
+
+\pyfile{spine-mod.py}
+
+\pyfile{spine-mod-ex.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/spine-mod-ex.pdf}
+\end{center}
+
+In the plot program, we use pyplot functions instead of using the OOP approach. Note that even if we created an \code{ax} variable, we must still use \code{plt.gca()} instead of \code{ax} in the file, because there is no \code{ax} to reference in \texttt{spine\_mod.py}\footnote{Variables outside the file are not in a shared \emph{scope} because \code{\%run} creates a new \emph{namespace} for variables inside the file)}. We can instead use \code{\%run -i} to let the file access our global variables. Also, \code{\%run -i} eliminates the need to import matplotlib again---we could delete the import statement from \texttt{spine-mod.py} and use \code{\%run -i spine-mod.py}. 
+
+We save the following file as \texttt{spine-mod2.py} and can create the same plot with the program further below. 
+
+\pyfile{spine-mod2.py}
+
+\pyfile{spine-mod2-ex.py}
+
+\begin{center}
+    \includegraphics[width = .7\textwidth]{figures/proseplots/spine-mod2-ex.pdf}
+\end{center}
+
+A further complication arises if our figure contains multiple subplots. In this case, we can access all the axes objects as an attribute of the figure object. 
+
+% double check
+
+\pyfile{spine-mod3.py}
+
+
+
+%See \link{https://matplotlib.org/stable/tutorials/introductory/customizing.html\#defining-your-own-style}{the documentation} for further details.
+
+\section{A Final Prose Example}
+
+In this section, we'll integrate much of what we've learned so far to create a line chart that, though simple, is far from the default. We'll imitate a chart from the New York Times article, \emph{The Pandemic Changed How We Spent Our Time}, by Ben Casselman and Ella Koeze. Below is the original. 
+
+\begin{center}
+    \includegraphics[width = .8\textwidth]{Images/nytATUS.png}
+\end{center}
+
+Imitating this graphic will take a lot of code, as demonstrated in Section \ref{subsec:firstgo}. In Section \ref{subsec:rrr}, we invest in reconfiguring the style and creating functions that  help reduce the tedium that would otherwise be required to make several plots of this style. 
+
+\subsection{A First Go}\label{subsec:firstgo}
+
+The program below would be even longer if not for the use of dictionaries like \code{plot_style}, which pairs pairs keyword arguments and specific values for the \code{plot()} method. This can be passed to \code{plot()} after being unpacked with the \code{**} operator. 
+
+\pyfile{nyt-rep1.py}
+
+\begin{center}
+    \includegraphics[width = .8\textwidth]{figures/proseplots/nyt-rep1.pdf}
+\end{center}
+
+\subsection{Reconfigured, Refactored, and Reusable}\label{subsec:rrr}
+
+%\begin{lstlisting}[language = Python]
+%style_changes = {'axes.linewidth': 2,
+ %'axes.facecolor': (.94, .94, .96),
+ %'axes.grid.axis': 'y',
+ %'axes.grid': True,
+ %'grid.color': 'white',
+ %'grid.linewidth': 2,
+ %'axes.spines.bottom': True,
+ %'axes.spines.top': False,
+ %'axes.spines.left': False,
+ %'axes.spines.right': False,
+ %'axes.edgecolor': 'darkgray',
+ %'xtick.bottom': False,
+% 'xtick.top': False,
+ %'ytick.left': False,
+ %'xtick.labeltop':True,
+ %'xtick.labelbottom':False,
+ %'ytick.labelleft':False,
+ %'xtick.color': (.3,.3,.3),
+ %'text.color': (.3,.3,.3),
+ %'font.size': 12,
+ %'lines.marker': 'o',
+ %'lines.markersize': 8,
+ %'lines.linewidth': 3,
+ %'axes.titlesize': 18,
+ %'axes.titleweight': 'bold', 
+ %'axes.formatter.useoffset': False # prevent scientific notation
+         % }
+%\end{lstlisting}
+
+\mplstylefile{nyt-helper.mplstyle}
+
+\pyfile{nyt-helper-function.py}
+
+\pyfile{nyt-helper-data.py}
+
+\pyfile{nyt-refactor.py}
+
+\begin{center}
+   \includegraphics[width = .8\textwidth]{figures/proseplots/nyt-refactor.pdf}
+\end{center}

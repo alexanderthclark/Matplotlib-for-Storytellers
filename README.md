@@ -7,6 +7,9 @@ This book is written for frustrated and reluctant matplotlib users who care abou
 ## Gallery
 <img src="https://user-images.githubusercontent.com/13120988/142295712-a6f2fda9-5a73-47bd-8121-d096ca9ce1b7.png" width="30%" /> <img src="https://user-images.githubusercontent.com/13120988/142295871-e7c5a363-ba97-4321-b03c-abc90b1633b2.png" width="34%" /> <img src="https://user-images.githubusercontent.com/13120988/142296449-36dc6531-4404-49ff-98e9-3e8cca86712b.png" width="29%" /> 
 <img src="https://user-images.githubusercontent.com/13120988/142297378-0bffea87-fecd-4575-b188-a5e33196b93c.png" width="31%" /> <img src="https://user-images.githubusercontent.com/13120988/142297197-e76441cb-b220-44bf-8a75-cc032cf3e21d.png" width="31%" />    <img src="https://user-images.githubusercontent.com/13120988/142297226-b67ac50c-0673-484c-ae07-649e2a785eef.png" width="36%" /> 
+<img src="https://github.com/alexanderthclark/Matplotlib-for-Storytellers/assets/13120988/5024bc41-b87c-4030-9434-2478d271ba89.png" width="32%" /> <img src="https://github.com/alexanderthclark/Matplotlib-for-Storytellers/assets/13120988/225dbe3e-4f44-4d90-aab9-fbb6e0ffbd1c.png" width="31%" /> <img src="https://github.com/alexanderthclark/Matplotlib-for-Storytellers/assets/13120988/c2e762ad-cfcb-494b-8fda-036865a60b94.png" width="30%" />
+
+
 
 ## Demos
 #### Notebooks
