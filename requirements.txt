@@ -1,0 +1,9 @@
+matplotlib
+nbformat
+numpy
+pandas
+pillow
+scikit-learn
+scipy
+statsmodels
+ternary
