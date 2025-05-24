@@ -4,6 +4,17 @@ This is a Python data visualization book. It is a work in progress.
 ## Why?
 This book is written for frustrated and reluctant matplotlib users who care about crafting good data visuals. Matplotlib can be a blank canvas, offering more room for customization than you might find in Microsoft Excel, and offers the advantages of reproducibility and automation that come from working with Python. Still, becoming comfortable with matplotlib requires a lot of patience. I wrote this book to help make that easier and put some essentials in one place.
 
+## Installation
+Before building the book or running the examples you will need to install the
+Python packages used throughout the scripts and notebooks. You can install them
+all at once with
+
+```bash
+pip install -r requirements.txt
+```
+
+The list of required packages is maintained in `requirements.txt`.
+
 ## Gallery
 <img src="https://user-images.githubusercontent.com/13120988/142295712-a6f2fda9-5a73-47bd-8121-d096ca9ce1b7.png" width="30%" /> <img src="https://user-images.githubusercontent.com/13120988/142295871-e7c5a363-ba97-4321-b03c-abc90b1633b2.png" width="34%" /> <img src="https://user-images.githubusercontent.com/13120988/142296449-36dc6531-4404-49ff-98e9-3e8cca86712b.png" width="29%" /> 
 <img src="https://user-images.githubusercontent.com/13120988/142297378-0bffea87-fecd-4575-b188-a5e33196b93c.png" width="31%" /> <img src="https://user-images.githubusercontent.com/13120988/142297197-e76441cb-b220-44bf-8a75-cc032cf3e21d.png" width="31%" />    <img src="https://user-images.githubusercontent.com/13120988/142297226-b67ac50c-0673-484c-ae07-649e2a785eef.png" width="36%" /> 
