@@ -3,4 +3,4 @@ data = {2019: [6, 4.3, 3.9],
 df = pd.DataFrame(data = data,
                   index = ['Alone',
                          'With people outside household',
-                         'With hosehould members only'])
+                         'With household members only'])
