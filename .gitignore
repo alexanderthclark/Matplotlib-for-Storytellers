@@ -1,0 +1,17 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.fls
+*.out
+*.bbl
+*.blg
+*.lol
+*.fdb_latexmk
+*.synctex.gz
+
+# Python artifacts
+__pycache__/
+*.py[cod]
