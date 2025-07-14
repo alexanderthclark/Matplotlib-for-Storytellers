@@ -45,3 +45,11 @@ parts:
     title: Chapter 7 - Multiple Axes and Plots
   - file: chapter8/index
     title: Chapter 8 - Style Configuration
+- caption: Part II - Mathematical Interlude
+  chapters:
+  - file: part_math
+    title: Part II - Mathematical Interlude
+  - file: chapter9/index
+    title: Chapter 9 - Math
+  - file: chapter10/index
+    title: Chapter 10 - Applications
