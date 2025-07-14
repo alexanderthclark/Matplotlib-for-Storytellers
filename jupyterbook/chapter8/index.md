@@ -156,7 +156,6 @@ axes.formatter.useoffset: False
 
 ```{literalinclude} ../../python/nyt-helper-data.py
 :language: python
-:pyobject: title_and_subtitle
 ```
 
 ```{literalinclude} ../../python/nyt-helper-data.py

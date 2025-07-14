@@ -17,8 +17,17 @@ Colors will be addressed in Chapter 6, but to start you can simply use the name 
 
 ![Title with padding](../images/chapter4/title-pad.png)
 
-```{literalinclude} ../../python/title-no-pad.py
-:language: python
+```python
+x = np.linspace(0,2,2)
+fig, ax = plt.figure(), plt.axes()
+
+ax.plot(x,x)
+ax.set_title("Title\n(no Padding)",
+            fontsize = 'xx-large',
+            weight = 'bold',
+            color = 'purple',
+            loc = 'left',
+            pad = 0)
 ```
 
 ![Title with no padding](../images/chapter4/title-no-pad.png)
@@ -61,7 +70,7 @@ For vertical alignment, the options are `'top'`, `'bottom'`, or `'center'`. For 
 
 Text can be rotated with the `rotation` parameter. By default, a plot isn't square—the aspect ratio (the ratio of $y$-unit to $x$-unit) is not one. That means that the 45 degree line created by $y=x$ is not actually plotted at 45 degrees. Yet according to the `rotation` parameter, text rotated at 45 degrees is plotted at 45 degrees—that angle is not converted based on the aspect ratio. Later in Section 4.6, I go into further detail in how to use some trigonometry to get the exact angle if you'd like to slope text at some angle, accounting for the aspect ratio.
 
-```{literalinclude} ../../python/text-rotation-all.py
+```{literalinclude} ../../python/text-rotation2.py
 :language: python
 ```
 
@@ -244,7 +253,7 @@ Below, we build on the solution from Chapter 3 by creating a function that creat
 
 Finally, you might want to customize the fonts. In matplotlib 3.6 and newer, there is a `get_font_names()` method that can be used to display available font names. The code below creates a figure for each font. I get several warnings with messages like "Glyph 105 (i) missing from current font."
 
-```{literalinclude} ../../python/font-examples.py
+```{literalinclude} ../../python/font.py
 :language: python
 ```
 

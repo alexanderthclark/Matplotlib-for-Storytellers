@@ -4,7 +4,7 @@ In Part III (Poetry), we'll begin to treat Matplotlib more like a blank canvas. 
 
 Some pieces of this chapter are unnecessary. `plt.Circle()` can be used to create a circle without any knowledge of trigonometry. Instead, we plot circles the old-fashioned way. We create a lot of points that, when connected, form a circle.
 
-Why bother? Indeed, your Python interpreter won't be impressed if you know trigonometry. We shouldn't bother in every case, but math can compensate for a lack of matplotlib knowledge. I'd rather know a lot of math and a little matplotlib than a little math and a lot of matplotlib. Math is durable knowledge, useful in non-plotting contexts. A deeper understanding is also what allows us to create the color gradient in [Circular Arrangements](../chapter10/index.md#circular-arrangements), which can't be fashioned with a simple call to `plt.Circle()`.
+Why bother? Indeed, your Python interpreter won't be impressed if you know trigonometry. We shouldn't bother in every case, but math can compensate for a lack of matplotlib knowledge. I'd rather know a lot of math and a little matplotlib than a little math and a lot of matplotlib. Math is durable knowledge, useful in non-plotting contexts. A deeper understanding is also what allows us to create the color gradient in the Circular Arrangements section of Chapter 10, which can't be fashioned with a simple call to `plt.Circle()`.
 
 ## Circles
 
