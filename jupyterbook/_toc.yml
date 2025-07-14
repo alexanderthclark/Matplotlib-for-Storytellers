@@ -37,3 +37,11 @@ parts:
     title: Chapter 3 - Plot Elements and Coordinate Systems
   - file: chapter4/index
     title: Chapter 4 - Text and Titles
+  - file: chapter5/index
+    title: Chapter 5 - Dates
+  - file: chapter6/index
+    title: Chapter 6 - Colors
+  - file: chapter7/index
+    title: Chapter 7 - Multiple Axes and Plots
+  - file: chapter8/index
+    title: Chapter 8 - Style Configuration
