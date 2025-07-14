@@ -1,0 +1,3 @@
+# Technical Notes and Prerequisites
+
+I use Python 3.9 and matplotlib 3.7.1. I also make use of Jupyter notebook cell magics. I assume familiarity with basic Python programming, NumPy, pandas, and even matplotlib. In Part I (Prose), the premise is that you can make a plot, but now you want to polish it. Other parts assume less background knowledge. For those needing to review some Python before approaching this text, I recommend [*A Whirlwind Tour of Python*](https://jakevdp.github.io/WhirlwindTourOfPython/) and [*Python Data Science Handbook*](https://jakevdp.github.io/PythonDataScienceHandbook/), both by Jake VanderPlas.

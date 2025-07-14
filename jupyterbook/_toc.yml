@@ -1,0 +1,35 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: title
+parts:
+- caption: Introduction
+  chapters:
+  - file: intro
+    title: Introduction
+- caption: Frontmatter
+  chapters:
+  - file: copyright
+    title: Copyright
+  - file: preface/index
+    title: Preface
+    sections:
+    - file: preface/technical_notes
+      title: Technical Notes and Prerequisites
+    - file: preface/why_matplotlib
+      title: Why Matplotlib?
+    - file: preface/good_visualization
+      title: Good Visualization is Like Good Writing
+    - file: preface/resources
+      title: Resources and Inspiration
+    - file: preface/text_organization
+      title: Text Organization
+- caption: Part I - Prose
+  chapters:
+  - file: part_prose
+    title: Part I - Prose
+  - file: chapter1/index
+    title: Chapter 1 - The Object-oriented Interface
+  - file: chapter2/index
+    title: Chapter 2 - Axes Appearance, Ticks, and Grids
