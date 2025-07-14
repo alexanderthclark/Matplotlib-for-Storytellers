@@ -4,21 +4,14 @@ Matplotlib offers two interfaces: a MATLAB-style interface and the more cumberso
 
 The MATLAB-style interface looks like the following.
 
-```python
-import matplotlib.pyplot as plt
-x = 1,0
-y = 0,1
-
-plt.plot(x,y)
-plt.title("My Plot")
+```{literalinclude} ../../python/matlab-plot.py
+:language: python
 ```
 
 The object-oriented interface looks like this.
 
-```python
-fig, ax = plt.figure(), plt.axes()
-ax.plot(x,y)
-ax.set_title("My Plot")
+```{literalinclude} ../../python/oop-plot.py
+:language: python
 ```
 
 There is no such thing as a free lunch, so you will observe this interface requires more code to do the same exact thing. Its virtues will be more apparent later. Object-oriented programming (OOP) also requires some new vocabulary. OOP might be contrasted with procedural programming as another common method of programming. In procedural programming, the MATLAB-style interface being an example, the data and code are separate and the programmer creates procedures that operate on the program's data. OOP instead focuses on the creation of *objects* which encapsulate both data and procedures.
@@ -29,10 +22,8 @@ An object's data are called its *attributes* and the procedures or functions are
 
 A plot requires a figure object and an axes object, typically defined as `fig` and `ax`. The figure object is the top level container. In many cases like in the above, you'll define it at the beginning of your code and never need to reference it again, as plotting is usually done with axes methods. A commonly used figure parameter is `figsize`, to which you can pass a sequence to alter the size of the figure. Both the figure and axes objects have a `facecolor` parameter which might help to illustrate the difference between the axes and figure.
 
-```python
-fig = plt.figure(figsize = (2,3),
-                 facecolor = 'gray')
-ax = plt.axes(facecolor = 'lightyellow')
+```{literalinclude} ../../python/figparams.py
+:language: python
 ```
 
 ![Figure and axes with different face colors](images/figparams.png)
@@ -41,16 +32,8 @@ The axes object, named `ax` by convention, gets more use in most programs. In pl
 
 This wishful coding won't take you everywhere though. For example, `plt.xlim()` is replaced by `ax.set_xlim()` to set the x-axis view limits. To modify the title, `plt.title()` is replaced with `ax.set_title()` and there is `ax.get_title()` simply to get the title. The axes object also happens to have a `title` attribute, which is only used to access the title, similar to the `get_title()` method. Many matplotlib methods can be classified as *getters* or *setters* like for these title methods. The plot method and its logic is different. Later calls of `ax.plot()` don't overwrite earlier calls and there is not the same getter and setter form. There's a `plot()` method but no single `plot` attribute being mutated. Whatever has been plotted can be retrieved, or gotten (getter'd?), but it's more complicated and rarely necessary. Use the code below to see what happens with two calls of `plot()` and two calls of `set_title()`. The second print statement demonstrates that the second call of `set_title()` overwrites the title attribute, but a second plot does not nullify the first.
 
-```python
-x = np.linspace(0,1,2)
-fig, ax = plt.figure(figsize = (8,4)), plt.axes()
-ax.plot(x, x)
-ax.plot(x, 1 - x)
-ax.set_title("My Chart")
-print(ax.title)
-print(ax.get_title())  # Similar to above line
-ax.set_title("My Wholesome Chart")
-print(ax.get_title())  # long
+```{literalinclude} ../../python/gettersetter.py
+:language: python
 ```
 
 ![Getters and setters example](images/gettersetter.png)
@@ -63,59 +46,24 @@ Axes methods `set_xlim()` and `get_xlim()` behave just like `set_title()` and `g
 
 You can also mix the interfaces. Use `plt.gca()` to *g*et the *c*urrent *a*xis. Use `plt.gcf()` to *g*et the *c*urrent *f*igure.
 
-```python
-x = np.linspace(0,1,2)
-plt.plot(x,x)
-plt.title("My Chart")
-
-ax = plt.gca()
-print(ax.title)
-
-ax.plot(x, 1 - x)
-ax.set_title('My Wholesome Chart')
-print(ax.title)
+```{literalinclude} ../../python/chart.py
+:language: python
 ```
 
 ![Mixing interfaces example](images/chart.png)
 
 In the above, we started with MATLAB and then converted to object-oriented. We can also go in the opposite direction, though it's not always ideal, especially when working with subplots. Below, we start with our figure and axes objects, and then revert back to the MATLAB style with the `axvline()` functions (producing vertical lines across the axes), toggling off the axis lines and labels, and then saving the figure. This graph would appear unchanged if you replaced `plt.axvline()` with `ax.axvline()`, `plt.axis()` with `ax.axis()`, and `fig.savefig()` would do the same as `plt.savefig()`.
 
-```python
-# OOP Start
-fig, ax = plt.figure(figsize = (8,5)), plt.axes()
-
-x = np.linspace(0,100,2)
-ax.plot(x, x, color = 'gray')
-
-ax.set_xlim([0,100])
-ax.set_ylim([0,100])
-
-# Back to pyplot functions
-for i in range(101):
-    plt.axvline(i,0, i / 100, color = 'C' + str(i))
-    plt.axvline(i, i/100, 1, color = 'C' + str(i+5))
-
-plt.axis('off')
-plt.savefig('colorful.pdf')
+```{literalinclude} ../../python/colorful.py
+:language: python
 ```
 
 ![Colorful vertical lines](images/colorful.png)
 
 Matplotlib is also integrated into pandas, with a `plot()` method for both Series and DataFrame objects, among other functionalities. There is excellent documentation [available](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html). These plots can be mixed with the object-oriented interface. You can use a plot method and specify the appropriate axes object as an argument. Below we import the iris dataset and make a boxplot with a mix of axes methods and then pyplot functions.
 
-```python
-from sklearn.datasets import load_iris
-data = load_iris()['data']
-df = pd.DataFrame(data)
-
-fig, ax = plt.figure(), plt.axes()
-
-df.plot.box(ax = ax)
-ax.yaxis.grid(True)
-ax.xaxis.grid(False)
-
-plt.tight_layout()
-plt.savefig('irisbox.pdf')
+```{literalinclude} ../../python/irisbox.py
+:language: python
 ```
 
 ![Iris dataset boxplot](images/irisbox.png)
