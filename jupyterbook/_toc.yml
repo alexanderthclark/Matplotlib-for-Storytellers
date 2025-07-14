@@ -33,3 +33,7 @@ parts:
     title: Chapter 1 - The Object-oriented Interface
   - file: chapter2/index
     title: Chapter 2 - Axes Appearance, Ticks, and Grids
+  - file: chapter3/index
+    title: Chapter 3 - Plot Elements and Coordinate Systems
+  - file: chapter4/index
+    title: Chapter 4 - Text and Titles
