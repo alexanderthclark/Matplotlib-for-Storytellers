@@ -60,6 +60,8 @@ sphinx:
       - _static
   extra_extensions:
     - sphinx_design
+    - sphinx_exercise
+    - sphinx_togglebutton
     
 # Launch buttons for interactive content
 launch_buttons:
