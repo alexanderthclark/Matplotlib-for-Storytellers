@@ -1,0 +1,39 @@
+name: matplotlib-storytellers
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python version as specified in the preface
+  - python=3.9
+  
+  # Core libraries
+  - matplotlib=3.7.1
+  - numpy
+  - pandas
+  
+  # Jupyter and notebook support
+  - jupyter
+  - jupyterlab
+  - notebook
+  
+  # Scientific computing
+  - scikit-learn
+  - scipy
+  - statsmodels
+  
+  # Image processing
+  - pillow
+  
+  # Jupyter Book and documentation
+  - jupyter-book
+  - sphinx-design
+  - myst-nb
+  
+  # Development tools
+  - pip
+  - ipywidgets
+  
+  # Additional pip packages
+  - pip:
+    - sphinx-proof>=0.1.3
+    # - ternary  # Uncomment if needed for ternary plots

@@ -1,0 +1,72 @@
+# Book settings
+title: Matplotlib for Storytellers
+author: Alexander Clark
+copyright: "2025"
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: auto
+  exclude_patterns:
+    - 'pattern_to_exclude'
+  timeout: 100
+  allow_errors: false
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+# bibtex_bibfiles:
+#   - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/alexanderthclark/Matplotlib-for-Storytellers
+  branch: jupyterbook-chapter1
+  path_to_book: jupyterbook
+
+# Add GitHub buttons to your book
+html:
+  use_edit_page_button: true
+  use_repository_button: true
+  use_issues_button: true
+  favicon: "_static/favicon.ico"
+  extra_footer: |
+    <p>
+    This version: {date}<br>
+    Built with <a href="https://jupyterbook.org">Jupyter Book</a>
+    </p>
+  analytics:
+    google_analytics_id: ""
+  home_page_in_navbar: true
+  
+# Jupyter Book theme and appearance
+sphinx:
+  config:
+    # html_theme: book
+    html_theme_options:
+      repository_url: "https://github.com/alexanderthclark/Matplotlib-for-Storytellers"
+      use_repository_button: true
+      use_issues_button: true
+      use_edit_page_button: true
+      navbar_align: "left"
+      show_toc_level: 2
+      navigation_with_keys: false
+    language: en
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    html_extra_path:
+      - _static
+  extra_extensions:
+    - sphinx_design
+    - sphinx_exercise
+    - sphinx_togglebutton
+    
+# Launch buttons for interactive content
+launch_buttons:
+  notebook_interface: classic
+  binderhub_url: ""
+  jupyterhub_url: ""
+  thebe: false
+  colab_url: "https://colab.research.google.com"

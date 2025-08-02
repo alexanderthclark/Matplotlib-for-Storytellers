@@ -1,0 +1,706 @@
+/* ========================================
+   Matplotlib for Storytellers - Modern Styles
+   ======================================== */
+
+/* ========================================
+   PHASE 1: TYPOGRAPHY SYSTEM
+   ======================================== */
+
+/* Import modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+/* Base typography - using Inter for clean, modern readability */
+.bd-content {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    font-weight: 400;
+    letter-spacing: -0.011em;
+    font-feature-settings: 'ss01', 'ss02', 'cv01', 'cv03';
+}
+
+/* Headings with dramatic display font */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 0;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.375rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1.125rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
+   PHASE 2: COLOR SYSTEM
+   ======================================== */
+
+/* CSS Variables for consistent theming */
+:root {
+    /* Light mode colors - matplotlib visualization theme */
+    --primary: #1f77b4;  /* Matplotlib default blue */
+    --primary-light: #2ca02c;  /* Matplotlib green for highlights */
+    --accent: #ff7f0e;  /* Matplotlib orange accent */
+    --success: #2ca02c;  /* Matplotlib green */
+    --warning: #ff7f0e;  /* Matplotlib orange */
+    --danger: #d62728;  /* Matplotlib red */
+    --text-primary: #1e293b;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-tertiary: #f1f5f9;
+    --border-color: #e2e8f0;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] {
+    /* Dark mode colors - sophisticated palette with matplotlib touches */
+    --primary: #1f77b4;  /* Keep matplotlib blue */
+    --primary-light: #aec7e8;  /* Light matplotlib blue */
+    --accent: #ff7f0e;  /* Matplotlib orange */
+    --success: #2ca02c;
+    --warning: #ffbb78;  /* Light matplotlib orange */
+    --danger: #ff9999;  /* Light matplotlib red */
+    --text-primary: #faf6ed;  /* Warm off-white */
+    --text-secondary: #e5ddd0;  /* Warm mid-tone */
+    --text-muted: #b8ad9f;  /* Warm gray */
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-tertiary: #334155;
+    --border-color: #334155;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+/* Apply color system */
+.bd-content {
+    color: var(--text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+}
+
+/* H1 special treatment with matplotlib-inspired gradient */
+h1 {
+    border-bottom: 3px solid var(--primary);
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Links */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--primary-light);
+    border-bottom-color: var(--primary-light);
+}
+
+/* Selection colors */
+::selection {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Ensure links are visible in both modes */
+[data-theme="light"] a {
+    color: var(--primary);
+}
+
+[data-theme="light"] a:hover {
+    color: var(--primary-light);
+    border-bottom-color: var(--primary-light);
+}
+
+[data-theme="dark"] a {
+    color: var(--primary-light);
+}
+
+[data-theme="dark"] a:hover {
+    color: #aec7e8;
+    border-bottom-color: #aec7e8;
+}
+
+/* ========================================
+   PHASE 3: CONTENT BLOCK REDESIGN
+   ======================================== */
+
+/* Modern table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+    background: var(--bg-primary);
+    box-shadow: var(--shadow-md);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table thead {
+    background: var(--bg-tertiary);
+    border-bottom: 2px solid var(--primary);
+}
+
+table th {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+}
+
+table td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+table tbody tr:hover {
+    background-color: var(--bg-secondary);
+}
+
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Zebra striping for better readability */
+table tbody tr:nth-child(even) {
+    background-color: var(--bg-secondary);
+}
+
+/* Enhanced code blocks */
+code, .highlight {
+    font-family: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-feature-settings: 'liga', 'calt';
+}
+
+/* Inline code */
+code {
+    background: var(--bg-tertiary);
+    color: var(--accent);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.875em;
+    border: 1px solid var(--border-color);
+}
+
+/* Code blocks */
+.highlight {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin: 2rem 0;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.highlight pre {
+    margin: 0;
+    padding: 1.5rem;
+    overflow-x: auto;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+/* Remove jupyter notebook cell styling */
+.cell {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    margin: 2rem 0 !important;
+}
+
+/* Enhanced blockquotes */
+blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    background: var(--bg-secondary);
+    border-left: 4px solid var(--primary);
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+}
+
+blockquote::before {
+    content: '"';
+    font-size: 4rem;
+    color: var(--primary);
+    opacity: 0.2;
+    position: absolute;
+    top: -0.5rem;
+    left: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* ========================================
+   CUSTOM ADMONITIONS
+   ======================================== */
+
+/* Base admonition styling */
+div.admonition {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+div.admonition:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Admonition title styling */
+div.admonition p.admonition-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    background: none !important;
+}
+
+/* Note Admonition */
+div.note {
+    background: linear-gradient(135deg, #e0f2fe 0%, #b3e5fc 100%);
+    border-left: 4px solid var(--primary);
+}
+
+[data-theme="dark"] div.note {
+    background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+    border-left-color: var(--primary-light);
+}
+
+div.note p.admonition-title {
+    color: var(--primary);
+}
+
+[data-theme="dark"] div.note p.admonition-title {
+    color: var(--primary-light);
+}
+
+div.note p.admonition-title::before {
+    content: "📝";
+    margin-right: 0.75rem;
+    font-size: 1.5rem;
+}
+
+/* Tip Admonition */
+div.tip {
+    background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+    border-left: 4px solid var(--success);
+}
+
+[data-theme="dark"] div.tip {
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+    border-left-color: var(--success);
+}
+
+div.tip p.admonition-title {
+    color: var(--success);
+}
+
+[data-theme="dark"] div.tip p.admonition-title {
+    color: #81c784;
+}
+
+div.tip p.admonition-title::before {
+    content: "💡";
+    margin-right: 0.75rem;
+    font-size: 1.5rem;
+}
+
+/* Warning Admonition */
+div.warning {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffcc80 100%);
+    border-left: 4px solid var(--warning);
+}
+
+[data-theme="dark"] div.warning {
+    background: linear-gradient(135deg, #e65100 0%, #f57c00 100%);
+    border-left-color: var(--warning);
+}
+
+div.warning p.admonition-title {
+    color: var(--warning);
+}
+
+[data-theme="dark"] div.warning p.admonition-title {
+    color: #ffcc80;
+}
+
+div.warning p.admonition-title::before {
+    content: "⚠️";
+    margin-right: 0.75rem;
+    font-size: 1.5rem;
+}
+
+/* Important Admonition */
+div.important {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-left: 4px solid #f59e0b;
+}
+
+[data-theme="dark"] div.important {
+    background: linear-gradient(135deg, #78350f 0%, #92400e 100%);
+    border-left-color: #fbbf24;
+}
+
+div.important p.admonition-title {
+    color: #d97706;
+}
+
+[data-theme="dark"] div.important p.admonition-title {
+    color: #fde68a;
+}
+
+div.important p.admonition-title::before {
+    content: "❗";
+    margin-right: 0.75rem;
+    font-size: 1.5rem;
+}
+
+/* Remove default admonition icon */
+.admonition>.admonition-title:after, div.admonition>.admonition-title:after {
+    content: none;
+}
+
+/* ========================================
+   PHASE 4: SPACING & LAYOUT SYSTEM
+   ======================================== */
+
+/* 8px spacing system */
+.bd-content {
+    padding: 2rem 0;
+}
+
+/* Paragraph spacing */
+p {
+    margin-bottom: 1.5rem;
+    text-align: left;
+    hyphens: none;
+}
+
+/* Section spacing */
+section {
+    margin: 4rem 0;
+}
+
+/* List spacing */
+ul, ol {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.75rem;
+    line-height: 1.75;
+}
+
+/* Nested lists */
+li ul, li ol {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Math equation spacing */
+.math {
+    margin: 2rem 0;
+    overflow-x: auto;
+}
+
+/* Definition lists */
+dl {
+    margin: 2rem 0;
+}
+
+dt {
+    font-weight: 600;
+    margin-top: 1.5rem;
+    color: var(--text-primary);
+}
+
+dd {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+/* Horizontal rules as section dividers */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border-color), transparent);
+    margin: 4rem 0;
+}
+
+/* Content container max width */
+.bd-article {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   FIGURE AND IMAGE STYLING
+   ======================================== */
+
+/* Figure styling */
+.figure {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.figure img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: var(--shadow-md);
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.figure img:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Figure captions */
+figcaption, .figure-caption {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 0.75rem;
+    font-style: italic;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ========================================
+   NAVIGATION IMPROVEMENTS
+   ======================================== */
+
+/* Better current page indicator */
+.bd-sidebar nav ul li.active > a {
+    font-weight: 600;
+    color: var(--primary);
+    border-left: 3px solid var(--primary);
+    padding-left: calc(1rem - 3px);
+    background-color: var(--bg-secondary);
+}
+
+/* Smooth hover transitions */
+.bd-sidebar nav a:hover {
+    color: var(--primary);
+    transition: color 0.2s ease;
+}
+
+/* Visual hierarchy with indentation */
+.bd-sidebar .caption {
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+    /* Typography adjustments */
+    .bd-content {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    
+    h1 { font-size: 2.25rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+    
+    /* Spacing adjustments */
+    section { margin: 3rem 0; }
+    
+    /* Table responsiveness */
+    table {
+        font-size: 0.875rem;
+    }
+    
+    table th, table td {
+        padding: 0.75rem;
+    }
+    
+    /* Code blocks */
+    .highlight pre {
+        padding: 1rem;
+        font-size: 0.8125rem;
+    }
+    
+    /* Admonitions */
+    div.admonition {
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
+    
+    /* Lists */
+    ul, ol {
+        padding-left: 1.5rem;
+    }
+}
+
+/* ========================================
+   UTILITIES
+   ======================================== */
+
+/* Text alignment classes */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Margin utilities */
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.mt-5 { margin-top: 3rem; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+.mb-5 { margin-bottom: 3rem; }
+
+/* ========================================
+   ANIMATIONS & TRANSITIONS
+   ======================================== */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Page transitions */
+.bd-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    .bd-sidebar,
+    .bd-header,
+    #pst-back-to-top,
+    .search-button__wrapper {
+        display: none !important;
+    }
+    
+    .bd-content {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: black;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    code, .highlight {
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+    }
+    
+    .figure img {
+        max-width: 100%;
+        box-shadow: none;
+    }
+}

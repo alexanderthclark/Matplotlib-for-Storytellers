@@ -1,23 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Jupyter Book build files
+jupyterbook/_build/
+jupyterbook/.jupyter_cache/
+
 # LaTeX build artifacts
 *.aux
 *.log
+*.out
 *.toc
 *.lof
 *.lot
 *.fls
-*.out
+*.fdb_latexmk
+*.synctex.gz
 *.bbl
 *.blg
 *.lol
-*.fdb_latexmk
-*.synctex.gz
 
-# Python artifacts
-__pycache__/
-*.py[cod]
-
-# macOS Finder metadata
+# OS files
 .DS_Store
+Thumbs.db
 
-# JupyterBook build artifacts
-jupyterbook/_build/
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Other
+*.bak
+*.tmp
