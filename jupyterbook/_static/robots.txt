@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://alexanderthclark.github.io/Matplotlib-for-Storytellers/sitemap.xml
+
+# Allow all search engines to crawl the site
+# No restrictions on matplotlib educational content

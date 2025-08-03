@@ -42,6 +42,7 @@ html:
   use_repository_button: true
   use_issues_button: true
   favicon: "_static/favicon.ico"
+  baseurl: "https://alexanderthclark.github.io/Matplotlib-for-Storytellers/"
   extra_footer: |
     <p>
     This version: {date}<br>
@@ -71,6 +72,7 @@ sphinx:
     - sphinx_design
     - sphinx_exercise
     - sphinx_togglebutton
+    - sphinx_sitemap
     
 # Launch buttons for interactive content
 launch_buttons:
