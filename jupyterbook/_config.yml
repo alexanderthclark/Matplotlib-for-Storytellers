@@ -72,7 +72,6 @@ sphinx:
     - sphinx_design
     - sphinx_exercise
     - sphinx_togglebutton
-    - sphinx_sitemap
     
 # Launch buttons for interactive content
 launch_buttons:
