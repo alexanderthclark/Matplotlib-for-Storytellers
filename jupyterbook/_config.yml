@@ -2,6 +2,17 @@
 title: Matplotlib for Storytellers
 author: Alexander Clark
 copyright: "2025"
+description: "A guide to creating compelling data visualizations with matplotlib for frustrated users who want to craft better plots"
+
+# SEO and metadata
+html_meta:
+  "description": "Learn matplotlib data visualization techniques to create compelling plots and charts. A practical guide for Python developers and data scientists."
+  "keywords": "matplotlib, python, data visualization, plotting, charts, graphs, data science, tutorial"
+  "author": "Alexander Clark"
+  "og:title": "Matplotlib for Storytellers"
+  "og:description": "A guide to creating compelling data visualizations with matplotlib"
+  "og:type": "book"
+  "og:url": "https://alexanderthclark.github.io/Matplotlib-for-Storytellers/"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -39,7 +50,7 @@ html:
     Built with <a href="https://jupyterbook.org">Jupyter Book</a>
     </p>
   analytics:
-    google_analytics_id: ""
+    google_analytics_id: "G-F0K6SQ5N10"
   home_page_in_navbar: true
   
 # Jupyter Book theme and appearance

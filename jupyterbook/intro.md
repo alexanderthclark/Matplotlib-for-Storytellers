@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to *Matplotlib for Storytellers*, a Python data visualization book that teaches frustrated matplotlib users how to craft good data visuals.
+Welcome to *Matplotlib for Storytellers*, a (still incomplete) Python data visualization book that teaches frustrated matplotlib users how to craft good data visuals.
 
 ## About This Book
 
