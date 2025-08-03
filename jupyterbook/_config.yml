@@ -24,7 +24,7 @@ latex:
 # Information about where the book exists on the web
 repository:
   url: https://github.com/alexanderthclark/Matplotlib-for-Storytellers
-  branch: jupyterbook-chapter1
+  branch: main
   path_to_book: jupyterbook
 
 # Add GitHub buttons to your book
