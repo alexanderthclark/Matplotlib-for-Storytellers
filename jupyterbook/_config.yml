@@ -7,8 +7,6 @@ copyright: "2025"
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: auto
-  exclude_patterns:
-    - 'pattern_to_exclude'
   timeout: 100
   allow_errors: false
 
