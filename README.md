@@ -7,9 +7,8 @@ This book is written for frustrated and reluctant matplotlib users who care abou
 ## Formats
 This book is available in multiple formats:
 
-- **📖 Interactive Jupyter Book** - Read online with executable code examples and enhanced navigation: [alexanderthclark.github.io/Matplotlib-for-Storytellers](https://alexanderthclark.github.io/Matplotlib-for-Storytellers/)
-- **📱 PDF on LeanPub** - Purchase the complete book in PDF format: [leanpub.com/mplforstorytellers](https://leanpub.com/mplforstorytellers)
-- **💻 GitHub Source** - Access all code, LaTeX source, and materials in this repository
+- **📖 Online Jupyter Book** - Read online with: [alexanderthclark.github.io/Matplotlib-for-Storytellers](https://alexanderthclark.github.io/Matplotlib-for-Storytellers/)
+- **📱 PDF** - Download the pdf [here](https://github.com/alexanderthclark/Matplotlib-for-Storytellers/blob/main/main.pdf) or at [leanpub.com/mplforstorytellers](https://leanpub.com/mplforstorytellers)
 
 ## Installation
 Before building the book or running the examples you will need to install the
