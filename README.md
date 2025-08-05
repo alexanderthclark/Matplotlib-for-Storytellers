@@ -4,6 +4,13 @@ This is a Python data visualization book. It is a work in progress.
 ## Why?
 This book is written for frustrated and reluctant matplotlib users who care about crafting good data visuals. Matplotlib can be a blank canvas, offering more room for customization than you might find in Microsoft Excel, and offers the advantages of reproducibility and automation that come from working with Python. Still, becoming comfortable with matplotlib requires a lot of patience. I wrote this book to help make that easier and put some essentials in one place.
 
+## Formats
+This book is available in multiple formats:
+
+- **📖 Interactive Jupyter Book** - Read online with executable code examples and enhanced navigation: [alexanderthclark.github.io/Matplotlib-for-Storytellers](https://alexanderthclark.github.io/Matplotlib-for-Storytellers/)
+- **📱 PDF on LeanPub** - Purchase the complete book in PDF format: [leanpub.com/mplforstorytellers](https://leanpub.com/mplforstorytellers)
+- **💻 GitHub Source** - Access all code, LaTeX source, and materials in this repository
+
 ## Installation
 Before building the book or running the examples you will need to install the
 Python packages used throughout the scripts and notebooks. You can install them
