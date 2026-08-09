@@ -68,17 +68,17 @@ The complete script is linked from the listing title; the core data reshaping an
 
 This chart gives a quick overview, but it asks the colorbar to do almost all of the work. Exact values require estimation, the missing season competes visually with the data, and the two post-lockout rebuilds are easy to overlook.
 
-For the final version, each data value becomes a \code{Circle} artist. Here we deliberately encode points percentage twice. The radius follows the original expanding-bubble rule, \code{0.25 + value / 2}, so stronger seasons swell into their neighbors; color reinforces the same pattern, while direct labels provide exact values. The redundant encodings create a rhythm across each row rather than asking a legend to do all the work.
+For the final version, each data value becomes a \code{Circle} artist. Here we deliberately encode points percentage twice. The radius follows the original expanding-bubble rule, \code{0.25 + value / 2}, so stronger seasons swell into their neighbors. Every circle uses Matplotlib's first default color, \code{C0}, while its opacity follows the same value; direct labels provide exact values. The redundant encodings create a rhythm across each row rather than asking a legend to do all the work. Compact horizontal season labels keep the top of the grid quiet.
 
 The text labels also become artists. Each team's mark is loaded with Pillow, placed in an \code{OffsetImage}, and anchored beside its row with an \code{AnnotationBbox}. A shaded band reserves space for the cancelled season, where the letters in ``LOCKOUT'' are stacked downward but kept upright. Finally, two annotations bring the Penguins' and Blackhawks' changes forward without erasing the other teams that provide context.
 
 The complete script also contains the layout, title, source note, and export commands. The radius helper, custom artist loop, and upright lockout treatment are shown first.
 
-\pyfilelines{hockey-heat.py}{43}{116}
+\pyfilelines{hockey-heat.py}{42}{105}
 
 The image-label loop uses the same artist pattern once per team.
 
-\pyfilelines{hockey-heat.py}{141}{151}
+\pyfilelines{hockey-heat.py}{130}{140}
 
 \begin{center}
     \includegraphics[width = \textwidth]{figures/poetryplots/hockey-heat.pdf}

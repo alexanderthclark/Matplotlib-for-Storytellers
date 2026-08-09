@@ -1,6 +1,5 @@
 from pathlib import Path
 
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -54,10 +53,10 @@ def load_team_mark(path, max_size=170):
         mark.thumbnail((max_size, max_size), Image.Resampling.LANCZOS)
         return np.asarray(mark)
 
-fig, ax = plt.subplots(figsize=(11.5, 5.8), facecolor="white")
-norm = mpl.colors.Normalize(vmin=0.30, vmax=0.76)
-cmap = mpl.colormaps["Blues"]
-accent = "#1565c0"
+background = (0.98, 0.98, 0.98)
+fig, ax = plt.subplots(figsize=(11.5, 5.8), facecolor=background)
+ax.set_facecolor(background)
+bubble_color = "C0"
 
 lockout = seasons.index("2004-05")
 ax.axvspan(lockout - 0.5, lockout + 0.5, color="#eceff1", zorder=0)
@@ -68,34 +67,24 @@ for row, team in enumerate(teams):
         if np.isnan(value):
             continue
 
-        color = cmap(norm(value))
         circle = Circle(
             (column, row),
             radius=bubble_radius(value),
-            facecolor=color,
-            edgecolor=mpl.colors.to_rgba(accent, 0.34),
-            linewidth=1.1,
+            facecolor=bubble_color,
+            edgecolor=bubble_color,
+            linewidth=1.0,
+            alpha=value,
             zorder=2,
         )
         ax.add_patch(circle)
 
-        red, green, blue = color[:3]
-        luminance = (
-            0.2126 * red
-            + 0.7152 * green
-            + 0.0722 * blue
-        )
-        if luminance < 0.55:
-            text_color = "white"
-        else:
-            text_color = "#102a43"
         ax.text(
             column,
             row,
             f"{value:.0%}",
             ha="center",
             va="center",
-            color=text_color,
+            color="#102a43",
             fontsize=11,
             fontweight="bold",
             zorder=3,
@@ -133,7 +122,7 @@ for team, label in callouts:
         label,
         ha="left",
         va="center",
-        color=accent,
+        color=bubble_color,
         fontsize=10.5,
         fontweight="bold",
     )
@@ -150,7 +139,8 @@ for row, team in enumerate(teams):
     )
     ax.add_artist(label)
 
-ax.set_xticks(range(len(seasons)), labels=seasons, rotation=35, ha="left")
+season_labels = [season[2:] for season in seasons]
+ax.set_xticks(range(len(seasons)), labels=season_labels)
 ax.set_yticks([])
 ax.xaxis.tick_top()
 ax.tick_params(axis="both", length=0, pad=8, labelsize=11)
@@ -163,7 +153,7 @@ ax.set_title(
     loc="left",
     fontsize=22,
     fontweight="bold",
-    pad=90,
+    pad=72,
 )
 ax.text(
     0,
