@@ -51,13 +51,14 @@ ax.set_title(
 ax.text(
     seasons.index("2004-05"),
     (len(teams) - 1) / 2,
-    "NO SEASON\nLOCKOUT",
-    rotation=90,
+    "\n".join("LOCKOUT"),
+    rotation=0,
     ha="center",
     va="center",
     color="#6c757d",
     fontsize=9,
     fontweight="bold",
+    linespacing=0.92,
 )
 
 cbar = fig.colorbar(image, ax=ax, orientation="horizontal", pad=0.13,

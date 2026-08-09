@@ -4,11 +4,22 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from matplotlib.offsetbox import AnnotationBbox, OffsetImage
 from matplotlib.patches import Circle
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "Data" / "nhl_regular_season.csv"
 OUTPUT_PATH = ROOT / "figures" / "poetryplots"
+
+TEAM_MARKS = {
+    "Detroit Red Wings": ROOT / "images" / "nhl" / "DET.png",
+    "Tampa Bay Lightning": ROOT / "images" / "nhl" / "TBL.png",
+    "Nashville Predators": ROOT / "images" / "predators.png",
+    "New York Islanders": ROOT / "images" / "nhl" / "NYI.png",
+    "Pittsburgh Penguins": ROOT / "images" / "nhl" / "PIT.png",
+    "Chicago Blackhawks": ROOT / "images" / "nhl" / "CHI.png",
+}
 
 seasons = [
     "1999-00", "2000-01", "2001-02", "2002-03", "2003-04",
@@ -28,6 +39,21 @@ matrix = (
     .reindex(index=teams, columns=seasons)
 )
 
+
+def bubble_radius(value):
+    """Restore the expanding-bubble scale used in the original figure."""
+    return 0.25 + value / 2
+
+
+def load_team_mark(path, max_size=170):
+    """Crop transparent padding and normalize marks to a common pixel box."""
+    with Image.open(path).convert("RGBA") as mark:
+        alpha_bbox = mark.getchannel("A").getbbox()
+        if alpha_bbox:
+            mark = mark.crop(alpha_bbox)
+        mark.thumbnail((max_size, max_size), Image.Resampling.LANCZOS)
+        return np.asarray(mark)
+
 fig, ax = plt.subplots(figsize=(11.5, 5.8), facecolor="white")
 norm = mpl.colors.Normalize(vmin=0.30, vmax=0.76)
 cmap = mpl.colormaps["Blues"]
@@ -45,10 +71,10 @@ for row, team in enumerate(teams):
         color = cmap(norm(value))
         circle = Circle(
             (column, row),
-            radius=0.38,
+            radius=bubble_radius(value),
             facecolor=color,
-            edgecolor="white",
-            linewidth=1.4,
+            edgecolor=mpl.colors.to_rgba(accent, 0.34),
+            linewidth=1.1,
             zorder=2,
         )
         ax.add_patch(circle)
@@ -78,13 +104,15 @@ for row, team in enumerate(teams):
 ax.text(
     lockout,
     (len(teams) - 1) / 2,
-    r"NO SEASON  $\bullet$  LOCKOUT",
-    rotation=90,
+    "\n".join("LOCKOUT"),
+    rotation=0,
     ha="center",
     va="center",
     color="#607d8b",
     fontsize=9.5,
     fontweight="bold",
+    linespacing=0.92,
+    zorder=4,
 )
 
 callouts = [
@@ -110,17 +138,25 @@ for team, label in callouts:
         fontweight="bold",
     )
 
+for row, team in enumerate(teams):
+    mark = OffsetImage(load_team_mark(TEAM_MARKS[team]), zoom=0.27)
+    label = AnnotationBbox(
+        mark,
+        (-1.30, row),
+        frameon=False,
+        box_alignment=(0.5, 0.5),
+        annotation_clip=False,
+        zorder=5,
+    )
+    ax.add_artist(label)
+
 ax.set_xticks(range(len(seasons)), labels=seasons, rotation=35, ha="left")
-ax.set_yticks(range(len(teams)), labels=teams)
+ax.set_yticks([])
 ax.xaxis.tick_top()
 ax.tick_params(axis="both", length=0, pad=8, labelsize=11)
-for label in ax.get_yticklabels():
-    if label.get_text() in {"Pittsburgh Penguins", "Chicago Blackhawks"}:
-        label.set_color(accent)
-        label.set_fontweight("bold")
 
-ax.set_xlim(-0.65, 11.75)
-ax.set_ylim(len(teams) - 0.45, -0.7)
+ax.set_xlim(-1.95, 12.0)
+ax.set_ylim(len(teams) - 0.38, -0.78)
 ax.set_aspect("equal")
 ax.set_title(
     "After the lockout, two rebuilds emerge",
@@ -140,21 +176,13 @@ ax.text(
     fontsize=11.5,
 )
 
-sm = mpl.cm.ScalarMappable(norm=norm, cmap=cmap)
-cbar = fig.colorbar(sm, ax=ax, orientation="horizontal", pad=0.11,
-                    fraction=0.045, aspect=45, shrink=0.62, anchor=(0, 0.5))
-cbar.set_label("Points percentage", color="#52606d")
-cbar.ax.xaxis.set_major_formatter(mpl.ticker.PercentFormatter(1.0))
-cbar.outline.set_visible(False)
-cbar.ax.tick_params(length=0, colors="#52606d")
-
 for spine in ax.spines.values():
     spine.set_visible(False)
 
 fig.text(
-    0.16,
+    0.14,
     0.015,
-    "Source: NHL season-end standings. Points percentage = points / (2 x games played).",
+    "Source: NHL season-end standings. Team marks: NHL. Points percentage = points / (2 x games played).",
     ha="left",
     va="bottom",
     color="#6c757d",
