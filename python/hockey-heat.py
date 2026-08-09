@@ -57,6 +57,13 @@ background = (0.98, 0.98, 0.98)
 fig, ax = plt.subplots(figsize=(11.5, 5.8), facecolor=background)
 ax.set_facecolor(background)
 bubble_color = "C0"
+cup_gold = "#D4AF37"
+STANLEY_CUP_WINNERS = {
+    ("Detroit Red Wings", "2001-02"),
+    ("Tampa Bay Lightning", "2003-04"),
+    ("Detroit Red Wings", "2007-08"),
+    ("Pittsburgh Penguins", "2008-09"),
+}
 
 lockout = seasons.index("2004-05")
 ax.axvspan(lockout - 0.5, lockout + 0.5, color="#eceff1", zorder=0)
@@ -67,12 +74,14 @@ for row, team in enumerate(teams):
         if np.isnan(value):
             continue
 
+        won_cup = (team, season) in STANLEY_CUP_WINNERS
+
         circle = Circle(
             (column, row),
             radius=bubble_radius(value),
             facecolor=bubble_color,
-            edgecolor=bubble_color,
-            linewidth=1.0,
+            edgecolor=cup_gold if won_cup else bubble_color,
+            linewidth=3.0 if won_cup else 1.0,
             alpha=value,
             zorder=2,
         )
@@ -135,7 +144,7 @@ ax.set_title(
 ax.text(
     0,
     1.18,
-    "Regular-season points percentage for six selected NHL teams, 1999-00 to 2008-09",
+    "Regular-season points percentage, 1999-00 to 2008-09. Gold edge: Stanley Cup champion.",
     transform=ax.transAxes,
     ha="left",
     va="bottom",
@@ -149,7 +158,7 @@ for spine in ax.spines.values():
 fig.text(
     0.14,
     0.015,
-    "Source: NHL season-end standings. Team marks: NHL. Points percentage = points / (2 x games played).",
+    "Source: NHL standings and Stanley Cup records. Team marks: NHL. Points percentage = points / (2 x games played).",
     ha="left",
     va="bottom",
     color="#6c757d",
