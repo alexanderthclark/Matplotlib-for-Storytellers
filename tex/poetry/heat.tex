@@ -75,6 +75,8 @@ Gold edges mark seasons when one of the six won the Stanley Cup: Detroit in 2001
 \newpage
 The text labels also become artists. Each team's mark is loaded with Pillow, placed in an \code{OffsetImage}, and anchored beside its row with an \code{AnnotationBbox}. A shaded band reserves space for the cancelled season, where the letters in ``LOCKOUT'' are stacked downward but kept upright.
 
+Before placement, the helper crops transparent padding and fits every mark inside the same 170-by-170-pixel box; applying one shared zoom then makes the six labels roughly uniform. Treat that as a starting point: Washington's wide wordmark may deserve a slightly larger team-specific zoom so the small ``capitals'' lettering remains legible, whereas the other five marks contain no text.
+
 The complete script also contains the layout, title, source note, and export commands. The radius helper, custom artist loop, and upright lockout treatment are shown first.
 
 \pyfilelines{hockey-heat.py}{42}{115}
@@ -89,4 +91,5 @@ The image-label loop uses the same artist pattern once per team.
 
 The finished figure now makes a broader claim. Washington, Pittsburgh, and Chicago all sit near the bottom around the lockout and finish 2008--09 at 66, 60, and 63 percent, respectively. Tampa Bay moves in the opposite direction, peaking at 65 percent before the lockout and ending at 40 percent. Detroit's consistently large bubbles keep both patterns in perspective, while Nashville supplies a steadier middle path. The gold edges add a useful complication: regular-season strength matters, but points percentage alone does not determine the playoff champion.
 
+\enlargethispage{2\baselineskip}
 The custom treatment earns its complexity when a small matrix contains a few values worth reading and a pattern worth emphasizing. For a much larger matrix, the direct labels and circles would become clutter; the simpler \code{imshow()} version would usually be the better choice.
