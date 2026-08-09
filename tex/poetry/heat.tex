@@ -50,10 +50,34 @@ The data transformation helps the trends seen in the original line chart pop mor
 
 \subsection{NHL Regular Season Records}
 
-WIP. Below is a kind of a heatmap. 
+The previous examples used \code{imshow()} to turn a rectangular array into a heatmap. Now we will keep the grid, but draw each observation ourselves. Doing so gives us control over the treatment of missing data, the labels inside the cells, and the annotations that direct a reader toward the story.
 
-\pyfile{hockey-heat.py}
+The data are final regular-season standings for six NHL teams from 1999--00 through 2008--09, retrieved from the official \link{https://api-web.nhle.com/v1/standings-season}{NHL standings season manifest} and the dated standings endpoints. The accompanying \gitlink{fetch-nhl-standings.py} script retrieves the same season-end rows used to create the committed CSV. Points percentage is calculated as points divided by twice the number of games played. This puts every team on the same zero-to-one scale. The 2004--05 season is missing because a league-wide lockout cancelled the entire season.
+
+The teams are selected to show contrasting paths rather than to represent the league as a whole. Detroit supplies a consistently strong benchmark; Tampa Bay and Nashville show different rises; and the Islanders, Penguins, and Blackhawks make the reversals easiest to see.
+
+First, here is the conventional version. We pivot the tidy data into a team-by-season matrix and pass it to \code{imshow()}. A masked value and a modified ``bad'' color make the lockout visibly different from a low-performing season.
+
+The complete script is linked from the listing title; the core data reshaping and \code{imshow()} call are shown here.
+
+\pyfilelines{hockey-heat-basic.py}{21}{37}
 
 \begin{center}
-    \includegraphics[width = .7\textwidth]{figures/poetryplots/hockey-heat.pdf}
+    \includegraphics[width = .95\textwidth]{figures/poetryplots/hockey-heat-basic.pdf}
 \end{center}
+
+This chart gives a quick overview, but it asks the colorbar to do almost all of the work. Exact values require estimation, the missing season competes visually with the data, and the two post-lockout rebuilds are easy to overlook.
+
+For the final version, each data value becomes a \code{Circle} artist. The circles all have the same size, so area does not introduce a second quantitative encoding. Color carries the points percentage, while direct labels provide exact values. A shaded band explicitly reserves space for the cancelled season. Finally, two annotations bring the Penguins' and Blackhawks' changes forward without erasing the other teams that provide context.
+
+The complete script also contains the layout, title, colorbar, source note, and export commands. The custom artist loop and the story annotations are the important new pieces.
+
+\pyfilelines{hockey-heat.py}{31}{112}
+
+\begin{center}
+    \includegraphics[width = \textwidth]{figures/poetryplots/hockey-heat.pdf}
+\end{center}
+
+The finished figure now makes a specific claim. Pittsburgh fell to a 35 percent points percentage immediately before and after the lockout, then reached 64 percent in 2006--07. Chicago's recovery took longer, moving from 36 percent in 2003--04 to 63 percent in 2008--09. Detroit's consistently dark circles on both sides of the lockout keep those improvements in perspective: a rebound and sustained excellence are different stories.
+
+The custom treatment earns its complexity when a small matrix contains a few values worth reading and a pattern worth annotating. For a much larger matrix, the direct labels and circles would become clutter; the simpler \code{imshow()} version would usually be the better choice.
