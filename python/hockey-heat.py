@@ -15,7 +15,7 @@ TEAM_MARKS = {
     "Detroit Red Wings": ROOT / "images" / "nhl" / "DET.png",
     "Tampa Bay Lightning": ROOT / "images" / "nhl" / "TBL.png",
     "Nashville Predators": ROOT / "images" / "predators.png",
-    "New York Islanders": ROOT / "images" / "nhl" / "NYI.png",
+    "Washington Capitals": ROOT / "images" / "nhl" / "WSH.png",
     "Pittsburgh Penguins": ROOT / "images" / "nhl" / "PIT.png",
     "Chicago Blackhawks": ROOT / "images" / "nhl" / "CHI.png",
 }
@@ -26,7 +26,7 @@ seasons = [
 ]
 teams = [
     "Detroit Red Wings", "Tampa Bay Lightning", "Nashville Predators",
-    "New York Islanders", "Pittsburgh Penguins", "Chicago Blackhawks",
+    "Washington Capitals", "Pittsburgh Penguins", "Chicago Blackhawks",
 ]
 
 standings = pd.read_csv(DATA_PATH)
@@ -104,29 +104,6 @@ ax.text(
     zorder=4,
 )
 
-callouts = [
-    (
-        "Pittsburgh Penguins",
-        "35%  $\\rightarrow$  64%\nby 2006-07",
-    ),
-    (
-        "Chicago Blackhawks",
-        "36%  $\\rightarrow$  63%\nby 2008-09",
-    ),
-]
-for team, label in callouts:
-    row = teams.index(team)
-    ax.text(
-        10.25,
-        row,
-        label,
-        ha="left",
-        va="center",
-        color=bubble_color,
-        fontsize=10.5,
-        fontweight="bold",
-    )
-
 for row, team in enumerate(teams):
     mark = OffsetImage(load_team_mark(TEAM_MARKS[team]), zoom=0.27)
     label = AnnotationBbox(
@@ -145,11 +122,11 @@ ax.set_yticks([])
 ax.xaxis.tick_top()
 ax.tick_params(axis="both", length=0, pad=8, labelsize=11)
 
-ax.set_xlim(-1.95, 12.0)
+ax.set_xlim(-1.95, 9.75)
 ax.set_ylim(len(teams) - 0.38, -0.78)
 ax.set_aspect("equal")
 ax.set_title(
-    "After the lockout, two rebuilds emerge",
+    "After the lockout, the league reshuffles",
     loc="left",
     fontsize=22,
     fontweight="bold",

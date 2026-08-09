@@ -15,7 +15,7 @@ seasons = [
 ]
 teams = [
     "Detroit Red Wings", "Tampa Bay Lightning", "Nashville Predators",
-    "New York Islanders", "Pittsburgh Penguins", "Chicago Blackhawks",
+    "Washington Capitals", "Pittsburgh Penguins", "Chicago Blackhawks",
 ]
 
 standings = pd.read_csv(DATA_PATH)

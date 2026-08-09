@@ -18,7 +18,7 @@ season_end_dates = {
     "2007-08": "2008-04-06",
     "2008-09": "2009-04-12",
 }
-team_order = ["DET", "TBL", "NSH", "NYI", "PIT", "CHI"]
+team_order = ["DET", "TBL", "NSH", "WSH", "PIT", "CHI"]
 
 rows = []
 for season, season_end in season_end_dates.items():

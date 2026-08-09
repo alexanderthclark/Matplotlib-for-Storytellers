@@ -54,7 +54,7 @@ The previous examples used \code{imshow()} to turn a rectangular array into a he
 
 The data are final regular-season standings for six NHL teams from 1999--00 through 2008--09, retrieved from the official \link{https://api-web.nhle.com/v1/standings-season}{NHL standings season manifest} and the dated standings endpoints. The accompanying \gitlink{fetch-nhl-standings.py} script retrieves the same season-end rows used to create the committed CSV. Points percentage is calculated as points divided by twice the number of games played. This puts every team on the same zero-to-one scale. The 2004--05 season is missing because a league-wide lockout cancelled the entire season.
 
-The teams are selected to show contrasting paths rather than to represent the league as a whole. Detroit supplies a consistently strong benchmark; Tampa Bay and Nashville show different rises; and the Islanders, Penguins, and Blackhawks make the reversals easiest to see.
+The teams are selected to show contrasting paths rather than to represent the league as a whole. Detroit supplies a consistently strong benchmark; Tampa Bay rises and falls; Nashville shows gradual growth; and Washington, Pittsburgh, and Chicago trace three different rebuilds.
 
 First, here is the conventional version. We pivot the tidy data into a team-by-season matrix and pass it to \code{imshow()}. A masked value and a modified ``bad'' color make the lockout visibly different from a low-performing season.
 
@@ -66,11 +66,11 @@ The complete script is linked from the listing title; the core data reshaping an
     \includegraphics[width = .95\textwidth]{figures/poetryplots/hockey-heat-basic.pdf}
 \end{center}
 
-This chart gives a quick overview, but it asks the colorbar to do almost all of the work. Exact values require estimation, the missing season competes visually with the data, and the two post-lockout rebuilds are easy to overlook.
+This chart gives a quick overview, but it asks the colorbar to do almost all of the work. Exact values require estimation, the missing season competes visually with the data, and the post-lockout rebuilds are easy to overlook.
 
 For the final version, each data value becomes a \code{Circle} artist. Here we deliberately encode points percentage twice. The radius follows the original expanding-bubble rule, \code{0.25 + value / 2}, so stronger seasons swell into their neighbors. Every circle uses Matplotlib's first default color, \code{C0}, while its opacity follows the same value; direct labels provide exact values. The redundant encodings create a rhythm across each row rather than asking a legend to do all the work. Compact horizontal season labels keep the top of the grid quiet.
 
-The text labels also become artists. Each team's mark is loaded with Pillow, placed in an \code{OffsetImage}, and anchored beside its row with an \code{AnnotationBbox}. A shaded band reserves space for the cancelled season, where the letters in ``LOCKOUT'' are stacked downward but kept upright. Finally, two annotations bring the Penguins' and Blackhawks' changes forward without erasing the other teams that provide context.
+The text labels also become artists. Each team's mark is loaded with Pillow, placed in an \code{OffsetImage}, and anchored beside its row with an \code{AnnotationBbox}. A shaded band reserves space for the cancelled season, where the letters in ``LOCKOUT'' are stacked downward but kept upright.
 
 The complete script also contains the layout, title, source note, and export commands. The radius helper, custom artist loop, and upright lockout treatment are shown first.
 
@@ -78,12 +78,12 @@ The complete script also contains the layout, title, source note, and export com
 
 The image-label loop uses the same artist pattern once per team.
 
-\pyfilelines{hockey-heat.py}{130}{140}
+\pyfilelines{hockey-heat.py}{107}{117}
 
 \begin{center}
     \includegraphics[width = \textwidth]{figures/poetryplots/hockey-heat.pdf}
 \end{center}
 
-The finished figure now makes a specific claim. Pittsburgh fell to a 35 percent points percentage immediately before and after the lockout, then reached 64 percent in 2006--07. Chicago's recovery took longer, moving from 36 percent in 2003--04 to 63 percent in 2008--09. Detroit's consistently large, dark circles on both sides of the lockout keep those improvements in perspective: a rebound and sustained excellence are different stories.
+The finished figure now makes a broader claim. Washington, Pittsburgh, and Chicago all sit near the bottom around the lockout and finish 2008--09 at 66, 60, and 63 percent, respectively. Tampa Bay moves in the opposite direction, peaking at 65 percent before the lockout and ending at 40 percent. Detroit's consistently large bubbles keep both patterns in perspective, while Nashville supplies a steadier middle path.
 
-The custom treatment earns its complexity when a small matrix contains a few values worth reading and a pattern worth annotating. For a much larger matrix, the direct labels and circles would become clutter; the simpler \code{imshow()} version would usually be the better choice.
+The custom treatment earns its complexity when a small matrix contains a few values worth reading and a pattern worth emphasizing. For a much larger matrix, the direct labels and circles would become clutter; the simpler \code{imshow()} version would usually be the better choice.
