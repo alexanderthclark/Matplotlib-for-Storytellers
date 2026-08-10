@@ -7,14 +7,17 @@ from matplotlib.offsetbox import AnnotationBbox, OffsetImage
 from matplotlib.patches import Circle
 from PIL import Image
 
-ROOT = Path(__file__).resolve().parents[1]
+try:
+    ROOT = Path(__file__).resolve().parents[1]
+except NameError:  # Running inside Poetry-Figure-Dev.ipynb.
+    ROOT = Path.cwd().resolve().parents[1]
 DATA_PATH = ROOT / "Data" / "nhl_regular_season.csv"
 OUTPUT_PATH = ROOT / "figures" / "poetryplots"
 
 TEAM_MARKS = {
     "Detroit Red Wings": ROOT / "images" / "nhl" / "DET.png",
     "Tampa Bay Lightning": ROOT / "images" / "nhl" / "TBL.png",
-    "Nashville Predators": ROOT / "images" / "predators.png",
+    "Nashville Predators": ROOT / "images" / "nhl" / "NSH.png",
     "Washington Capitals": ROOT / "images" / "nhl" / "WSH.png",
     "Pittsburgh Penguins": ROOT / "images" / "nhl" / "PIT.png",
     "Chicago Blackhawks": ROOT / "images" / "nhl" / "CHI.png",
