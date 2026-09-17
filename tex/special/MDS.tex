@@ -1,17 +1,17 @@
-Multi-dimensional scaling (MDS) turns a set of pairwise dissimilarities into a map. Each row and column of the input represents an item, and each cell records how different two items are. MDS invents coordinates for the items so that distances on the map approximate the supplied dissimilarities. Two dimensions are especially attractive because the result can be drawn, but squeezing all of the relationships onto a flat page usually introduces some error.
+%Dimensionality reduction techniques should be on the agenda for anyone interested in more visualizing complex data.
 
-Consider the meme below, which references social-distancing guidance from the coronavirus pandemic. We have four individuals, forming six possible pairs, and any two individuals must remain six feet apart. The graphic shows impossible right triangles that violate the Pythagorean Theorem when every distance is exactly six feet. There is no way to arrange four points in two-dimensional space so that every pair is the same distance apart. Three points can form an equilateral triangle, but the fourth point needs a third dimension.
+Multi-dimensional scaling (MDS) is a kind of dimensionality reduction, allowing one to translate a set of items and their predetermined pairwise distances into an arrangement of points in Cartesian space, typically in two dimensions. This is not a trivial task. Consider the meme below, which references social distancing guidance from the coronavirus pandemic. We have four individuals, forming six possible pairs, and any two individuals must maintain a six-foot distance. The graphic shows impossible right triangles that violate the Pythagorean Theorem when the distances are all exactly six feet. Indeed, there is no way to arrange four individuals in two-dimensional space so that they are all exactly six feet apart. This highlights one difficulty in multi-dimensional scaling---we must accept some error in our output.
 
 \begin{center}
     \includegraphics[width = 0.8\textwidth]{images/calmdownpythag.jpg}
 \end{center}
 
-The following diagram shows the same problem geometrically. Point $b$ must lie on the circle centered at $a$ to be one unit from $a$. Point $c$ can be placed where the first two circles intersect, making $a$, $b$, and $c$ mutually equidistant. A fourth point $d$ would need to lie on all three circles, but the three circumferences have no common intersection.
+The following diagram helps show why no alternative arrangement could be perfect. Each point $a,b,c$ is in the middle of a circle of six-foot radius. For $b$ to be six feet away from $a$, $b$ must lie on the circle centered at $a$. Similarly, for $b$ to be six feet away from $c$, $b$ must also lie on the circle centered at $c$. For three points, this arrangement is possible. But if we introduce $d$, $d$ must lie on all three of the circles centered at $a$, $b$, and $c$. But there is no point where all three circles intersect.
 
 \pyfile{mds-circles.py}
 
 \begin{center}
-    \includegraphics[width = 0.82\textwidth]{figures/specialplots/mds-circles.pdf}
+    \includegraphics[width = 0.96\textwidth]{figures/specialplots/mds-circles.pdf}
 \end{center}
 
 \section{From Dissimilarities to a Map}
