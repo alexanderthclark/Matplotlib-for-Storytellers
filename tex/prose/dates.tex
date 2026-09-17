@@ -23,10 +23,11 @@ You might find code using \code{plot_date()}, which used to be used in place of 
 
 \subsection{Time Zone Handling}
 
-%\code{plot_date()} also plots the dates according to a default UTC timezone, sometimes converting dates given in a different timezone. This can be modified with the \code{tz} parameter, but this requires covering 
+Matplotlib's date converters, locators, and formatters are time-zone aware. If no time zone is specified, Matplotlib uses \code{rcParams['timezone']}, which is \code{'UTC'} by default. You can choose the time zone used for tick labels by passing an IANA time-zone name to a formatter, as in \code{mdates.DateFormatter('\%H:\%M \%Z', tz = 'America/New\_York')}. The underlying observations do not move; only their displayed clock times change.
 
+It is important to distinguish conversion from localization. A time-zone-aware timestamp identifies an unambiguous instant and can be converted for different audiences. A naive timestamp has no such information. With pandas, \code{tz\_localize()} attaches a time zone to naive dates, while \code{tz\_convert()} converts dates that are already time-zone aware. Localize only when you know which time zone the recorded clock times represent. Otherwise, the same numbers can be assigned to the wrong instant.
 
-For a deeper knowledge, see the \code{datetime.tzinfo} class and the \code{pytz} library. TK
+Named zones are preferable to fixed offsets because their rules account for daylight-saving transitions. Python's standard-library \link{https://docs.python.org/3/library/zoneinfo.html}{\code{zoneinfo}} module supplies \code{tzinfo} objects for these zones. For plotting, a zone name or \code{tzinfo} object can be passed to Matplotlib's \link{https://matplotlib.org/stable/api/dates_api.html}{date locators and formatters}. The practical rule is simple: store an unambiguous time, commonly in UTC, and convert it only when choosing how the audience should read the axis.
 
 \section{Ticks and Formatting}
 
