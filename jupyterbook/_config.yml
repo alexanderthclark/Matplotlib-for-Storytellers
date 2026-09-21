@@ -55,6 +55,8 @@ html:
 # Jupyter Book theme and appearance
 sphinx:
   config:
+    exclude_patterns:
+      - README.md
     # html_theme: book
     html_theme_options:
       repository_url: "https://github.com/alexanderthclark/Matplotlib-for-Storytellers"

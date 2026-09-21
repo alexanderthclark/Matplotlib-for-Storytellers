@@ -1,6 +1,6 @@
 # Matplotlib for Storytellers - Jupyter Book
 
-This is the Jupyter Book version of Chapter 1: The Object-oriented Interface from "Matplotlib for Storytellers".
+This is the online Jupyter Book edition of *Matplotlib for Storytellers*.
 
 ## Building the Book
 
@@ -22,15 +22,14 @@ open _build/html/index.html
 ## Structure
 
 - `_config.yml` - Book configuration
-- `_toc.yml` - Table of contents  
+- `_toc.yml` - Complete table of contents
 - `intro.md` - Welcome page
-- `chapter1/` - Chapter 1 content
-  - `index.md` - The Object-oriented Interface chapter
-  - `images/` - Figure PDFs from the original book
+- `chapter1/` through `chapter16/` - Chapter content
+- `images/` - Web-ready figures from the print book
 
 ## Notes
 
 - Code blocks are standard markdown with Python syntax highlighting
 - Images have been converted to PNG format for better web display  
-- The content faithfully follows the original LaTeX version
+- The content follows the original LaTeX version while using MyST Markdown for web navigation, code listings, figures, links, and equations
 - Note: Some code examples assume previous imports (e.g., `import matplotlib.pyplot as plt`, `import numpy as np`, `import pandas as pd`)
