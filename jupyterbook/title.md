@@ -8,4 +8,6 @@
 
 <p>This version: 2025 (mostly written in 2021)</p>
 
+<p><a href="https://github.com/alexanderthclark/Matplotlib-for-Storytellers/blob/main/main.pdf">Read or download the PDF edition</a></p>
+
 </div>
