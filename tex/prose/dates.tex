@@ -18,7 +18,7 @@ Before we try to improve the formatting, see what happens if we try to use the a
     \includegraphics[width = .7\textwidth]{figures/proseplots/ax-dates.pdf}
 \end{center}
 
-You might find code using \code{plot_date()}, which used to be used in place of \code{plot()}. This is no longer necessary.
+You might find older code using \code{plot_date()}. The method was removed in matplotlib 3.11; pass datetime-like values directly to \code{plot()} instead.
 
 
 \subsection{Time Zone Handling}
@@ -63,7 +63,7 @@ Code & Output/Example \\
 \end{small}
 \end{center}
 
-A more complete list of format codes can be found at \link{https://strftime.org}{strftime.org}. Codes that generate actual names, like \code{'\%A'} or \code{'\%B'}, can be made lowercase to produce an abbreviated name. Notice that these formats create zero-padded numbers like \code{'07'} instead of \code{'7'}. On Mac or Linux, padding can be eliminated with the \code{'-'} modifier, using \code{'\%-H'} or \code{'\%-m'}
+A more complete list of format codes can be found in the \link{https://docs.python.org/3/library/datetime.html\#strftime-and-strptime-format-codes}{Python documentation}. Codes that generate actual names, like \code{'\%A'} or \code{'\%B'}, can be made lowercase to produce an abbreviated name. Notice that these formats create zero-padded numbers like \code{'07'} instead of \code{'7'}. On Mac or Linux, padding can be eliminated with the \code{'-'} modifier, using \code{'\%-H'} or \code{'\%-m'}
 instead of \code{'\%H'} or \code{'\%m'} for example. On Windows, use \code{'#'}.
 
 \pyfile{date-fmt.py}
