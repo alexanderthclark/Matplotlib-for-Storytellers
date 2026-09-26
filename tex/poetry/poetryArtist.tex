@@ -8,9 +8,25 @@ Chapter \ref{chapter:elements} introduced the distinction between primitive Arti
 
 Many axes methods quietly create Artist objects for us. For example, \code{ax.plot()} creates one or more \code{Line2D} objects, \code{ax.text()} creates a \code{Text} object, and \code{ax.scatter()} creates a collection. A call to \code{ax.bar()} creates a collection of rectangular patches. You usually do not need to know any of this when the usual plotting method gives you what you want.
 
-But sometimes it is easier to create the Artist directly. You can create a circle with \code{plt.Circle()} and add it to an axes object with \code{ax.add\_patch()}. There are similar methods such as \code{add\_line()} and \code{add\_collection()}, along with the more general \code{add\_artist()}. I would use the more specific method when one exists. Besides making the type of object clearer, some of these methods also allow the axes object to account for the Artist when determining the data limits. Matplotlib's \link{https://matplotlib.org/stable/tutorials/artists.html}{Artist tutorial} goes into more detail.
+But sometimes it is easier to create the Artist directly. A Patch is an Artist used to draw a two-dimensional shape with a face and an edge. \code{Circle}, \code{Rectangle}, and \code{Polygon} are all patches. You can create a circle with \code{plt.Circle()} and add it to an axes object with \code{ax.add\_patch()}. There are similar methods such as \code{add\_line()} and \code{add\_collection()}, along with the more general \code{add\_artist()}. I would use the more specific method when one exists. Besides making the type of object clearer, some of these methods also allow the axes object to account for the Artist when determining the data limits. Matplotlib's \link{https://matplotlib.org/stable/tutorials/artists.html}{Artist tutorial} goes into more detail.
+
+\subsection{A Small Thermometer}
+
+A thermometer is not a standard matplotlib plot type, which makes it a useful small example. Below, a temperature determines the height of a red rectangle. A second rectangle creates the stem and a circle creates the bulb. We also add a short line and a text label at the top of the red fill. This is closer to an illustration than a conventional plot, but it is still made with the same objects we have used throughout the book.
+
+\pyfile{thermometer.py}
+
+\begin{center}
+    \includegraphics[width = .45\textwidth]{figures/poetryplots/thermometer.pdf}
+\end{center}
+
+The two rectangles and the circle are created first, but that does not add them to the plot. The loop passes each one to \code{ax.add\_patch()}. The short horizontal line is a \code{Line2D} object, so it is added with \code{ax.add\_line()}. The call to \code{ax.text()} is a convenience: it creates a \code{Text} object and adds it to the axes in one step. We assign that object to \code{label} so that its color can be changed afterward with \code{set\_color()}.
+
+The thermometer also shows why it helps to have access to the individual objects. The value controls the height of one rectangle and the locations of the line and label. The \code{zorder} values keep the fill above the stem and the bulb above both. We could now change or remove any part without redrawing the others.
 
 Creating and adding an Artist does not finish the job. We still need to choose its coordinate system, its \code{zorder}, and whether it should be clipped by the axes. We might also set its color, transparency, line width, or size. These are not new considerations. We have already made the same choices through plotting methods. Creating the Artist directly just leaves more of those decisions in our hands.
+
+Other Artist classes appear later without requiring much additional theory. \code{ax.scatter()} returns a \code{PathCollection}, while \code{imshow()} returns an \code{AxesImage}. The hockey example uses \code{OffsetImage} and \code{AnnotationBbox} to place team logos. There is no need to memorize the class hierarchy. The important point is that these parts of a plot are objects that can be stored in variables, modified, layered, or removed.
 
 \section{Building a Plot One Artist at a Time}
 
