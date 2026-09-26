@@ -9,7 +9,7 @@ The gauge will have values running from 0\% to 100\%, and we'll place these alon
     \includegraphics[width = .75\textwidth]{figures/poetryplots/speedometer.pdf}
 \end{center}
 
-The helper function accepts an Axes object rather than creating a new Figure. That makes the same drawing reusable in a subplot layout. Below, one loop places three gauges on three Axes. The smaller panels also reveal some crowding in the tick labels, a reminder that a design that works alone may need adjustment when repeated.
+The helper function accepts an Axes object rather than creating a new Figure, allowing the same drawing to be reused across subplots. Below, one loop places three gauges on three Axes. You might prefer to make further modifications to the sizing and spacing: the tick labels are crowded in these smaller panels.
 
 \pyfile{speedometers.py}
 
