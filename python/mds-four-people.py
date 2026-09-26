@@ -56,12 +56,6 @@ for name, (x, y) in zip(names, locations):
             color = 'white', size = 16,
             weight = 'bold', zorder = 4)
 
-ax.text(0, 1.02,
-        'Every target dissimilarity is 1; labels show fitted distances.',
-        transform = ax.transAxes,
-        ha = 'left', va = 'bottom',
-        color = '#52606d', size = 11)
-
 padding = .34
 ax.set_xlim(locations[:, 0].min() - padding,
             locations[:, 0].max() + padding)
