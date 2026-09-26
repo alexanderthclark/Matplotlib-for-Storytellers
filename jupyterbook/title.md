@@ -6,6 +6,6 @@
 
 <p class="hero-author">By <a href="https://github.com/alexanderthclark">Alexander Clark</a></p>
 
-<p>This version: 2025 (mostly written in 2021)</p>
+<p>First version: 2021 · Current version: 2026</p>
 
 </div>
