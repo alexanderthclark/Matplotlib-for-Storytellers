@@ -20,7 +20,7 @@ Before we try to improve the formatting, see what happens if we try to use the a
 
 ![Axes dates](../images/chapter5/ax-dates.png)
 
-You might find code using `plot_date()`, which used to be used in place of `plot()`. This is no longer necessary.
+You might find older code using `plot_date()`. The method was removed in matplotlib 3.11; pass datetime-like values directly to `plot()` instead.
 
 ### 5.1.1 Time Zone Handling
 
@@ -56,7 +56,7 @@ Here are some common format codes, applied to Sunday January 30, 2000, 11:59PM, 
 | `'%H:%M %Z'` | `'23:59 EST'` |
 | `'%A %I%p'` | `'Sunday 11PM'` |
 
-A more complete list of format codes can be found at [strftime.org](https://strftime.org). Codes that generate actual names, like `'%A'` or `'%B'`, can be made lowercase to produce an abbreviated name. Notice that these formats create zero-padded numbers like `'07'` instead of `'7'`. On Mac or Linux, padding can be eliminated with the `'-'` modifier, using `'%-H'` or `'%-m'` instead of `'%H'` or `'%m'` for example. On Windows, use `'#'`.
+A more complete list of format codes can be found in the [Python documentation](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes). Codes that generate actual names, like `'%A'` or `'%B'`, can be made lowercase to produce an abbreviated name. Notice that these formats create zero-padded numbers like `'07'` instead of `'7'`. On Mac or Linux, padding can be eliminated with the `'-'` modifier, using `'%-H'` or `'%-m'` instead of `'%H'` or `'%m'` for example. On Windows, use `'#'`.
 
 ```{literalinclude} ../../python/date-fmt.py
 :language: python

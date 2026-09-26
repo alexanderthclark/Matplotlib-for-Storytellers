@@ -12,8 +12,7 @@ records = (standings.pivot(index = 'team',
                     .reindex(index = teams,
                              columns = seasons))
 
-cmap = mpl.colormaps['Blues'].copy()
-cmap.set_bad('#e9ecef')
+cmap = mpl.colormaps['Blues'].with_extremes(bad = '#e9ecef')
 
 fig, ax = plt.subplots(figsize = (10, 4.6))
 image = ax.imshow(np.ma.masked_invalid(records),
