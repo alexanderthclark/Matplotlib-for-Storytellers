@@ -24,7 +24,11 @@ You might find older code using `plot_date()`. The method was removed in matplot
 
 ### 5.1.1 Time Zone Handling
 
-For a deeper knowledge, see the `datetime.tzinfo` class and the `pytz` library. TK
+Matplotlib's date converters, locators, and formatters are time-zone aware. If no time zone is specified, Matplotlib uses `rcParams['timezone']`, which is `'UTC'` by default. You can choose the time zone used for tick labels by passing an IANA time-zone name to a formatter, as in `mdates.DateFormatter('%H:%M %Z', tz = 'America/New_York')`. The underlying observations do not move; only their displayed clock times change.
+
+It is important to distinguish conversion from localization. A time-zone-aware timestamp identifies an unambiguous instant and can be converted for different audiences. A naive timestamp has no such information. With pandas, `tz_localize()` attaches a time zone to naive dates, while `tz_convert()` converts dates that are already time-zone aware. Localize only when you know which time zone the recorded clock times represent. Otherwise, the same numbers can be assigned to the wrong instant.
+
+Named zones are preferable to fixed offsets because their rules account for daylight-saving transitions. Python's standard-library [`zoneinfo`](https://docs.python.org/3/library/zoneinfo.html) module supplies `tzinfo` objects for these zones. For plotting, a zone name or `tzinfo` object can be passed to Matplotlib's [date locators and formatters](https://matplotlib.org/stable/api/dates_api.html). The practical rule is simple: store an unambiguous time, commonly in UTC, and convert it only when choosing how the audience should read the axis.
 
 ## 5.2 Ticks and Formatting
 

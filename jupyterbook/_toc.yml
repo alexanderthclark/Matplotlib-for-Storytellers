@@ -53,3 +53,27 @@ parts:
     title: Chapter 9 - Math
   - file: chapter10/index
     title: Chapter 10 - Applications
+- caption: Part III - Poetry
+  chapters:
+  - file: part_poetry
+    title: Part III - Poetry
+  - file: chapter11/index
+    title: Chapter 11 - Poetry
+  - file: chapter12/index
+    title: Chapter 12 - Artist Objects
+  - file: chapter13/index
+    title: Chapter 13 - Applications
+- caption: Part IV - Special Topics
+  chapters:
+  - file: part_special
+    title: Part IV - Special Topics
+  - file: chapter14/index
+    title: Chapter 14 - Ternary Plots
+  - file: chapter15/index
+    title: Chapter 15 - Intro Statistics
+  - file: chapter16/index
+    title: Chapter 16 - Multi-dimensional Scaling
+- caption: Backmatter
+  chapters:
+  - file: about
+    title: About the Author

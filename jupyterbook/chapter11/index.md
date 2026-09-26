@@ -1,0 +1,9 @@
+# Chapter 11: Poetry
+
+President George W. Bush is reported to have been fascinated by satellite pictures showing North and South Korea at night. South Korea is covered in bright lights and its communist neighbor, dark, could be mistaken for a collection of dead pixels. The pictures, like any data visualization, communicate and distill a lot of information. Karen Hughes, Bush's former counselor, said that to Bush, the pictures showed “the light and opportunity that comes with freedom, and the dark that comes with a regime that is oppressive.” The pictures, like any data visualization, communicate and distill a lot of information. And like an effective novel data visualization, the pictures invite more active interest.
+
+With prose behind us, we approach that end of the spectrum. Roger Scruton argues that “poetry is concerned with the truth as a kind of revelation,” standing apart from the “aboutness” of prose. Scruton adds, “When Keats writes his ‘Ode to the Nightingale,’ he does not describe the bird and its song only: he endows it with value.” So here we are, trying to endow some data with value through its presentation.
+
+This is a different kind of task you might take up once you've understood the important insights from your data and you have an editorial perspective. When the Bureau of Labor Statistics reports unemployment numbers, that should not be editorialized—prose line charts and tables will do. But sometimes your audience will benefit from receiving the data pre-chewed or more artfully presented.
+
+To that end, this part aims to help you construct interesting charts, mostly with more considered use of Artist objects. This will also help you construct prosaic plots, as you might also use these objects to build plots from scratch if the easier way escapes you. This will be more laborious. Poets do write fewer words than prose writers over their careers.
