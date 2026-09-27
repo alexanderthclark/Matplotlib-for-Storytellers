@@ -1,4 +1,4 @@
-There's an allure to control rooms or all the gauges on the dashboard of a vehicle. If you can make your dashboards alluring, your stakeholders will visit them more often. We'll create a simple speedometer-like gauge to add some visual interest to reporting a single percentile value. We'll use what learned about rotating points in Section \ref{subsec:rotations}
+There's an allure to control rooms or all the gauges on the dashboard of a vehicle. If you can make your dashboards alluring, your stakeholders will visit them more often. We'll create a simple speedometer-like gauge to add some visual interest to reporting a single percentile value. We'll use what we learned about rotating points in Section \ref{subsec:rotations}.
 The gauge will have values running from 0\% to 100\%, and we'll place these along a half circle. The gauge's hand will point to a particular realized percentile value. We use a rotation matrix to find the correct angle at which to place the hand. 
 
 \pyfile{speedo-functions.py}
@@ -9,10 +9,14 @@ The gauge will have values running from 0\% to 100\%, and we'll place these alon
     \includegraphics[width = .75\textwidth]{figures/poetryplots/speedometer.pdf}
 \end{center}
 
-You might prefer to make further modifications to the sizing and spacing depending. Below, we see some crowding with the tick labels. 
+The helper function accepts an Axes object rather than creating a new Figure, allowing the same drawing to be reused across subplots. Below, one loop places three gauges on three Axes. You might prefer to make further modifications to the sizing and spacing, because the tick labels are crowded in these smaller panels.
 
 \pyfile{speedometers.py}
 
 \begin{center}
     \includegraphics[width = .75\textwidth]{figures/poetryplots/speedometers.pdf}
 \end{center}
+
+If the gauges must remain this small, we could label every 20 percentage points instead of every 10, reduce the text size, or increase the space between subplots. Which adjustment is best depends on what the audience needs to compare. The hand and the large value already communicate the approximate percentile, so every tick label may not be earning its space.
+
+The reusable pattern matters more than the speedometer itself. The \code{speedometer()} function handles the geometry and styling of one gauge, while the calling code decides where it belongs. Functions that accept \code{ax} can be used alone, repeated in a grid, or inserted into a larger composition without rewriting the drawing instructions.

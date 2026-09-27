@@ -6,7 +6,7 @@ This section introduces the \link{https://github.com/marcharper/python-ternary}{
     \includegraphics[width = .6\textwidth]{images/tikz_simplex_blank.pdf}
 \end{center}
 
-I encountered these diagrams in a few economics courses. Professor \link{https://www.ssc.wisc.edu/~whs/}{Bill Sandholm} made particularly memorable use of these diagrams in his courses and research in evolutionary game theory. These plots aren't the most natural selection for inclusion in this text. It's a personal indulgence and a favor to other game theorists.
+I encountered these diagrams in a few economics courses. Professor \link{https://users.ssc.wisc.edu/~whs/}{Bill Sandholm} made particularly memorable use of these diagrams in his courses and research in evolutionary game theory. These plots aren't the most natural selection for inclusion in this text. It's a personal indulgence and a favor to other game theorists.
 
 After running \code{import ternary}, the construction of a plot isn't much different than what we covered in Chapter \ref{chapter:oop}. Start with figure and
 \emph{ternary} axes objects. However, \code{ternary.figure()} will create both objects. There is no analogue to \code{plt.axes()} as this more closely imitates \code{plt.subplots(1,1)} than \code{plt.figure()}. It's not a perfect replica though. For example, there is no \code{figsize} parameter, but this can be adjusted with the figure method \code{set_size_inches}.
@@ -77,4 +77,4 @@ We can color best responses zones by using the \code{heatmap} method, though it 
     \includegraphics[width = 0.90\textwidth]{figures/specialplots/rps-br-zones.pdf}
 \end{center}
 
-Anyone inspecting what \code{data} looks like above will note that the points in the triangle aren't proper probability vectors as they add up to our \code{scale} value of 200 instead of one. That's immaterial for this application. A higher scale is chosen to create a sharper, exact border between between the best response regions. 
+Anyone inspecting what \code{data} looks like above will note that the points in the triangle aren't proper probability vectors as they add up to our \code{scale} value of 200 instead of one. That's immaterial for this application. A higher scale is chosen to create a sharper, exact border between between the best response regions.
