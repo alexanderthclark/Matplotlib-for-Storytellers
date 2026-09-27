@@ -3,7 +3,7 @@ nbformat
 numpy
 pandas
 pillow
-scikit-learn
+scikit-learn>=1.8
 scipy
 statsmodels
 ternary

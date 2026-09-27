@@ -2,7 +2,8 @@ names = ['a', 'b', 'c', 'd']
 dissimilarities = np.ones((4, 4)) - np.eye(4)
 
 mds = MDS(n_components = 2,
-          dissimilarity = 'precomputed',
+          metric = 'precomputed',
+          init = 'random',
           random_state = 7,
           n_init = 8)
 locations = mds.fit_transform(dissimilarities)
