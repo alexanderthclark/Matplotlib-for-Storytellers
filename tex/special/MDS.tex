@@ -14,8 +14,6 @@ The following diagram helps show why no alternative arrangement could be perfect
     \includegraphics[width = 0.96\textwidth]{figures/specialplots/mds-circles.pdf}
 \end{center}
 
-\section{From Dissimilarities to a Map}
-
 MDS can help us get as close as is possible. The code below constructs a matrix with zeros on the diagonal because each item is identical to itself and ones everywhere else because every distinct pair has a target dissimilarity of one. The matrix is symmetric: the dissimilarity from $a$ to $b$ is the same as the dissimilarity from $b$ to $a$.
 
 The code passes the matrix to scikit-learn's \link{https://scikit-learn.org/stable/modules/generated/sklearn.manifold.MDS.html}{\code{MDS}} estimator with \code{metric = 'precomputed'}. The \code{n\_components} argument requests two output dimensions. MDS begins from an initial arrangement and repeatedly moves the points to improve the fit. We explicitly use a random initial arrangement with \code{init = 'random'}, set \code{random\_state} so the example can be reproduced, and use several initial arrangements with \code{n\_init}; the estimator keeps the best result.
@@ -27,7 +25,5 @@ The code passes the matrix to scikit-learn's \link{https://scikit-learn.org/stab
 \end{center}
 
 The result is approximately a square. That is a compromise born of insufficient dimensions. The four sides are about $0.85$ units long while the two diagonals are about $1.21$ units long. MDS makes some pairs too close and others too far away because a perfect two-dimensional arrangement does not exist.
-
-\section{Reading an MDS Map}
 
 The distances are the meaningful part of an MDS map. The horizontal and vertical axes ordinarily have no substantive interpretation. The entire configuration can be translated, rotated, or reflected without changing any pairwise distance, so a second valid fit might appear in a different location or orientation. A fixed \code{random\_state} makes output reproducible.
