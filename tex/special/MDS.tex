@@ -24,6 +24,6 @@ The code passes the matrix to scikit-learn's \link{https://scikit-learn.org/stab
     \includegraphics[width = 0.78\textwidth]{figures/specialplots/mds-four-people.pdf}
 \end{center}
 
-The result is approximately a square. That is a compromise born of insufficient dimensions. The four sides are about $0.85$ units long while the two diagonals are about $1.21$ units long. MDS makes some pairs too close and others too far away because a perfect two-dimensional arrangement does not exist.
+The result is approximately a square, a compromise forced by using two dimensions. The four sides are about $0.85$ units long while the two diagonals are about $1.21$ units long. MDS makes some pairs too close and others too far away because a perfect two-dimensional arrangement does not exist.
 
 The distances are the meaningful part of an MDS map. The horizontal and vertical axes ordinarily have no substantive interpretation. The entire configuration can be translated, rotated, or reflected without changing any pairwise distance, so a second valid fit might appear in a different location or orientation. A fixed \code{random\_state} makes output reproducible.
