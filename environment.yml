@@ -4,7 +4,7 @@ channels:
   - defaults
 dependencies:
   # Python version as specified in the preface
-  - python=3.9
+  - python=3.11
   
   # Core libraries
   - matplotlib=3.7.1
@@ -17,7 +17,7 @@ dependencies:
   - notebook
   
   # Scientific computing
-  - scikit-learn
+  - scikit-learn>=1.8
   - scipy
   - statsmodels
   
