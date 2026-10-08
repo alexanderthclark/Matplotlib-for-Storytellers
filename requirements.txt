@@ -7,4 +7,4 @@ pillow
 scikit-learn>=1.8
 scipy
 statsmodels
-ternary
+python-ternary

@@ -10,6 +10,7 @@ pandas>=2.0.0
 scikit-learn>=1.8
 scipy>=1.10.0
 statsmodels>=0.14.0
+python-ternary
 
 # Image processing
 Pillow>=9.5.0
