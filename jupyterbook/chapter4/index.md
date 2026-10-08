@@ -52,7 +52,7 @@ Matplotlib offers `text` as both a figure and an axes method. Let's start with s
 
 Immediately, we see that despite passing the same $x$ and $y$ position values, the figure and axes methods place the text differently. By default, the figure method uses "figure" coordinates, where (0,0) is the bottom left and (1,1) is the top right. The axes method uses $x$ and $y$ data coordinates by default. We will modify this shortly.
 
-A more common concern is the alignment of the text. Both figure and axes text methods include parameters `verticalalignment` and `horizontalalignment`, which can be abbreviated as `va` and `ha`. By default, the text is placed so that the given coordinate is at the bottom-left corner of the text.
+A more common concern is the alignment of the text. Both figure and axes text methods include parameters `verticalalignment` and `horizontalalignment`, which can be abbreviated as `va` and `ha`. By default, the text starts at the given horizontal coordinate, with its baseline at the given vertical coordinate.
 
 ```{literalinclude} ../../python/text-default-align.py
 :language: python
@@ -60,7 +60,7 @@ A more common concern is the alignment of the text. Both figure and axes text me
 
 ![Default text alignment](../images/chapter4/text-default-align.png)
 
-For vertical alignment, the options are `'top'`, `'bottom'`, or `'center'`. For horizontal alignment, the options are `'left'`, `'right'`, or `'center'`. The default demonstrated above was `'bottom'` and `'left'`. It does result in the text being above and to the right of the coordinate point, perhaps confusingly, but the interpretation is that the coordinate point is at the bottom-left of the text. The possible alignments are illustrated below.
+For vertical alignment, the options are `'top'`, `'bottom'`, `'center'`, `'baseline'`, or `'center_baseline'`. For horizontal alignment, the options are `'left'`, `'right'`, or `'center'`. The default demonstrated above was `'baseline'` and `'left'`. The coordinate point is at the left edge of the text's baseline. Some of the possible alignments are illustrated below.
 
 ```{literalinclude} ../../python/text-align.py
 :language: python
