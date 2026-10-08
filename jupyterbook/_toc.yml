@@ -15,8 +15,8 @@ parts:
   - file: preface/index
     title: Preface
     sections:
-    - file: preface/second_edition
-      title: Preface to the Second Edition
+    - file: preface/version_note
+      title: A Note on This Version
     - file: preface/technical_notes
       title: Technical Notes and Prerequisites
     - file: preface/why_matplotlib
