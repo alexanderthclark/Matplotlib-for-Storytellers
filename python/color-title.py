@@ -13,26 +13,26 @@ def color_title(labels, colors, textprops ={'size':'large'}, ax = None, y = 1.01
     xT = 0 # where the text ends in x-axis coords
     shift = 0 # where the text starts
 
-    # for text objects
-    text = dict()
+    # text objects from the previous centering pass
+    text = []
 
     while (np.abs(shift - (1-xT)) > precision) and (shift <= xT) :
+        for t in text:
+            t.remove()
+        text = []
+
         x_pos = shift
 
         for label, col in zip(labels, colors):
 
-            try:
-                text[label].remove()
-            except KeyError:
-                pass
-
-            text[label] = ax.text(x_pos, y, label,
+            t = ax.text(x_pos, y, label,
                         transform = transform,
                         ha = 'left',
                         color = col,
                         **textprops)
+            text.append(t)
 
-            x_pos = text[label].get_window_extent()\
+            x_pos = t.get_window_extent()\
                    .transformed(transform.inverted()).x1
 
         xT = x_pos # where all text ends
